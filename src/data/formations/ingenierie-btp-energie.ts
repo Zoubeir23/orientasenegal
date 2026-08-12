@@ -17,7 +17,7 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
     institut: "ESEBAT",
     bacsCompatibles: ["Scientifique"],
     description:
-      "Formation en structures, béton armé, topographie, métré et conduite de chantier, du BTS jusqu'au diplôme d'ingénieur. École reconnue par le Ministère de l'Enseignement Supérieur ; l'accréditation ANAQ-Sup/CAMES spécifique à chaque filière est à confirmer auprès de l'école.",
+      "Formation en structures, béton armé, topographie, métré et conduite de chantier, du BTS jusqu'au diplôme d'ingénieur. ESEBAT figure sur la liste des écoles reconnues par le CAMES (arrêté 00152/2021), mais cette licence professionnelle n'apparaît pas séparément dans la base ANAQ-Sup consultée — seul le Master Génie Civil de l'école y est accrédité individuellement.",
     debouches: [
       "Ingénieur travaux",
       "Conducteur de chantier",
@@ -108,7 +108,7 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
     },
     sourceOfficielle: { libelle: "ept.edu.sn", url: "https://ept.edu.sn/" },
     noteDAdmission:
-      "Admission sur concours national (candidats libres acceptés), réservé aux candidats de moins de 22 ans au 1er octobre de l'année d'entrée, sur la base d'un bac scientifique ou technique (S1, S2, S3, STIDD).",
+      "Admission sur concours national (candidats libres acceptés), réservé aux candidats de moins de 22 ans au 1er octobre de l'année d'entrée, sur la base d'un bac scientifique ou technique (S1, S2, S3, STIDD). Accréditation : l'EPT dispose d'une habilitation ANAQ-Sup générale (2021-2022) et d'une reconnaissance CAMES, mais ce diplôme précis (Génie Civil) n'apparaît pas séparément dans la base ANAQ-Sup consultée (le diplôme Génie Aéronautique de l'EPT y figure en revanche).",
   },
   {
     id: "batisup-genie-civil",
@@ -122,7 +122,7 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
     institut: "BATISUP - École Supérieure du Bâtiment",
     bacsCompatibles: ["Scientifique"],
     description:
-      "École privée fondée en 2006, accréditation définitive du Ministère de l'Éducation. Cursus du BTS (Bac+2) à la licence (Bac+3) puis au master (Bac+5) en génie civil et bâtiment. École internationale : une vingtaine de nationalités représentées.",
+      "École privée fondée en 2006, habilitée par le Ministère de l'Enseignement Supérieur (habilitation ANAQ-Sup confirmée pour l'institution). Cursus du BTS (Bac+2) à la licence (Bac+3) puis au master (Bac+5) en génie civil et bâtiment ; seul le Master Génie Civil est accrédité individuellement sur la base ANAQ-Sup consultée, pas le BTS ni la licence. École internationale : une vingtaine de nationalités représentées.",
     debouches: [
       "Technicien BTP",
       "Conducteur de travaux",
@@ -211,6 +211,8 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
         "Probablement la filière technique avec le meilleur rapport durée d'études / employabilité immédiate aux Comores. Maîtrisez le dimensionnement et le stockage sur batteries.",
     },
     sourceOfficielle: { libelle: "esebat.com", url: "https://esebat.com/" },
+    noteDAdmission:
+      "Accréditation : cette licence n'a été trouvée ni dans la base ANAQ-Sup ni dans les listes CAMES consultées, contrairement à la licence Génie Civil de la même école (reconnue CAMES au niveau institutionnel) : demandez le statut d'accréditation précis de ce diplôme avant de vous inscrire.",
   },
   {
     id: "isep-thies-energies-renouvelables",
@@ -265,7 +267,7 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
       url: "https://isep-thies.sn/course/energies-renouvelables/",
     },
     noteDAdmission:
-      "Institut public : recrutement par campagne annuelle, places limitées, formation en alternance école-entreprise.",
+      "Institut public : recrutement par campagne annuelle, places limitées, formation en alternance école-entreprise. Accréditation : ISEP Thiès dispose d'une habilitation ANAQ-Sup confirmée et d'une reconnaissance CAMES au niveau institutionnel (premier ISEP autorisé à délivrer le DiSEP) ; l'accréditation individuelle de ce parcours énergies renouvelables n'a pas été confirmée séparément.",
   },
   {
     id: "cuad-architecture",
@@ -279,7 +281,7 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
     institut: "CUAD - Collège Universitaire d'Architecture de Dakar",
     bacsCompatibles: ["Scientifique"],
     description:
-      "Licence puis Master en architecture, avec des spécialisations en architecture bioclimatique, patrimoine, urbanisme et paysage. Établissement accrédité ANAQ-Sup, seule école d'architecture reconnue au Sénégal depuis sa création en 2008.",
+      "Licence puis Master en architecture, avec des spécialisations en architecture bioclimatique, patrimoine, urbanisme et paysage. La Licence ET le Master sont tous deux accrédités individuellement par l'ANAQ-Sup (vérifié sur anaqsup.sn, deux fiches distinctes), seule école d'architecture avec ce niveau de vérification au Sénégal depuis sa création en 2008.",
     debouches: [
       "Architecte",
       "Urbaniste",
@@ -317,7 +319,7 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
     },
     sourceOfficielle: { libelle: "cuad.archi", url: "https://www.cuad.archi/" },
     noteDAdmission:
-      "Admission sur dossier après le bac, ou après un Bac+2 pour une entrée en cours de cursus.",
+      "Admission sur dossier après le bac, ou après un Bac+2 pour une entrée en cours de cursus. Accréditation confirmée : anaqsup.sn/accreditations/cuad-college-universitaire-darchitecture-de-dakar/ (Licence) et anaqsup.sn/accreditations/cuad-college-universitaire-darchitecture-de-dakar-2/ (Master).",
   },
   {
     id: "arubasup-architecture",
@@ -365,10 +367,10 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
         "Cabinet indépendant",
       ],
       conseil:
-        "Vérifiez l'accréditation exacte (ANAQ-Sup, CAMES) et les frais réels avant de comparer avec CUAD : les deux écoles n'affichent pas leurs tarifs en ligne, un contact direct est indispensable.",
+        "Contrairement à CUAD, cette école n'a été trouvée dans aucune des deux bases d'accréditation consultées (ANAQ-Sup, CAMES) : demandez explicitement le statut d'accréditation et le numéro de décision avant de vous engager, et comparez avec CUAD qui, lui, est confirmé accrédité.",
     },
     sourceOfficielle: { libelle: "arubasup.sn", url: "https://arubasup.sn/" },
     noteDAdmission:
-      "Admission sur dossier (lettre de motivation, attestation de bac, relevés de notes, photo) suivi d'un entretien oral d'environ 30 minutes devant un jury.",
+      "Admission sur dossier (lettre de motivation, attestation de bac, relevés de notes, photo) suivi d'un entretien oral d'environ 30 minutes devant un jury. Accréditation : école non trouvée dans la base ANAQ-Sup ni dans les listes CAMES consultées, malgré une recherche approfondie — statut à clarifier impérativement avec l'école avant tout engagement financier.",
   },
 ];
