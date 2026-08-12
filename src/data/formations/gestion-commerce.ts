@@ -17,7 +17,7 @@ export const formationsGestionCommerce: Formation[] = [
     institut: "ISM - Institut Supérieur de Management",
     bacsCompatibles: ["Littéraire", "Scientifique"],
     description:
-      "Business school accréditée AABS présente sur 12 sites au Sénégal. Comptabilité, marketing, ressources humaines et stratégie, avec stages en entreprise.",
+      "Business school présente sur 12 sites au Sénégal, membre du réseau AABS (Association of African Business Schools) — une adhésion de réseau, pas une accréditation académique CAMES/ANAQ-Sup. Cette licence Sciences de Gestion et Management n'apparaît pas dans la base ANAQ-Sup consultée (une autre licence ISM, Droit des Affaires, y est en revanche accréditée). Comptabilité, marketing, ressources humaines et stratégie, avec stages en entreprise.",
     debouches: [
       "Contrôleur de gestion",
       "Chargé de marketing",
@@ -58,7 +58,7 @@ export const formationsGestionCommerce: Formation[] = [
       url: "https://www.groupeism.sn/admission/admission",
     },
     noteDAdmission:
-      "Admission : dossier, épreuve écrite de culture générale, entretien en anglais et entretien collectif.",
+      "Admission : dossier, épreuve écrite de culture générale, entretien en anglais et entretien collectif. Accréditation : ne confondez pas l'appartenance au réseau AABS (label de business schools, pas une accréditation d'État) avec une accréditation CAMES ou ANAQ-Sup — demandez le statut précis de cette filière avant de vous engager.",
   },
   {
     id: "cesag-gestion",
@@ -110,7 +110,7 @@ export const formationsGestionCommerce: Formation[] = [
     },
     sourceOfficielle: { libelle: "cesag.sn", url: "https://www.cesag.sn/" },
     noteDAdmission:
-      "Admission sur concours d'entrée, deux sessions par an, inscription en ligne.",
+      "Admission sur concours d'entrée, deux sessions par an, inscription en ligne. Accréditation confirmée : le CESAG revendique 40 programmes sur 40 accrédités CAMES (cesag.sn, page accréditations qualité) — l'un des dossiers d'accréditation les plus solides de ce répertoire.",
   },
   {
     id: "ifage-comptabilite-controle-audit",
@@ -124,7 +124,7 @@ export const formationsGestionCommerce: Formation[] = [
     institut: "IFAGE - Institut Interafricain de Formation en Assurance et Gestion",
     bacsCompatibles: ["Littéraire", "Scientifique"],
     description:
-      "Licence professionnelle en 3 ans, spécialisée sur l'environnement comptable OHADA : comptabilité générale, contrôle de gestion et audit financier. Accréditée CAMES et ANAQ-Sup.",
+      "Licence professionnelle en 3 ans, spécialisée sur l'environnement comptable OHADA : comptabilité générale, contrôle de gestion et audit financier. Accréditation CAMES et ANAQ-Sup confirmée pour cette filière précise (Licence professionnelle Comptabilité Contrôle Audit).",
     debouches: ["Comptable", "Auditeur junior", "Contrôleur de gestion", "Fiscaliste"],
     ville: "Dakar",
     dureeEnAnnees: 3,
@@ -212,7 +212,7 @@ export const formationsGestionCommerce: Formation[] = [
     },
     sourceOfficielle: { libelle: "idgdakar.com", url: "https://www.idgdakar.com/" },
     noteDAdmission:
-      "Admission sur dossier (diplômes, pièce d'identité, CV) après le baccalauréat.",
+      "Admission sur dossier (diplômes, pièce d'identité, CV) après le baccalauréat. Accréditation : cette école n'a été trouvée ni dans la base ANAQ-Sup ni dans les listes CAMES consultées — demandez explicitement le statut d'accréditation avant de vous engager, notamment au vu de la reconnaissance annoncée via le réseau Collège de Paris (qui n'est pas non plus une accréditation d'État sénégalaise).",
   },
   {
     id: "iam-marketing-digital",
@@ -226,7 +226,7 @@ export const formationsGestionCommerce: Formation[] = [
     institut: "IAM - Institut Africain de Management",
     bacsCompatibles: ["Littéraire", "Scientifique"],
     description:
-      "Grande école de management dakaroise, accréditée ISO 9001 et CAMES. Parcours orienté marketing, communication et outils numériques, accessible aux profils littéraires ; un master dédié au digital business existe aussi en poursuite d'études.",
+      "Grande école de management dakaroise, certifiée ISO 9001 (norme qualité, à ne pas confondre avec une accréditation académique). L'IAM a des programmes accrédités ANAQ-Sup en administration des affaires, supply chain et banque/finance, mais cette filière Marketing et Communication Digitale n'apparaît pas séparément dans la base consultée. Parcours accessible aux profils littéraires ; un master dédié au digital business existe aussi en poursuite d'études.",
     debouches: [
       "Chargé de marketing digital",
       "Community manager",
@@ -264,7 +264,7 @@ export const formationsGestionCommerce: Formation[] = [
     },
     sourceOfficielle: { libelle: "groupeiam.com", url: "https://groupeiam.com/" },
     noteDAdmission:
-      "Le niveau exact du parcours marketing/communication (licence Bac+3 ou master Bac+5) peut varier selon les années : confirmez l'intitulé précis auprès du service admissions avant de candidater.",
+      "Le niveau exact du parcours marketing/communication (licence Bac+3 ou master Bac+5) peut varier selon les années : confirmez l'intitulé précis auprès du service admissions avant de candidater. L'IAM revendique une accréditation ANAQ-Sup pour ses licences/masters (annonce sur groupeiam.com, juin 2025), mais cette filière précise n'était pas confirmée sur la base ANAQ-Sup au moment de la vérification : demandez confirmation écrite.",
   },
   {
     id: "afi-ue-marketing-digital",
@@ -316,7 +316,7 @@ export const formationsGestionCommerce: Formation[] = [
     },
     sourceOfficielle: { libelle: "afi-ue.sn", url: "https://afi-ue.sn/" },
     noteDAdmission:
-      "Admission sur dossier complet, toutes séries de baccalauréat, après sélection.",
+      "Admission sur dossier complet, toutes séries de baccalauréat, après sélection. Accréditation : AFI-l'UE a d'autres programmes accrédités ANAQ-Sup (affaires internationales, banque/assurance), mais cette filière Marketing et Communication Digitale n'apparaît pas séparément dans la base consultée — vérifiez le statut précis auprès de l'école.",
   },
   {
     id: "supdeco-transport-logistique",
@@ -330,7 +330,7 @@ export const formationsGestionCommerce: Formation[] = [
     institut: "Supdeco Dakar",
     bacsCompatibles: ["Scientifique", "Littéraire"],
     description:
-      "Première business school du Sénégal (1993), certifiée ISO 9001, accréditée CAMES et Centre d'excellence UEMOA. Elle accueille plus de 25 nationalités.",
+      "Première business school du Sénégal (1993), certifiée ISO 9001 (norme qualité, distincte d'une accréditation académique), Centre d'excellence UEMOA. Sa Licence Transport et Logistique est confirmée accréditée CAMES pour cette filière précise ; un Master Management du Transport aérien est également listé sur ANAQ-Sup. Elle accueille plus de 25 nationalités.",
     debouches: [
       "Responsable logistique",
       "Déclarant en douane",
@@ -420,6 +420,6 @@ export const formationsGestionCommerce: Formation[] = [
     },
     sourceOfficielle: { libelle: "esmp.sn", url: "https://esmp.sn/" },
     noteDAdmission:
-      "Admission après le baccalauréat ou en admission parallèle (BTS, DUT, L2), sur dossier et entretien.",
+      "Admission après le baccalauréat ou en admission parallèle (BTS, DUT, L2), sur dossier et entretien. Accréditation : l'ESMP n'apparaît sur ANAQ-Sup qu'au statut d'« habilitation » (étape préalable à l'accréditation complète), pas encore en accréditation confirmée pour cette filière — vérifiez l'avancement de ce dossier avant de vous engager.",
   },
 ];
