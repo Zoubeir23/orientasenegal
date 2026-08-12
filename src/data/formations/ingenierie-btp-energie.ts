@@ -2,31 +2,23 @@ import type { Formation } from "@/types/formation";
 
 /**
  * Génie civil/BTP, électrotechnique/énergies renouvelables, architecture.
- * Entrées vérifiées sur les sites officiels (ESEBAT, CUAD).
+ * "Génie Civil, Bâtiment et Travaux Publics" regroupe ESEBAT et BATISUP
+ * (même filière, même niveau) ; "Architecture et Urbanisme" regroupe CUAD
+ * et ARuBA-Sup. EPT (ingénieur Bac+5) et ISEP Thiès EnR restent distincts
+ * car de niveau ou de nature différente.
  */
 export const formationsIngenierieBtpEnergie: Formation[] = [
   {
-    id: "esebat-genie-civil",
-    statutEtablissement: "Privé",
-    fraisDeScolarite: {
-      montant: "Non publié",
-      detail:
-        "ESEBAT ne publie pas sa grille tarifaire en ligne : les frais d'inscription et de scolarité sont communiqués par le service scolarité, sur demande d'une facture proforma (esebat@esebat.com, +221 33 825 36 74).",
-    },
+    id: "genie-civil-batiment",
     filiere: "Génie Civil, Bâtiment et Travaux Publics",
-    institut: "ESEBAT",
-    bacsCompatibles: ["Scientifique"],
     description:
-      "Formation en structures, béton armé, topographie, métré et conduite de chantier, du BTS jusqu'au diplôme d'ingénieur. ESEBAT figure sur la liste des écoles reconnues par le CAMES (arrêté 00152/2021), mais cette licence professionnelle n'apparaît pas séparément dans la base ANAQ-Sup consultée — seul le Master Génie Civil de l'école y est accrédité individuellement.",
+      "Formation en structures, béton armé, topographie, métré et conduite de chantier, du BTS jusqu'à la licence professionnelle (diplôme d'ingénieur possible en poursuite d'études selon l'école).",
     debouches: [
       "Ingénieur travaux",
       "Conducteur de chantier",
       "Bureau d'études",
       "Métreur",
     ],
-    ville: "Dakar",
-    dureeEnAnnees: 3,
-    diplomePrepare: "Licence professionnelle (BTS et diplôme d'ingénieur également proposés)",
     competencesAcquises: [
       "Résistance des matériaux et calcul de structures en béton armé",
       "Lecture et production de plans, dessin technique assisté par ordinateur",
@@ -52,23 +44,46 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
         "Création de sa propre entreprise de construction",
       ],
       conseil:
-        "Documentez chaque chantier suivi pendant vos stages : aux Comores, un portfolio de réalisations pèse souvent plus lourd que le diplôme seul.",
+        "Documentez chaque chantier suivi pendant vos stages : aux Comores, un portfolio de réalisations pèse souvent plus lourd que le diplôme seul. Comparez ESEBAT et BATISUP sur leurs taux de réussite et l'accréditation exacte de chaque niveau (souvent le master plutôt que la licence) avant de choisir.",
     },
-    sourceOfficielle: { libelle: "esebat.com", url: "https://esebat.com/" },
-    noteDAdmission:
-      "ESEBAT dispose de campus à Dakar, Saint-Louis et Ziguinchor, et propose aussi des formations à distance.",
+    etablissements: [
+      {
+        institut: "ESEBAT",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle (BTS et diplôme d'ingénieur également proposés)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "ESEBAT ne publie pas sa grille tarifaire en ligne : les frais d'inscription et de scolarité sont communiqués par le service scolarité, sur demande d'une facture proforma (esebat@esebat.com, +221 33 825 36 74).",
+        },
+        sourceOfficielle: { libelle: "esebat.com", url: "https://esebat.com/" },
+        noteDAdmission:
+          "Campus à Dakar, Saint-Louis et Ziguinchor, formations à distance disponibles. Accréditation : ESEBAT figure sur la liste des écoles reconnues par le CAMES (arrêté 00152/2021), mais cette licence professionnelle n'apparaît pas séparément dans la base ANAQ-Sup consultée — seul le Master Génie Civil de l'école y est accrédité individuellement.",
+      },
+      {
+        institut: "BATISUP - École Supérieure du Bâtiment",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "BTS puis Licence (Master possible)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "BATISUP ne publie pas sa grille tarifaire en ligne. Les inscriptions 2026-2027 ouvrent début août pour une rentrée en octobre : contactez l'école via son site pour connaître le montant applicable.",
+        },
+        sourceOfficielle: { libelle: "batisup.com", url: "https://www.batisup.com/" },
+        noteDAdmission:
+          "École fondée en 2006, habilitée par le Ministère de l'Enseignement Supérieur, une vingtaine de nationalités représentées, 91 % de réussite au BTS en 2025 selon l'école. Inscriptions à partir du 1er août (https://www.batisup.com/s-inscrire). Accréditation : seul le Master Génie Civil est accrédité individuellement sur la base ANAQ-Sup consultée, pas le BTS ni la licence.",
+      },
+    ],
   },
   {
     id: "ept-genie-civil",
-    statutEtablissement: "Public",
-    fraisDeScolarite: {
-      montant: "50 000 F + 7 000 F de dossier (pays conventionnés)",
-      detail:
-        "École publique d'ingénieurs : 50 000 FCFA de scolarité annuelle + 7 000 FCFA de frais de dossier pour les candidats des pays ayant un accord avec le Sénégal, notamment la zone UEMOA. Les Comores n'étant pas membres de l'UEMOA, le statut tarifaire exact des candidats comoriens doit être confirmé directement auprès de l'EPT.",
-    },
     filiere: "Génie Civil",
-    institut: "EPT - École Polytechnique de Thiès",
-    bacsCompatibles: ["Scientifique"],
     description:
       "Première école d'ingénieurs publique du Sénégal (1973). Cursus en 5 ans (2 ans de tronc commun puis 3 ans de spécialisation avec alternance école-entreprise croissante) menant au diplôme d'ingénieur de conception en génie civil.",
     debouches: [
@@ -77,9 +92,6 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
       "Bureau d'études techniques",
       "Chef de projet BTP",
     ],
-    ville: "Thiès",
-    dureeEnAnnees: 5,
-    diplomePrepare: "Diplôme d'Ingénieur de Conception (Bac+5)",
     competencesAcquises: [
       "Résistance des matériaux et dimensionnement de structures",
       "Génie routier, hydraulique et ouvrages d'art",
@@ -106,73 +118,28 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
       conseil:
         "Cursus long et sélectif (concours), mais le tarif conventionné le rend très accessible si les Comores sont éligibles : vérifiez ce point en priorité auprès de l'EPT.",
     },
-    sourceOfficielle: { libelle: "ept.edu.sn", url: "https://ept.edu.sn/" },
-    noteDAdmission:
-      "Admission sur concours national (candidats libres acceptés), réservé aux candidats de moins de 22 ans au 1er octobre de l'année d'entrée, sur la base d'un bac scientifique ou technique (S1, S2, S3, STIDD). Accréditation : l'EPT dispose d'une habilitation ANAQ-Sup générale (2021-2022) et d'une reconnaissance CAMES, mais ce diplôme précis (Génie Civil) n'apparaît pas séparément dans la base ANAQ-Sup consultée (le diplôme Génie Aéronautique de l'EPT y figure en revanche).",
-  },
-  {
-    id: "batisup-genie-civil",
-    statutEtablissement: "Privé",
-    fraisDeScolarite: {
-      montant: "Non publié",
-      detail:
-        "BATISUP ne publie pas sa grille tarifaire en ligne. Les inscriptions 2026-2027 ouvrent début août pour une rentrée en octobre : contactez l'école via son site pour connaître le montant applicable.",
-    },
-    filiere: "Génie Civil et Bâtiment",
-    institut: "BATISUP - École Supérieure du Bâtiment",
-    bacsCompatibles: ["Scientifique"],
-    description:
-      "École privée fondée en 2006, habilitée par le Ministère de l'Enseignement Supérieur (habilitation ANAQ-Sup confirmée pour l'institution). Cursus du BTS (Bac+2) à la licence (Bac+3) puis au master (Bac+5) en génie civil et bâtiment ; seul le Master Génie Civil est accrédité individuellement sur la base ANAQ-Sup consultée, pas le BTS ni la licence. École internationale : une vingtaine de nationalités représentées.",
-    debouches: [
-      "Technicien BTP",
-      "Conducteur de travaux",
-      "Dessinateur projeteur bâtiment",
-      "Chef de chantier",
+    etablissements: [
+      {
+        institut: "EPT - École Polytechnique de Thiès",
+        ville: "Thiès",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 5,
+        diplomePrepare: "Diplôme d'Ingénieur de Conception (Bac+5)",
+        fraisDeScolarite: {
+          montant: "50 000 F + 7 000 F de dossier (pays conventionnés)",
+          detail:
+            "École publique d'ingénieurs : 50 000 FCFA de scolarité annuelle + 7 000 FCFA de frais de dossier pour les candidats des pays ayant un accord avec le Sénégal, notamment la zone UEMOA. Les Comores n'étant pas membres de l'UEMOA, le statut tarifaire exact des candidats comoriens doit être confirmé directement auprès de l'EPT.",
+        },
+        sourceOfficielle: { libelle: "ept.edu.sn", url: "https://ept.edu.sn/" },
+        noteDAdmission:
+          "Admission sur concours national (candidats libres acceptés), réservé aux candidats de moins de 22 ans au 1er octobre de l'année d'entrée, sur la base d'un bac scientifique ou technique (S1, S2, S3, STIDD). Accréditation : habilitation ANAQ-Sup générale (2021-2022) et reconnaissance CAMES, mais ce diplôme précis (Génie Civil) n'apparaît pas séparément dans la base ANAQ-Sup consultée (le diplôme Génie Aéronautique de l'EPT y figure en revanche).",
+      },
     ],
-    ville: "Dakar",
-    dureeEnAnnees: 3,
-    diplomePrepare: "BTS puis Licence (Master possible)",
-    competencesAcquises: [
-      "Techniques de construction et matériaux du bâtiment",
-      "Dessin technique et logiciels de conception assistée par ordinateur",
-      "Métré, devis et suivi budgétaire de chantier",
-      "Normes de construction et sécurité sur site",
-      "Gestion d'équipe de chantier",
-    ],
-    missionsConcretes: [
-      "Suivre l'avancement d'un chantier de bâtiment",
-      "Établir les plans d'exécution d'un projet de construction",
-      "Contrôler la conformité des travaux réalisés",
-      "Chiffrer un projet avant de le lancer",
-    ],
-    perspectivesAuxComores: {
-      niveauDeDemande: "Forte",
-      resume:
-        "Même constat que pour les autres formations en BTP : la construction est un secteur très actif aux Comores, avec un déficit de techniciens formés capables d'encadrer un chantier avec méthode.",
-      employeursPotentiels: [
-        "Entreprises de BTP locales",
-        "Bureaux d'études techniques",
-        "Ministère des Infrastructures, communes",
-        "Création de sa propre entreprise de construction",
-      ],
-      conseil:
-        "École établie avec un bon taux de réussite au BTS (91 % en 2025 selon l'école) : demandez ces indicateurs de résultats lors de votre candidature, ils sont un bon signal de qualité pédagogique.",
-    },
-    sourceOfficielle: { libelle: "batisup.com", url: "https://www.batisup.com/" },
-    noteDAdmission:
-      "Inscriptions annuelles à partir du 1er août pour une rentrée en octobre. Modalités précises d'admission des étudiants étrangers non publiées : à demander via https://www.batisup.com/s-inscrire.",
   },
   {
     id: "esebat-electrotechnique",
-    statutEtablissement: "Privé",
-    fraisDeScolarite: {
-      montant: "Non publié",
-      detail:
-        "ESEBAT ne publie pas sa grille tarifaire en ligne : demandez une facture proforma au service scolarité avant de constituer votre dossier.",
-    },
     filiere: "Électrotechnique et Énergies Renouvelables",
-    institut: "ESEBAT",
-    bacsCompatibles: ["Scientifique"],
     description:
       "Électricité industrielle, génie électrique et efficacité énergétique. L'école propose également des parcours électromécanique et systèmes automatisés.",
     debouches: [
@@ -181,9 +148,6 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
       "Automaticien",
       "Chef de projet EnR",
     ],
-    ville: "Dakar",
-    dureeEnAnnees: 3,
-    diplomePrepare: "Licence professionnelle",
     competencesAcquises: [
       "Électricité générale, industrielle et normes de sécurité",
       "Dimensionnement et installation de systèmes photovoltaïques",
@@ -210,21 +174,28 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
       conseil:
         "Probablement la filière technique avec le meilleur rapport durée d'études / employabilité immédiate aux Comores. Maîtrisez le dimensionnement et le stockage sur batteries.",
     },
-    sourceOfficielle: { libelle: "esebat.com", url: "https://esebat.com/" },
-    noteDAdmission:
-      "Accréditation : cette licence n'a été trouvée ni dans la base ANAQ-Sup ni dans les listes CAMES consultées, contrairement à la licence Génie Civil de la même école (reconnue CAMES au niveau institutionnel) : demandez le statut d'accréditation précis de ce diplôme avant de vous inscrire.",
+    etablissements: [
+      {
+        institut: "ESEBAT",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "ESEBAT ne publie pas sa grille tarifaire en ligne : demandez une facture proforma au service scolarité avant de constituer votre dossier.",
+        },
+        sourceOfficielle: { libelle: "esebat.com", url: "https://esebat.com/" },
+        noteDAdmission:
+          "Accréditation : cette licence n'a été trouvée ni dans la base ANAQ-Sup ni dans les listes CAMES consultées, contrairement à la licence Génie Civil de la même école (reconnue CAMES au niveau institutionnel) : demandez le statut d'accréditation précis de ce diplôme avant de vous inscrire.",
+      },
+    ],
   },
   {
     id: "isep-thies-energies-renouvelables",
-    statutEtablissement: "Public",
-    fraisDeScolarite: {
-      montant: "Frais publics réduits",
-      detail:
-        "Institut public inauguré en 2021 : la scolarité est largement subventionnée par l'État. Le montant applicable aux étudiants étrangers n'est pas publié en ligne, à demander lors de la campagne de recrutement annuelle.",
-    },
     filiere: "Énergies Renouvelables (photovoltaïque solaire)",
-    institut: "ISEP Thiès (Abdoulaye Ly)",
-    bacsCompatibles: ["Scientifique"],
     description:
       "Formation de technicien supérieur en alternance école-entreprise, spécialisée dans le photovoltaïque solaire. L'institut propose aussi BTP-assainissement, transport-logistique, agro-entreprise, tourisme et management immobilier.",
     debouches: [
@@ -233,9 +204,6 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
       "Technicien de maintenance énergétique",
       "Chargé de projet EnR",
     ],
-    ville: "Thiès",
-    dureeEnAnnees: 2,
-    diplomePrepare: "Diplôme de technicien supérieur (Bac+2, alternance)",
     competencesAcquises: [
       "Dimensionnement et installation de systèmes photovoltaïques",
       "Stockage par batteries et systèmes hybrides solaire-réseau",
@@ -262,41 +230,45 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
       conseil:
         "Formation publique courte (2 ans) et pratique, avec un excellent rapport durée/employabilité. Vérifiez les modalités d'admission des étudiants étrangers dès l'ouverture de la campagne annuelle.",
     },
-    sourceOfficielle: {
-      libelle: "isep-thies.sn",
-      url: "https://isep-thies.sn/course/energies-renouvelables/",
-    },
-    noteDAdmission:
-      "Institut public : recrutement par campagne annuelle, places limitées, formation en alternance école-entreprise. Accréditation : ISEP Thiès dispose d'une habilitation ANAQ-Sup confirmée et d'une reconnaissance CAMES au niveau institutionnel (premier ISEP autorisé à délivrer le DiSEP) ; l'accréditation individuelle de ce parcours énergies renouvelables n'a pas été confirmée séparément.",
+    etablissements: [
+      {
+        institut: "ISEP Thiès (Abdoulaye Ly)",
+        ville: "Thiès",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 2,
+        diplomePrepare: "Diplôme de technicien supérieur (Bac+2, alternance)",
+        fraisDeScolarite: {
+          montant: "Frais publics réduits",
+          detail:
+            "Institut public inauguré en 2021 : la scolarité est largement subventionnée par l'État. Le montant applicable aux étudiants étrangers n'est pas publié en ligne, à demander lors de la campagne de recrutement annuelle.",
+        },
+        sourceOfficielle: {
+          libelle: "isep-thies.sn",
+          url: "https://isep-thies.sn/course/energies-renouvelables/",
+        },
+        noteDAdmission:
+          "Institut public : recrutement par campagne annuelle, places limitées, formation en alternance école-entreprise. Accréditation : ISEP Thiès dispose d'une habilitation ANAQ-Sup confirmée et d'une reconnaissance CAMES au niveau institutionnel (premier ISEP autorisé à délivrer le DiSEP), mais ce parcours précis n'a pas d'accréditation individuelle confirmée séparément.",
+      },
+    ],
   },
   {
-    id: "cuad-architecture",
-    statutEtablissement: "Privé",
-    fraisDeScolarite: {
-      montant: "≈ 2 500 000 F pour la licence",
-      detail:
-        "Environ 520 000 FCFA de frais d'inscription et 1 980 000 FCFA de scolarité pour les 3 ans de licence, d'après l'annuaire SenCampus. Montant à confirmer directement auprès du CUAD, qui ne publie pas sa grille sur son site.",
-    },
+    id: "architecture-urbanisme",
     filiere: "Architecture et Urbanisme",
-    institut: "CUAD - Collège Universitaire d'Architecture de Dakar",
-    bacsCompatibles: ["Scientifique"],
     description:
-      "Licence puis Master en architecture, avec des spécialisations en architecture bioclimatique, patrimoine, urbanisme et paysage. La Licence ET le Master sont tous deux accrédités individuellement par l'ANAQ-Sup (vérifié sur anaqsup.sn, deux fiches distinctes), seule école d'architecture avec ce niveau de vérification au Sénégal depuis sa création en 2008.",
+      "Licence puis Master en architecture, avec des spécialisations en architecture bioclimatique, patrimoine, urbanisme, paysage et arts appliqués selon l'école.",
     debouches: [
       "Architecte",
       "Urbaniste",
       "Dessinateur projeteur",
       "Architecte d'intérieur",
     ],
-    ville: "Dakar",
-    dureeEnAnnees: 5,
-    diplomePrepare: "Licence (3 ans) puis Master en architecture (2 ans)",
     competencesAcquises: [
       "Conception de projets architecturaux, de l'esquisse au permis de construire",
       "Logiciels métier : AutoCAD, Revit, SketchUp, rendu 3D",
       "Architecture bioclimatique et efficacité énergétique en climat chaud",
-      "Patrimoine, architecture traditionnelle et contemporaine africaine",
       "Urbanisme : lotissements, voirie, équipements publics",
+      "Méthodologie de projet, du concept au dossier technique",
     ],
     missionsConcretes: [
       "Dessiner une maison, une école ou un commerce et en défendre le projet",
@@ -315,62 +287,41 @@ export const formationsIngenierieBtpEnergie: Formation[] = [
         "Cabinet indépendant",
       ],
       conseil:
-        "L'habitat bioclimatique et la construction parasismique sont deux spécialités très pertinentes pour l'archipel : orientez vos projets d'études dans cette direction.",
+        "L'habitat bioclimatique et la construction parasismique sont deux spécialités très pertinentes pour l'archipel : orientez vos projets d'études dans cette direction. Comparez CUAD (accréditation ANAQ-Sup confirmée) et ARuBA-Sup (non trouvée dans les bases consultées) avant de choisir.",
     },
-    sourceOfficielle: { libelle: "cuad.archi", url: "https://www.cuad.archi/" },
-    noteDAdmission:
-      "Admission sur dossier après le bac, ou après un Bac+2 pour une entrée en cours de cursus. Accréditation confirmée : anaqsup.sn/accreditations/cuad-college-universitaire-darchitecture-de-dakar/ (Licence) et anaqsup.sn/accreditations/cuad-college-universitaire-darchitecture-de-dakar-2/ (Master).",
-  },
-  {
-    id: "arubasup-architecture",
-    statutEtablissement: "Privé",
-    fraisDeScolarite: {
-      montant: "Non publié",
-      detail:
-        "ARuBA-Sup ne publie pas sa grille tarifaire en ligne. Les admissions 2026-2027 sont ouvertes : contactez l'école directement pour connaître le montant applicable.",
-    },
-    filiere: "Architecture, Urbanisme et Arts Appliqués",
-    institut: "ARuBA-Sup - École Supérieure d'Architecture, d'Urbanisme et des Beaux-Arts",
-    bacsCompatibles: ["Scientifique", "Littéraire"],
-    description:
-      "École privée dakaroise formant en architecture, urbanisme et arts appliqués, avec un corps enseignant composé notamment d'architectes DPLG et des partenariats internationaux (France, Maroc, Côte d'Ivoire).",
-    debouches: [
-      "Architecte",
-      "Urbaniste",
-      "Designer d'espace",
-      "Dessinateur projeteur",
+    etablissements: [
+      {
+        institut: "CUAD - Collège Universitaire d'Architecture de Dakar",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 5,
+        diplomePrepare: "Licence (3 ans) puis Master en architecture (2 ans)",
+        fraisDeScolarite: {
+          montant: "≈ 2 500 000 F pour la licence",
+          detail:
+            "Environ 520 000 FCFA de frais d'inscription et 1 980 000 FCFA de scolarité pour les 3 ans de licence, d'après l'annuaire SenCampus. Montant à confirmer directement auprès du CUAD, qui ne publie pas sa grille sur son site.",
+        },
+        sourceOfficielle: { libelle: "cuad.archi", url: "https://www.cuad.archi/" },
+        noteDAdmission:
+          "Seule école d'architecture reconnue au Sénégal depuis sa création en 2008. Admission sur dossier après le bac, ou après un Bac+2 pour une entrée en cours de cursus. Accréditation confirmée pour la Licence ET le Master (deux fiches distinctes) : anaqsup.sn/accreditations/cuad-college-universitaire-darchitecture-de-dakar/ et anaqsup.sn/accreditations/cuad-college-universitaire-darchitecture-de-dakar-2/.",
+      },
+      {
+        institut: "ARuBA-Sup - École Supérieure d'Architecture, d'Urbanisme et des Beaux-Arts",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 5,
+        diplomePrepare: "Licence (3 ans) puis Master (2 ans), reconnaissance LMD",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "ARuBA-Sup ne publie pas sa grille tarifaire en ligne. Les admissions 2026-2027 sont ouvertes : contactez l'école directement pour connaître le montant applicable.",
+        },
+        sourceOfficielle: { libelle: "arubasup.sn", url: "https://arubasup.sn/" },
+        noteDAdmission:
+          "Corps enseignant composé notamment d'architectes DPLG, partenariats internationaux (France, Maroc, Côte d'Ivoire). Admission sur dossier (lettre de motivation, attestation de bac, relevés de notes, photo) suivi d'un entretien oral d'environ 30 minutes devant un jury. Accréditation : école non trouvée dans la base ANAQ-Sup ni dans les listes CAMES consultées malgré une recherche approfondie — statut à clarifier impérativement avec l'école avant tout engagement financier.",
+      },
     ],
-    ville: "Dakar",
-    dureeEnAnnees: 5,
-    diplomePrepare: "Licence (3 ans) puis Master (2 ans), reconnaissance LMD",
-    competencesAcquises: [
-      "Conception architecturale et dessin technique",
-      "Logiciels de modélisation et de rendu 3D",
-      "Urbanisme et aménagement du territoire",
-      "Arts appliqués et design d'espace",
-      "Méthodologie de projet, du concept au dossier technique",
-    ],
-    missionsConcretes: [
-      "Concevoir un projet architectural complet",
-      "Participer à un projet d'aménagement urbain",
-      "Réaliser des supports de présentation et maquettes de projet",
-      "Poursuivre en master avec une mobilité internationale possible",
-    ],
-    perspectivesAuxComores: {
-      niveauDeDemande: "Moyenne",
-      resume:
-        "Alternative privée à CUAD pour se former à l'architecture à Dakar. Les perspectives au retour aux Comores restent similaires : marché naissant mais réel, à construire davantage qu'à intégrer.",
-      employeursPotentiels: [
-        "Cabinets d'architecture (Moroni, Mutsamudu)",
-        "Direction de l'urbanisme, collectivités",
-        "Promoteurs immobiliers et clients de la diaspora",
-        "Cabinet indépendant",
-      ],
-      conseil:
-        "Contrairement à CUAD, cette école n'a été trouvée dans aucune des deux bases d'accréditation consultées (ANAQ-Sup, CAMES) : demandez explicitement le statut d'accréditation et le numéro de décision avant de vous engager, et comparez avec CUAD qui, lui, est confirmé accrédité.",
-    },
-    sourceOfficielle: { libelle: "arubasup.sn", url: "https://arubasup.sn/" },
-    noteDAdmission:
-      "Admission sur dossier (lettre de motivation, attestation de bac, relevés de notes, photo) suivi d'un entretien oral d'environ 30 minutes devant un jury. Accréditation : école non trouvée dans la base ANAQ-Sup ni dans les listes CAMES consultées, malgré une recherche approfondie — statut à clarifier impérativement avec l'école avant tout engagement financier.",
   },
 ];

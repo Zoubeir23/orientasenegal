@@ -2,30 +2,22 @@ import type { Formation } from "@/types/formation";
 
 /**
  * Médecine, agro-industrie, hôtellerie-tourisme, création multimédia.
- * Entrées vérifiées sur les sites officiels (UCAD, ISEP Richard-Toll, ENFHT, ISEP Thiès).
+ * "Médecine" regroupe UCAD et UIDT (les deux facultés publiques) ;
+ * "Hôtellerie, Restauration et Tourisme" regroupe ENFHT et Les Marmitons.
+ * ISEP Richard-Toll/ENSA Thiès et ISEP Thiès/Kourtrajmé restent distincts :
+ * niveaux de diplôme et natures de formation trop différents pour fusionner.
  */
 export const formationsSanteAgroTourisme: Formation[] = [
   {
-    id: "ucad-medecine",
-    statutEtablissement: "Public",
-    fraisDeScolarite: {
-      montant: "≈ 200 000 F / an (étrangers, à confirmer)",
-      detail:
-        "Droits d'inscription historiquement rapportés à la FMPOS de l'UCAD : 200 000 FCFA par an en licence pour les étudiants étrangers, contre 25 000 FCFA pour les Sénégalais et boursiers, et 1 000 000 FCFA pour le doctorat. Ces montants ne sont plus republiés sur le site actuel de la faculté : confirmez le tarif en vigueur auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget. S'ajoutent le logement, la nourriture et le matériel médical.",
-    },
+    id: "medecine",
     filiere: "Médecine",
-    institut: "UCAD - Faculté de Médecine, Pharmacie et Odontostomatologie",
-    bacsCompatibles: ["Scientifique"],
     description:
-      "Cursus médical complet à la FMPOS, avec stages hospitaliers. Sélection très exigeante : mention fortement recommandée au baccalauréat.",
+      "Cursus médical complet avec stages hospitaliers, menant au doctorat en médecine. Sélection très exigeante : mention fortement recommandée au baccalauréat. Deux facultés publiques au Sénégal.",
     debouches: ["Médecin généraliste", "Interne", "Chercheur en santé publique"],
-    ville: "Dakar",
-    dureeEnAnnees: 7,
-    diplomePrepare: "Doctorat en médecine",
     competencesAcquises: [
       "Sciences fondamentales : anatomie, physiologie, biochimie, pharmacologie",
       "Sémiologie et démarche diagnostique",
-      "Stages hospitaliers dans tous les grands services",
+      "Stages hospitaliers dans les grands services",
       "Urgences, pédiatrie, gynécologie, maladies tropicales",
       "Santé publique et épidémiologie de terrain",
     ],
@@ -46,70 +38,46 @@ export const formationsSanteAgroTourisme: Formation[] = [
         "Cabinet privé",
       ],
       conseil:
-        "Cursus long et très sélectif : ne vous engagez que si les sciences vous passionnent vraiment. Renseignez-vous dès la 3e année sur les équivalences et l'inscription à l'Ordre aux Comores.",
+        "Cursus long et très sélectif : ne vous engagez que si les sciences vous passionnent vraiment. Renseignez-vous dès la 3e année sur les équivalences et l'inscription à l'Ordre aux Comores. UIDT a l'accréditation la mieux documentée des deux facultés (acte ANAQ-Sup daté), mais l'UCAD reste la plus ancienne et la plus reconnue.",
     },
-    sourceOfficielle: { libelle: "fmpos.ucad.sn", url: "https://fmpos.ucad.sn/" },
-    noteDAdmission:
-      "L'UCAD est ouverte aux étudiants étrangers dans la limite des places disponibles. Préinscription obligatoire en ligne sur preinscriptionenligne.ucad.sn. Accréditation : ce doctorat n'a pas été localisé directement dans la base ANAQ-Sup consultée ; la reconnaissance CAMES de l'UCAD est attestée indirectement (96,2 % de réussite aux évaluations CAMES 2025 rapportés par la presse), mais sans lien direct vers une fiche d'accréditation CAMES dédiée à ce diplôme précis.",
-  },
-  {
-    id: "uidt-medecine",
-    statutEtablissement: "Public",
-    fraisDeScolarite: {
-      montant: "Non publié",
-      detail:
-        "Deuxième faculté de médecine publique du Sénégal : le tarif applicable aux étudiants étrangers n'est pas publié en ligne. Contactez ufrsante@univ-thies.sn pour connaître le montant applicable aux candidats comoriens.",
-    },
-    filiere: "Médecine",
-    institut: "UIDT - Université Iba Der Thiam de Thiès (UFR Santé)",
-    bacsCompatibles: ["Scientifique"],
-    description:
-      "Deuxième école de médecine publique du Sénégal (UFR Santé créée en 2008, premiers diplômés en 2017). Propose aussi pharmacie, soins infirmiers et orthophonie. Cursus complet avec test d'entrée spécifique pour les candidats étrangers.",
-    debouches: ["Médecin généraliste", "Interne", "Chercheur en santé publique"],
-    ville: "Thiès",
-    dureeEnAnnees: 8,
-    diplomePrepare: "Doctorat en médecine",
-    competencesAcquises: [
-      "Sciences fondamentales : anatomie, physiologie, biochimie, pharmacologie",
-      "Sémiologie et démarche diagnostique",
-      "Stages hospitaliers dans les services régionaux de Thiès",
-      "Urgences, pédiatrie, gynécologie, maladies tropicales",
-      "Santé publique et épidémiologie de terrain",
+    etablissements: [
+      {
+        institut: "UCAD - Faculté de Médecine, Pharmacie et Odontostomatologie",
+        ville: "Dakar",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 7,
+        diplomePrepare: "Doctorat en médecine",
+        fraisDeScolarite: {
+          montant: "≈ 200 000 F / an (étrangers, à confirmer)",
+          detail:
+            "Droits d'inscription historiquement rapportés à la FMPOS de l'UCAD : 200 000 FCFA par an en licence pour les étudiants étrangers, contre 25 000 FCFA pour les Sénégalais et boursiers, et 1 000 000 FCFA pour le doctorat. Ces montants ne sont plus republiés sur le site actuel de la faculté : confirmez le tarif en vigueur auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget. S'ajoutent le logement, la nourriture et le matériel médical.",
+        },
+        sourceOfficielle: { libelle: "fmpos.ucad.sn", url: "https://fmpos.ucad.sn/" },
+        noteDAdmission:
+          "L'UCAD est ouverte aux étudiants étrangers dans la limite des places disponibles. Préinscription obligatoire en ligne sur preinscriptionenligne.ucad.sn. Accréditation : ce doctorat n'a pas été localisé directement dans la base ANAQ-Sup consultée ; la reconnaissance CAMES de l'UCAD est attestée indirectement (96,2 % de réussite aux évaluations CAMES 2025 rapportés par la presse), sans lien direct vers une fiche d'accréditation CAMES dédiée à ce diplôme précis.",
+      },
+      {
+        institut: "UIDT - Université Iba Der Thiam de Thiès (UFR Santé)",
+        ville: "Thiès",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 8,
+        diplomePrepare: "Doctorat en médecine",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "Deuxième faculté de médecine publique du Sénégal : le tarif applicable aux étudiants étrangers n'est pas publié en ligne. Contactez ufrsante@univ-thies.sn pour connaître le montant applicable aux candidats comoriens.",
+        },
+        sourceOfficielle: { libelle: "uidt.sn", url: "https://www.uidt.sn/medecine-generale/" },
+        noteDAdmission:
+          "Deuxième école de médecine publique du Sénégal (UFR Santé créée en 2008, premiers diplômés en 2017), propose aussi pharmacie, soins infirmiers et orthophonie. Admission des étudiants étrangers par test d'entrée spécifique (contact : ufrsante@univ-thies.sn). Accréditation confirmée : le Conseil Scientifique de l'ANAQ-Sup a accrédité ce doctorat par acte du 19 novembre 2020 (univ-thies.sn).",
+      },
     ],
-    missionsConcretes: [
-      "Consulter, diagnostiquer et prescrire en cabinet ou en hôpital",
-      "Prendre en charge les urgences et les maladies courantes",
-      "Se spécialiser ensuite (chirurgie, pédiatrie, cardiologie…)",
-      "Mener des campagnes de prévention et de vaccination",
-    ],
-    perspectivesAuxComores: {
-      niveauDeDemande: "Forte",
-      resume:
-        "Alternative publique à UCAD, plus récente mais avec un test d'entrée spécifiquement ouvert aux étudiants étrangers. Le manque de médecins reste structurel aux Comores : les mêmes perspectives de placement s'appliquent qu'à la sortie de Dakar.",
-      employeursPotentiels: [
-        "Hôpital El-Maarouf et centres hospitaliers régionaux",
-        "Centres de santé de district",
-        "ONG médicales et organisations internationales",
-        "Cabinet privé",
-      ],
-      conseil:
-        "École plus jeune que la FMPOS de l'UCAD (premiers diplômés en 2017), donc moins de recul sur la reconnaissance internationale de son diplôme : renseignez-vous sur les équivalences avant de choisir entre les deux facultés publiques.",
-    },
-    sourceOfficielle: { libelle: "uidt.sn", url: "https://www.uidt.sn/medecine-generale/" },
-    noteDAdmission:
-      "Admission des étudiants étrangers par test d'entrée spécifique (contact : ufrsante@univ-thies.sn). Baccalauréat scientifique requis. Accréditation confirmée : le Conseil Scientifique de l'ANAQ-Sup a accrédité ce doctorat en médecine par acte du 19 novembre 2020 (univ-thies.sn) — accréditation formellement documentée, contrairement au doctorat de l'UCAD non retrouvé directement dans la base.",
   },
   {
     id: "isep-richard-toll-agro",
-    statutEtablissement: "Public",
-    fraisDeScolarite: {
-      montant: "Frais publics réduits",
-      detail:
-        "Institut public créé par décret présidentiel n°2016-814 : scolarité largement subventionnée par l'État. Le tarif applicable aux étudiants étrangers n'est pas publié, à demander lors de la campagne de recrutement annuelle (isep@isep-rt.edu.sn, +221 33 964 20 16).",
-    },
     filiere: "Production Agro-Industrielle",
-    institut: "ISEP Richard-Toll",
-    bacsCompatibles: ["Scientifique"],
     description:
       "Institut public créé en 2016, spécialisé en agriculture, élevage, aquaculture, agroalimentaire et tourisme. Formation de technicien supérieur en 2 ans.",
     debouches: [
@@ -117,9 +85,6 @@ export const formationsSanteAgroTourisme: Formation[] = [
       "Responsable de production",
       "Technico-commercial agroalimentaire",
     ],
-    ville: "Richard-Toll",
-    dureeEnAnnees: 2,
-    diplomePrepare: "Diplôme de technicien supérieur (Bac+2)",
     competencesAcquises: [
       "Procédés de transformation : séchage, conservation, conditionnement",
       "Microbiologie alimentaire et contrôle qualité",
@@ -146,24 +111,31 @@ export const formationsSanteAgroTourisme: Formation[] = [
       conseil:
         "Ne partez sur cette filière que si vous avez un projet entrepreneurial en tête. Utilisez vos stages pour étudier une filière comorienne précise et revenir avec un projet chiffré.",
     },
-    sourceOfficielle: {
-      libelle: "iseprichardtoll.sn",
-      url: "https://iseprichardtoll.sn/",
-    },
-    noteDAdmission:
-      "Institut public, recrutement par campagne annuelle. L'établissement propose plusieurs parcours agroalimentaires (production, commercialisation, logistique). Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée — l'habilitation trouvée concerne le réseau ISEP (via ISEP Thiès), pas le site de Richard-Toll individuellement.",
+    etablissements: [
+      {
+        institut: "ISEP Richard-Toll",
+        ville: "Richard-Toll",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 2,
+        diplomePrepare: "Diplôme de technicien supérieur (Bac+2)",
+        fraisDeScolarite: {
+          montant: "Frais publics réduits",
+          detail:
+            "Institut public créé par décret présidentiel n°2016-814 : scolarité largement subventionnée par l'État. Le tarif applicable aux étudiants étrangers n'est pas publié, à demander lors de la campagne de recrutement annuelle (isep@isep-rt.edu.sn, +221 33 964 20 16).",
+        },
+        sourceOfficielle: {
+          libelle: "iseprichardtoll.sn",
+          url: "https://iseprichardtoll.sn/",
+        },
+        noteDAdmission:
+          "Recrutement par campagne annuelle. L'établissement propose plusieurs parcours agroalimentaires (production, commercialisation, logistique). Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée — l'habilitation trouvée concerne le réseau ISEP (via ISEP Thiès), pas le site de Richard-Toll individuellement.",
+      },
+    ],
   },
   {
     id: "ensa-thies-agronomie",
-    statutEtablissement: "Public",
-    fraisDeScolarite: {
-      montant: "Non publié",
-      detail:
-        "École publique intégrée à l'UIDT : le tarif applicable aux étudiants étrangers n'est pas publié en ligne. Contactez info@uidt.sn ou +221 33 894 40 00 pour connaître le montant applicable.",
-    },
     filiere: "Ingénierie Agricole (Ingénieur Agronome)",
-    institut: "ENSA Thiès - École Nationale Supérieure d'Agriculture",
-    bacsCompatibles: ["Scientifique"],
     description:
       "Principale école d'ingénieurs agronomes du Sénégal, fondée en 1981 et intégrée à l'Université de Thiès en 2006. Spécialisations en production végétale, production animale, foresterie, sciences du sol et environnement, ingénierie rurale et économie rurale.",
     debouches: [
@@ -172,9 +144,6 @@ export const formationsSanteAgroTourisme: Formation[] = [
       "Chargé de projet agricole ou rural",
       "Conseiller technique en coopérative",
     ],
-    ville: "Thiès",
-    dureeEnAnnees: 5,
-    diplomePrepare: "Diplôme d'Ingénieur Agronome (Bac+5)",
     competencesAcquises: [
       "Agronomie générale et production végétale/animale",
       "Sciences du sol, irrigation et gestion de l'eau",
@@ -201,32 +170,36 @@ export const formationsSanteAgroTourisme: Formation[] = [
       conseil:
         "Cursus long (5 ans) : n'envisagez cette voie que si vous avez un vrai projet agricole ou souhaitez travailler pour de grands projets de développement rural. Pour un projet entrepreneurial plus rapide, ISEP Richard-Toll (Bac+2) reste une option plus courte.",
     },
-    sourceOfficielle: { libelle: "uidt.sn", url: "https://www.uidt.sn/ensa/" },
-    noteDAdmission:
-      "École publique intégrée à l'UIDT depuis 2006. Modalités d'admission des étudiants étrangers non publiées en ligne : à demander directement à l'université. Accréditation : ce diplôme d'ingénieur ne figure pas séparément dans la base ANAQ-Sup consultée ; il dépend de l'habilitation institutionnelle de l'UIDT plutôt que d'une accréditation individuelle confirmée.",
+    etablissements: [
+      {
+        institut: "ENSA Thiès - École Nationale Supérieure d'Agriculture",
+        ville: "Thiès",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 5,
+        diplomePrepare: "Diplôme d'Ingénieur Agronome (Bac+5)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "École publique intégrée à l'UIDT : le tarif applicable aux étudiants étrangers n'est pas publié en ligne. Contactez info@uidt.sn ou +221 33 894 40 00 pour connaître le montant applicable.",
+        },
+        sourceOfficielle: { libelle: "uidt.sn", url: "https://www.uidt.sn/ensa/" },
+        noteDAdmission:
+          "École intégrée à l'UIDT depuis 2006. Modalités d'admission des étudiants étrangers non publiées en ligne : à demander directement à l'université. Accréditation : ce diplôme d'ingénieur ne figure pas séparément dans la base ANAQ-Sup consultée ; il dépend de l'habilitation institutionnelle de l'UIDT plutôt que d'une accréditation individuelle confirmée.",
+      },
+    ],
   },
   {
-    id: "enfht-hotellerie-tourisme",
-    statutEtablissement: "Public",
-    fraisDeScolarite: {
-      montant: "Frais publics réduits",
-      detail:
-        "École nationale publique sous tutelle du ministère du Tourisme : scolarité subventionnée. Le montant appliqué aux étudiants étrangers admis sur dossier n'est pas publié en ligne, à demander au secrétariat lors du dépôt du dossier.",
-    },
+    id: "hotellerie-restauration-tourisme",
     filiere: "Hôtellerie, Restauration et Tourisme",
-    institut: "ENFHT - École Nationale de Formation Hôtelière et Touristique",
-    bacsCompatibles: ["Littéraire", "Scientifique"],
     description:
-      "École publique créée en 1959, seule structure d'Afrique subsaharienne francophone à délivrer un BTS du secteur. Elle a historiquement accueilli des étudiants comoriens aux côtés d'autres nationalités africaines.",
+      "Formations en gestion hôtelière, restauration et tourisme, du niveau BEP jusqu'au BTS. Une école publique historique (ENFHT) et une école privée très pratique (Les Marmitons) couvrent ce domaine à Dakar.",
     debouches: [
       "Réceptionniste chef",
       "Agent de voyage",
       "Responsable de restauration",
       "Gestionnaire hôtelier",
     ],
-    ville: "Dakar",
-    dureeEnAnnees: 2,
-    diplomePrepare: "BTS (3 ans en gestion hôtelière, année préparatoire incluse)",
     competencesAcquises: [
       "Gestion hôtelière : réception, réservation, gestion des chambres",
       "Techniques de restauration et de service",
@@ -251,78 +224,49 @@ export const formationsSanteAgroTourisme: Formation[] = [
         "Création d'une maison d'hôtes ou d'une agence réceptive",
       ],
       conseil:
-        "Les langues sont votre premier actif : anglais et arabe ou italien ouvrent plus de portes que le diplôme lui-même. Envisagez une première expérience à l'étranger avant le retour.",
+        "Les langues sont votre premier actif : anglais et arabe ou italien ouvrent plus de portes que le diplôme lui-même. L'ENFHT offre la formation la plus généraliste, Les Marmitons la plus pratique (cuisine, pâtisserie) : choisissez selon votre projet précis.",
     },
-    sourceOfficielle: { libelle: "enfht.sn", url: "https://enfht.sn/" },
-    noteDAdmission:
-      "Les étudiants étrangers sont admis sur étude de dossier (les Sénégalais passent un concours national). Concours en avril-mai, inscriptions en février-mars ; confirmez les conditions d'âge en vigueur directement auprès de l'école. Accréditation : malgré son ancienneté (1959) et son statut d'école publique, ce BTS n'a été trouvé ni dans la base ANAQ-Sup ni dans les listes CAMES consultées — sa reconnaissance tient à son statut d'école nationale sous tutelle ministérielle plutôt qu'à une accréditation individuelle documentée en ligne.",
-  },
-  {
-    id: "les-marmitons-hotellerie",
-    statutEtablissement: "Privé",
-    fraisDeScolarite: {
-      montant: "Non publié",
-      detail:
-        "L'école ne publie pas sa grille tarifaire complète en ligne. Consultez le site pour les modalités d'inscription ou contactez directement l'établissement.",
-    },
-    filiere: "Restauration, Hôtellerie et Tourisme",
-    institut: "Institut Supérieur Les Marmitons",
-    bacsCompatibles: ["Littéraire", "Scientifique"],
-    description:
-      "École privée dakaroise fondée en 2006 par le chef Sidy Diéme, devenue une référence pour les formations pratiques en cuisine, pâtisserie, boucherie, accueil hôtelier, service et tourisme.",
-    debouches: [
-      "Cuisinier",
-      "Pâtissier",
-      "Agent d'accueil hôtelier",
-      "Guide touristique",
+    etablissements: [
+      {
+        institut: "ENFHT - École Nationale de Formation Hôtelière et Touristique",
+        ville: "Dakar",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 2,
+        diplomePrepare: "BTS (3 ans en gestion hôtelière, année préparatoire incluse)",
+        fraisDeScolarite: {
+          montant: "Frais publics réduits",
+          detail:
+            "École nationale publique sous tutelle du ministère du Tourisme : scolarité subventionnée. Le montant appliqué aux étudiants étrangers admis sur dossier n'est pas publié en ligne, à demander au secrétariat lors du dépôt du dossier.",
+        },
+        sourceOfficielle: { libelle: "enfht.sn", url: "https://enfht.sn/" },
+        noteDAdmission:
+          "École créée en 1959, seule structure d'Afrique subsaharienne francophone à délivrer un BTS du secteur, avec un historique d'accueil d'étudiants comoriens. Les étrangers sont admis sur étude de dossier (les Sénégalais passent un concours national). Concours en avril-mai, inscriptions en février-mars. Accréditation : malgré son ancienneté, ce BTS n'a été trouvé ni dans la base ANAQ-Sup ni dans les listes CAMES consultées — sa reconnaissance tient à son statut d'école nationale sous tutelle ministérielle.",
+      },
+      {
+        institut: "Institut Supérieur Les Marmitons",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "BEP, CAP/DEP puis BTS (diplômes reconnus par l'État)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'école ne publie pas sa grille tarifaire complète en ligne. Consultez le site pour les modalités d'inscription ou contactez directement l'établissement.",
+        },
+        sourceOfficielle: {
+          libelle: "ecolelesmarmitons.com",
+          url: "https://ecolelesmarmitons.com/",
+        },
+        noteDAdmission:
+          "École fondée en 2006 par le chef Sidy Diéme, référence pour les formations pratiques en cuisine, pâtisserie, boucherie, accueil hôtelier, service et tourisme. Accréditation : école non trouvée dans la base ANAQ-Sup ni dans les listes CAMES consultées ; les diplômes délivrés sont présentés comme reconnus par l'État sénégalais, à faire confirmer directement auprès de l'école.",
+      },
     ],
-    ville: "Dakar",
-    dureeEnAnnees: 3,
-    diplomePrepare: "BEP, CAP/DEP puis BTS (diplômes reconnus par l'État)",
-    competencesAcquises: [
-      "Techniques culinaires et pâtisserie",
-      "Accueil et service en restauration",
-      "Gestion d'un établissement hôtelier",
-      "Bases du tourisme et du guidage",
-      "Hygiène et sécurité alimentaire",
-    ],
-    missionsConcretes: [
-      "Travailler en cuisine dans un restaurant ou un hôtel",
-      "Gérer l'accueil et le service d'un établissement",
-      "Organiser un service de restauration événementiel",
-      "Ouvrir son propre restaurant ou service traiteur",
-    ],
-    perspectivesAuxComores: {
-      niveauDeDemande: "À construire",
-      resume:
-        "Formation très pratique, complémentaire de celle de l'ENFHT (plus généraliste). Le tourisme comorien reste à construire, mais les compétences culinaires et d'accueil sont directement mobilisables dans la restauration locale ou en indépendant.",
-      employeursPotentiels: [
-        "Hôtels et restaurants de Grande Comore, Anjouan, Mohéli",
-        "Traiteurs et évènementiel",
-        "Projets d'écotourisme",
-        "Création de son propre restaurant ou service traiteur",
-      ],
-      conseil:
-        "Formation courte et très pratique : idéale si vous voulez vous lancer rapidement dans la restauration ou l'hôtellerie sans passer par un cursus long.",
-    },
-    sourceOfficielle: {
-      libelle: "ecolelesmarmitons.com",
-      url: "https://ecolelesmarmitons.com/",
-    },
-    noteDAdmission:
-      "Accréditation : école non trouvée dans la base ANAQ-Sup ni dans les listes CAMES consultées ; les diplômes délivrés (BEP, CAP/DEP, BTS) sont présentés comme reconnus par l'État sénégalais, à faire confirmer directement auprès de l'école.",
   },
   {
     id: "isep-thies-multimedia",
-    statutEtablissement: "Public",
-    fraisDeScolarite: {
-      montant: "Frais publics réduits",
-      detail:
-        "Institut public financé par l'État et la Banque mondiale : la scolarité est très largement subventionnée. Le montant applicable aux étudiants étrangers n'est pas publié en ligne, à demander lors de la campagne de recrutement.",
-    },
     filiere: "Création Multimédia et Production Audiovisuelle",
-    institut: "ISEP Thiès (Abdoulaye Ly)",
-    bacsCompatibles: ["Scientifique", "Littéraire"],
     description:
       "Institut public formant des techniciens supérieurs. Département TIC : design graphique, multimédia, journalisme et production audiovisuelle.",
     debouches: [
@@ -331,9 +275,6 @@ export const formationsSanteAgroTourisme: Formation[] = [
       "Designer graphique",
       "Journaliste reporter d'images",
     ],
-    ville: "Thiès",
-    dureeEnAnnees: 2,
-    diplomePrepare: "Diplôme de technicien supérieur (Bac+2)",
     competencesAcquises: [
       "Écriture de scénario, storyboard et conduite d'un tournage",
       "Prise de vue, cadrage, lumière et prise de son",
@@ -360,24 +301,31 @@ export const formationsSanteAgroTourisme: Formation[] = [
       conseil:
         "L'une des rares filières où l'on peut rentrer et facturer immédiatement, et le cursus est court (2 ans). Investissez tôt dans votre matériel et construisez une bande démo.",
     },
-    sourceOfficielle: {
-      libelle: "isep-thies.sn",
-      url: "https://www.isep-thies.sn/formations/",
-    },
-    noteDAdmission:
-      "Institut public : le recrutement se fait par campagne annuelle, places limitées. Formation courte et très pratique. Accréditation : ISEP Thiès dispose d'une habilitation ANAQ-Sup confirmée et d'une reconnaissance CAMES au niveau institutionnel (premier ISEP autorisé à délivrer le DiSEP), mais ce parcours multimédia précis n'a pas d'accréditation individuelle confirmée séparément dans les bases consultées.",
+    etablissements: [
+      {
+        institut: "ISEP Thiès (Abdoulaye Ly)",
+        ville: "Thiès",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 2,
+        diplomePrepare: "Diplôme de technicien supérieur (Bac+2)",
+        fraisDeScolarite: {
+          montant: "Frais publics réduits",
+          detail:
+            "Institut public financé par l'État et la Banque mondiale : la scolarité est très largement subventionnée. Le montant applicable aux étudiants étrangers n'est pas publié en ligne, à demander lors de la campagne de recrutement.",
+        },
+        sourceOfficielle: {
+          libelle: "isep-thies.sn",
+          url: "https://www.isep-thies.sn/formations/",
+        },
+        noteDAdmission:
+          "Recrutement par campagne annuelle, places limitées. Formation courte et très pratique. Accréditation : ISEP Thiès dispose d'une habilitation ANAQ-Sup confirmée et d'une reconnaissance CAMES au niveau institutionnel (premier ISEP autorisé à délivrer le DiSEP), mais ce parcours multimédia précis n'a pas d'accréditation individuelle confirmée séparément.",
+      },
+    ],
   },
   {
     id: "kourtrajme-dakar-audiovisuel",
-    statutEtablissement: "Privé",
-    fraisDeScolarite: {
-      montant: "Gratuit",
-      detail:
-        "École gratuite, financée par l'Agence Française de Développement (AFD) et le collectif Kourtrajmé. Aucun frais d'inscription ni de scolarité. Places très limitées (environ 20 étudiants par promotion) et appel à candidatures fermé au moment de la vérification (2026) : surveillez la réouverture sur le site.",
-    },
     filiere: "Cinéma et Audiovisuel",
-    institut: "École Kourtrajmé Dakar",
-    bacsCompatibles: ["Littéraire", "Scientifique"],
     description:
       "Première école Kourtrajmé d'Afrique, ouverte en janvier 2022 par le collectif fondé par le réalisateur Ladj Ly ('Les Misérables'). Formation gratuite en scénario, réalisation, prise de son, prise de vue et post-production, sans condition de diplôme ni d'âge.",
     debouches: [
@@ -386,9 +334,6 @@ export const formationsSanteAgroTourisme: Formation[] = [
       "Chef opérateur son ou image",
       "Monteur",
     ],
-    ville: "Dakar",
-    dureeEnAnnees: 1,
-    diplomePrepare: "Formation professionnalisante (non diplômante au sens classique)",
     competencesAcquises: [
       "Écriture de scénario et structure narrative",
       "Réalisation et direction d'acteurs",
@@ -415,11 +360,26 @@ export const formationsSanteAgroTourisme: Formation[] = [
       conseil:
         "Formation gratuite mais places très limitées et sans diplôme officiel : à envisager en complément d'un diplôme technique (ISEP Thiès par exemple), pas comme seule formation si vous avez besoin d'un titre reconnu à faire valoir aux Comores.",
     },
-    sourceOfficielle: {
-      libelle: "ecolekourtrajmedakar.com",
-      url: "https://ecolekourtrajmedakar.com/",
-    },
-    noteDAdmission:
-      "Aucune condition de diplôme, d'âge ou de qualification requise. Sélection sur motivation. Appels à candidatures ponctuels : vérifiez le calendrier d'ouverture sur le site officiel avant de postuler. Accréditation : formation libre, explicitement hors système ANAQ-Sup/CAMES (pas de diplôme d'État délivré) ; un partenariat avec l'INA (Institut National de l'Audiovisuel, France) encadre la certification pédagogique, ce qui n'équivaut pas à une accréditation académique sénégalaise.",
+    etablissements: [
+      {
+        institut: "École Kourtrajmé Dakar",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 1,
+        diplomePrepare: "Formation professionnalisante (non diplômante au sens classique)",
+        fraisDeScolarite: {
+          montant: "Gratuit",
+          detail:
+            "École gratuite, financée par l'Agence Française de Développement (AFD) et le collectif Kourtrajmé. Aucun frais d'inscription ni de scolarité. Places très limitées (environ 20 étudiants par promotion) et appel à candidatures fermé au moment de la vérification (2026) : surveillez la réouverture sur le site.",
+        },
+        sourceOfficielle: {
+          libelle: "ecolekourtrajmedakar.com",
+          url: "https://ecolekourtrajmedakar.com/",
+        },
+        noteDAdmission:
+          "Aucune condition de diplôme, d'âge ou de qualification requise. Sélection sur motivation. Appels à candidatures ponctuels : vérifiez le calendrier d'ouverture sur le site officiel avant de postuler. Accréditation : formation libre, explicitement hors système ANAQ-Sup/CAMES (pas de diplôme d'État délivré) ; un partenariat avec l'INA (Institut National de l'Audiovisuel, France) encadre la certification pédagogique, ce qui n'équivaut pas à une accréditation académique sénégalaise.",
+      },
+    ],
   },
 ];
