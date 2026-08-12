@@ -106,6 +106,53 @@ export const formationsDroitCommunication: Formation[] = [
       "Procédure spécifique pour les titulaires d'un baccalauréat étranger via le portail CAMPUSEN (orientation.campusen.sn) : création de compte, dépôt des relevés de notes et de l'attestation de baccalauréat, puis classement des vœux.",
   },
   {
+    id: "isdd-droit",
+    statutEtablissement: "Privé",
+    fraisDeScolarite: {
+      montant: "165 000 F d'inscription + mensualités (470 000 à 620 000 F/an)",
+      detail:
+        "Grille publiée par l'ISDD : 165 000 FCFA d'inscription à chaque niveau, puis une scolarité payable en 8 mensualités croissantes selon l'année : environ 470 000 FCFA/mois de scolarité totale en L1, 570 000 FCFA en L2 et 620 000 FCFA en L3 (montants annuels globaux, à confirmer précisément auprès de l'école pour l'année en cours).",
+    },
+    filiere: "Droit",
+    institut: "ISDD - Institut Supérieur de Droit de Dakar",
+    bacsCompatibles: ["Littéraire", "Scientifique"],
+    description:
+      "École de droit privée fondée en 2005 par le professeur Babacar Guèye, accréditée ANAQ-Sup et CAMES. Plus de 1 000 étudiants de 18 nationalités différentes ; masters en droit public et droit des affaires en poursuite d'études.",
+    debouches: ["Avocat", "Juriste d'entreprise", "Notaire", "Consultant juridique"],
+    ville: "Dakar",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Licence CAMES en droit (Master possible)",
+    competencesAcquises: [
+      "Droit civil, droit des obligations et droit des biens",
+      "Méthodologie juridique : dissertation, cas pratique, commentaire d'arrêt",
+      "Droit des affaires et droit régional OHADA",
+      "Procédure et institutions judiciaires",
+      "Anglais juridique et culture générale",
+    ],
+    missionsConcretes: [
+      "Rédiger et sécuriser des contrats commerciaux",
+      "Conseiller une entreprise sur ses obligations légales",
+      "Préparer les concours du barreau ou de la magistrature",
+      "Poursuivre en master pour se spécialiser en droit public ou des affaires",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "École privée établie avec un corps étudiant déjà très international (18 nationalités), ce qui facilite l'intégration d'un bachelier comorien. Les débouchés au retour restent les mêmes que pour tout diplôme de droit : conseil aux entreprises, foncier, OHADA.",
+      employeursPotentiels: [
+        "Cabinets d'avocats et études notariales",
+        "Banques, assurances, entreprises (juriste interne)",
+        "ONG (gouvernance, droits humains)",
+        "Administration et justice",
+      ],
+      conseil:
+        "École privée avec une grille tarifaire publiée, ce qui facilite la budgétisation par rapport aux facultés publiques. Vérifiez le montant exact en vigueur pour l'année de candidature avant de vous engager.",
+    },
+    sourceOfficielle: { libelle: "isdd.edu.sn", url: "https://isdd.edu.sn/licence-en-droit/" },
+    noteDAdmission:
+      "Admission sur dossier après le baccalauréat, toutes séries. Pré-inscription en ligne sur le site de l'école. Contact : +221 33 827 48 36, contact@isdd.edu.sn.",
+  },
+  {
     id: "ugb-information-communication",
     statutEtablissement: "Public",
     fraisDeScolarite: {
@@ -157,5 +204,57 @@ export const formationsDroitCommunication: Formation[] = [
       libelle: "ugb.sn",
       url: "https://ugb.sn/fr/toutes-nos-licences",
     },
+  },
+  {
+    id: "cesti-journalisme",
+    statutEtablissement: "Public",
+    fraisDeScolarite: {
+      montant: "Non publié",
+      detail:
+        "Centre public rattaché à l'UCAD : les frais spécifiques au CESTI ne sont pas publiés en ligne. Contactez cesti@ucad.edu.sn pour connaître le montant applicable aux candidats étrangers.",
+    },
+    filiere: "Journalisme",
+    institut: "CESTI - Centre d'Études des Sciences et Techniques de l'Information (UCAD)",
+    bacsCompatibles: ["Littéraire", "Scientifique"],
+    description:
+      "École de journalisme de référence en Afrique francophone, fondée en 1965 avec l'appui de l'UNESCO. Plus de 1 400 diplômés issus de 21 nationalités depuis sa création. Formation pratique en presse écrite, radio, télévision, multimédia et photojournalisme.",
+    debouches: [
+      "Journaliste presse écrite ou web",
+      "Journaliste radio/télévision",
+      "Photojournaliste",
+      "Chargé de communication médias",
+    ],
+    ville: "Dakar",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Diplôme Supérieur de Journalisme (équivalent Licence)",
+    competencesAcquises: [
+      "Techniques rédactionnelles : enquête, reportage, interview",
+      "Pratique radio, télévision et photojournalisme",
+      "Écriture web et gestion de contenus multimédias",
+      "Déontologie et droit de la presse",
+      "Conduite d'un projet d'investigation en fin de cursus",
+    ],
+    missionsConcretes: [
+      "Produire un reportage radio, TV ou écrit de bout en bout",
+      "Couvrir l'actualité politique, économique ou sociale d'un pays",
+      "Mener une enquête journalistique documentée",
+      "Travailler pour un média national ou une agence de presse",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le CESTI forme les journalistes de référence pour plusieurs pays d'Afrique francophone. Aux Comores, les médias professionnels sont peu nombreux mais en développement (radios, presse en ligne) : un diplôme reconnu régionalement distingue immédiatement un candidat.",
+      employeursPotentiels: [
+        "Radios et télévisions nationales",
+        "Presse en ligne et agences de presse",
+        "ONG et organisations internationales (communication)",
+        "Correspondance pour médias étrangers",
+      ],
+      conseil:
+        "Concours d'entrée exigeant : préparez-le sérieusement (culture générale, actualité, épreuves rédactionnelles). C'est l'un des diplômes les mieux reconnus de la sous-région pour ce métier.",
+    },
+    sourceOfficielle: { libelle: "cesti.ucad.sn", url: "https://cesti.ucad.sn/" },
+    noteDAdmission:
+      "Admission par concours (présélection sur dossier puis épreuves écrites), ouvert à toutes nationalités, sans distinction, dans la limite des places disponibles. Calendrier annuel à surveiller sur le site du CESTI.",
   },
 ];
