@@ -59,7 +59,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       url: "https://esp.sn/departement/genie-informatique/",
     },
     noteDAdmission:
-      "Candidature via mycandidature.esp puis admission.ucad.sn. Filière scientifique exigeante en mathématiques. Confirmez la catégorie tarifaire applicable aux bacheliers comoriens avant de candidater.",
+      "Candidature via mycandidature.esp puis admission.ucad.sn. Filière scientifique exigeante en mathématiques. Confirmez la catégorie tarifaire applicable aux bacheliers comoriens avant de candidater. Accréditation : cette licence n'apparaît pas dans la base ANAQ-Sup consultée ; l'ESP a engagé une démarche d'accréditation de ses formations auprès de l'ANAQ-Sup (annoncée sur esp.sn), non finalisée à ce jour pour ce diplôme précis.",
   },
   {
     id: "ism-informatique-gestion",
@@ -114,7 +114,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       url: "https://www.groupeism.sn/formation-ingenieur/license-informatique-gestion-entreprises",
     },
     noteDAdmission:
-      "Ouverte aux bacs littéraires. Admission ISM sur dossier, tests écrits et entretien en anglais.",
+      "Ouverte aux bacs littéraires. Admission ISM sur dossier, tests écrits et entretien en anglais. Accréditation : l'ISM revendique une accréditation ANAQ-Sup, mais je n'ai pas trouvé cette filière précise confirmée sur la base officielle anaqsup.sn/accreditations/ (une autre licence ISM, Droit des Affaires, y est en revanche listée) — vérifiez directement sur le site avant de candidater.",
   },
   {
     id: "isi-genie-informatique",
@@ -128,7 +128,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
     institut: "ISI - Institut Supérieur d'Informatique",
     bacsCompatibles: ["Scientifique"],
     description:
-      "École privée fondée en 1994, accréditée ANAQ-Sup. Plusieurs parcours en licence : génie informatique, réseaux et systèmes, réseaux et télécommunications, cybersécurité, science des données/IA, ainsi qu'un parcours MIAGE. Masters disponibles ensuite (cryptographie et sécurité, génie logiciel, réseaux).",
+      "École privée fondée en 1994. Sa Licence professionnelle en Réseaux informatiques est accréditée ANAQ-Sup (vérifié sur anaqsup.sn). Plusieurs autres parcours en licence : génie informatique, réseaux et télécommunications, cybersécurité, science des données/IA, ainsi qu'un parcours MIAGE — leur accréditation individuelle n'a pas été confirmée séparément. Masters disponibles ensuite (cryptographie et sécurité, génie logiciel, réseaux).",
     debouches: [
       "Développeur",
       "Administrateur réseaux et systèmes",
@@ -166,7 +166,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
     },
     sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
     noteDAdmission:
-      "École privée accréditée ANAQ-Sup, fondée en 1994. Le master est ouvert aux titulaires d'un Bac+3. Frais et modalités précises d'admission des étudiants étrangers non publiés en ligne : à demander directement au service admissions.",
+      "École privée fondée en 1994. Le master est ouvert aux titulaires d'un Bac+3. Frais et modalités précises d'admission des étudiants étrangers non publiés en ligne : à demander directement au service admissions. Accréditation confirmée : anaqsup.sn/accreditations/isi-institut-superieur-dinformatique/.",
   },
   {
     id: "udb-genie-informatique",
@@ -180,7 +180,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
     institut: "UDB - Université Dakar Bourguiba",
     bacsCompatibles: ["Scientifique"],
     description:
-      "Université privée fondée en 1995, accréditée CAMES et ANAQ-Sup. Licence en génie informatique et parcours MIAGE (méthodes informatiques appliquées à la gestion des entreprises), avec un master en génie logiciel en poursuite d'études.",
+      "Université privée fondée en 1995. Sa Licence en MIAGE (méthodes informatiques appliquées à la gestion des entreprises) est accréditée ANAQ-Sup (vérifié sur anaqsup.sn) et reconnue CAMES. Le parcours génie informatique général et le master en génie logiciel n'ont pas d'accréditation individuelle confirmée séparément.",
     debouches: [
       "Développeur d'applications",
       "Ingénieur logiciel junior",
@@ -214,11 +214,11 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         "Clients internationaux en télétravail (freelance)",
       ],
       conseil:
-        "Université privée accréditée CAMES depuis 1995 : demandez la grille tarifaire par écrit et vérifiez la reconnaissance du diplôme avant de vous engager, les frais n'étant pas publiés en ligne.",
+        "Université privée établie depuis 1995, avec la licence MIAGE accréditée ANAQ-Sup : demandez la grille tarifaire par écrit avant de vous engager, les frais n'étant pas publiés en ligne.",
     },
     sourceOfficielle: { libelle: "udb-sn.com", url: "https://www.udb-sn.com" },
     noteDAdmission:
-      "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique. Frais et modalités d'admission des étudiants étrangers non publiés en ligne, à demander directement à l'université.",
+      "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique. Frais et modalités d'admission des étudiants étrangers non publiés en ligne, à demander directement à l'université. Accréditation MIAGE confirmée : anaqsup.sn/accreditations/universite-dakar-bourguiba-udb-licence-en-methodes-informatiques-appliquees-a-la-gestion-miage/.",
   },
   {
     id: "ept-genie-informatique-telecoms",
@@ -270,7 +270,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
     },
     sourceOfficielle: { libelle: "ept.edu.sn", url: "https://ept.edu.sn/" },
     noteDAdmission:
-      "Admission sur concours national (candidats libres acceptés), réservé aux candidats de moins de 22 ans au 1er octobre de l'année d'entrée, sur la base d'un bac scientifique ou technique (S1, S2, S3, STIDD). Plus de 85 % des diplômés trouvent un emploi dans les 6 mois selon l'école.",
+      "Admission sur concours national (candidats libres acceptés), réservé aux candidats de moins de 22 ans au 1er octobre de l'année d'entrée, sur la base d'un bac scientifique ou technique (S1, S2, S3, STIDD). Plus de 85 % des diplômés trouvent un emploi dans les 6 mois selon l'école. Accréditation : l'EPT dispose d'une habilitation ANAQ-Sup générale et d'une reconnaissance CAMES, mais ce diplôme précis (Génie Informatique et Télécommunications) n'apparaît pas séparément dans la base ANAQ-Sup consultée (d'autres diplômes d'ingénieur de l'EPT, comme Génie Aéronautique, y figurent).",
   },
   {
     id: "uam-informatique",
@@ -322,7 +322,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
     },
     sourceOfficielle: { libelle: "uam.sn", url: "https://uam.sn/formations/" },
     noteDAdmission:
-      "L'UAM lance chaque année un appel à candidatures dédié aux titulaires d'un baccalauréat étranger reconnu par l'État du Sénégal (contact : etude.dossier@uam.edu.sn). L'intitulé exact du parcours informatique peut varier selon les années : vérifiez-le lors de la candidature. L'accès à Polytech Diamniadio se fait par concours.",
+      "L'UAM lance chaque année un appel à candidatures dédié aux titulaires d'un baccalauréat étranger reconnu par l'État du Sénégal (contact : etude.dossier@uam.edu.sn). L'intitulé exact du parcours informatique peut varier selon les années : vérifiez-le lors de la candidature. L'accès à Polytech Diamniadio se fait par concours. Accréditation : un rapport d'évaluation externe ANAQ-Sup pour la Licence Ingénierie Informatique a été publié en avril 2025, ce qui indique une accréditation en cours d'instruction plutôt que finalisée à cette date.",
   },
   {
     id: "esmt-reseaux-telecoms",
@@ -374,6 +374,6 @@ export const formationsInformatiqueTelecoms: Formation[] = [
     },
     sourceOfficielle: { libelle: "esmt.sn", url: "https://esmt.sn/" },
     noteDAdmission:
-      "L'école accueille en formation initiale ou continue des étudiants de tous les pays africains francophones, recrutés sur concours d'entrée (session annuelle, ex. fin juillet) ou sur dossier.",
+      "L'école accueille en formation initiale ou continue des étudiants de tous les pays africains francophones, recrutés sur concours d'entrée (session annuelle, ex. fin juillet) ou sur dossier. Accréditation ANAQ-Sup confirmée pour la spécialité Administration et Sécurité des Réseaux (ASR) et plusieurs autres spécialités de la licence : anaqsup.sn/accreditations/esmt-licence-professionnelle-en-telecommunications-et-informatique-specialite-administration-et-securite-des-reseaux-asr/.",
   },
 ];
