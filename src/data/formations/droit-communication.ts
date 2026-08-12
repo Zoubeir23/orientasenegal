@@ -21,7 +21,7 @@ export const formationsDroitCommunication: Formation[] = [
     debouches: ["Avocat", "Juriste d'entreprise", "Notaire", "Magistrat"],
     ville: "Saint-Louis",
     dureeEnAnnees: 3,
-    diplomePrepare: "Licence CAMES en droit privé (Master requis pour les concours)",
+    diplomePrepare: "Licence en droit privé (Master requis pour les concours)",
     competencesAcquises: [
       "Droit civil : contrats, famille, successions, biens",
       "Droit des affaires et droit du travail",
@@ -53,7 +53,7 @@ export const formationsDroitCommunication: Formation[] = [
       url: "https://www.ugb.sn/fr/licences-juridiques-politiques-et-de-ladministration",
     },
     noteDAdmission:
-      "L'UGB annonce une sélection automatique en premier cycle pour tout titulaire du baccalauréat ou d'un titre équivalent, dans la limite des places.",
+      "L'UGB annonce une sélection automatique en premier cycle pour tout titulaire du baccalauréat ou d'un titre équivalent, dans la limite des places. Accréditation : cette licence n'apparaît pas séparément dans la base ANAQ-Sup consultée. Comme pour la plupart des diplômes de facultés publiques, l'accréditation ANAQ-Sup individuelle n'est pas systématique (le diplôme est reconnu nationalement en tant que diplôme d'État), mais l'UGB a par ailleurs plusieurs autres formations accréditées.",
   },
   {
     id: "ucad-fsjp-droit",
@@ -103,7 +103,7 @@ export const formationsDroitCommunication: Formation[] = [
       url: "https://www.ucad.sn/titulaire-de-baccalaureats-etrangers",
     },
     noteDAdmission:
-      "Procédure spécifique pour les titulaires d'un baccalauréat étranger via le portail CAMPUSEN (orientation.campusen.sn) : création de compte, dépôt des relevés de notes et de l'attestation de baccalauréat, puis classement des vœux.",
+      "Procédure spécifique pour les titulaires d'un baccalauréat étranger via le portail CAMPUSEN (orientation.campusen.sn) : création de compte, dépôt des relevés de notes et de l'attestation de baccalauréat, puis classement des vœux. Accréditation : cette licence n'apparaît pas séparément dans la base ANAQ-Sup consultée (diplôme d'État reconnu nationalement, comme la plupart des licences généralistes de facultés publiques) ; des variantes professionnelles (ex. Licence Carrières Judiciaires) y sont en revanche accréditées.",
   },
   {
     id: "isdd-droit",
@@ -117,11 +117,11 @@ export const formationsDroitCommunication: Formation[] = [
     institut: "ISDD - Institut Supérieur de Droit de Dakar",
     bacsCompatibles: ["Littéraire", "Scientifique"],
     description:
-      "École de droit privée fondée en 2005 par le professeur Babacar Guèye, accréditée ANAQ-Sup et CAMES. Plus de 1 000 étudiants de 18 nationalités différentes ; masters en droit public et droit des affaires en poursuite d'études.",
+      "École de droit privée fondée en 2005 par le professeur Babacar Guèye, dont la Licence en Droit est accréditée ANAQ-Sup (confirmé sur la liste officielle des programmes accrédités). L'école est par ailleurs reconnue par le CAMES au niveau institutionnel. Plus de 1 000 étudiants de 18 nationalités différentes ; masters en droit public et droit des affaires en poursuite d'études.",
     debouches: ["Avocat", "Juriste d'entreprise", "Notaire", "Consultant juridique"],
     ville: "Dakar",
     dureeEnAnnees: 3,
-    diplomePrepare: "Licence CAMES en droit (Master possible)",
+    diplomePrepare: "Licence en droit, accréditée ANAQ-Sup (Master possible)",
     competencesAcquises: [
       "Droit civil, droit des obligations et droit des biens",
       "Méthodologie juridique : dissertation, cas pratique, commentaire d'arrêt",
@@ -204,6 +204,8 @@ export const formationsDroitCommunication: Formation[] = [
       libelle: "ugb.sn",
       url: "https://ugb.sn/fr/toutes-nos-licences",
     },
+    noteDAdmission:
+      "Accréditation : cette licence n'apparaît pas séparément dans la base ANAQ-Sup consultée (diplôme public reconnu nationalement).",
   },
   {
     id: "cesti-journalisme",
@@ -255,6 +257,6 @@ export const formationsDroitCommunication: Formation[] = [
     },
     sourceOfficielle: { libelle: "cesti.ucad.sn", url: "https://cesti.ucad.sn/" },
     noteDAdmission:
-      "Admission par concours (présélection sur dossier puis épreuves écrites), ouvert à toutes nationalités, sans distinction, dans la limite des places disponibles. Calendrier annuel à surveiller sur le site du CESTI.",
+      "Admission par concours (présélection sur dossier puis épreuves écrites), ouvert à toutes nationalités, sans distinction, dans la limite des places disponibles. Calendrier annuel à surveiller sur le site du CESTI. Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée (le CESTI est une composante publique de l'UCAD, dont l'école doctorale a fait l'objet d'une auto-évaluation ANAQ-Sup, mais pas ce diplôme précis).",
   },
 ];
