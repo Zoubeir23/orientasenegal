@@ -61,6 +61,58 @@ export const formationsGestionCommerce: Formation[] = [
       "Admission : dossier, épreuve écrite de culture générale, entretien en anglais et entretien collectif.",
   },
   {
+    id: "cesag-gestion",
+    statutEtablissement: "Public",
+    fraisDeScolarite: {
+      montant: "Non publié",
+      detail:
+        "Établissement public international (sous supervision de la BCEAO, membre UEMOA) : les frais applicables aux candidats hors zone UEMOA, comme les Comores, ne sont pas publiés en ligne. Contactez le CESAG (courrier@cesag.sn, +221 33 839 73 60) pour un devis précis.",
+    },
+    filiere: "Licence en Gestion (management, PME, comptabilité, finance)",
+    institut: "CESAG - Centre Africain d'Études Supérieures en Gestion",
+    bacsCompatibles: ["Littéraire", "Scientifique"],
+    description:
+      "Établissement public interétatique de référence en Afrique de l'Ouest pour les sciences de gestion, avec plusieurs options de spécialisation en licence (management, PME, comptabilité, finance).",
+    debouches: [
+      "Gestionnaire d'entreprise",
+      "Contrôleur de gestion",
+      "Analyste financier junior",
+      "Entrepreneur",
+    ],
+    ville: "Dakar",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Licence en gestion",
+    competencesAcquises: [
+      "Comptabilité générale et analytique",
+      "Gestion financière et analyse d'entreprise",
+      "Management des petites et moyennes entreprises",
+      "Outils de gestion et de pilotage",
+      "Méthodologie de projet et esprit entrepreneurial",
+    ],
+    missionsConcretes: [
+      "Analyser la santé financière d'une entreprise",
+      "Accompagner la création ou la croissance d'une PME",
+      "Mettre en place des outils de suivi de gestion",
+      "Lancer et structurer sa propre activité",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Institution publique interétatique reconnue dans toute la sous-région, ce qui donne un poids particulier au diplôme. Les débouchés au retour restent proches des autres formations en gestion : utile mais à combiner avec une spécialité claire.",
+      employeursPotentiels: [
+        "Banques et institutions de microfinance",
+        "Entreprises privées et PME",
+        "ONG et projets de développement",
+        "Création d'entreprise",
+      ],
+      conseil:
+        "Établissement public à forte réputation régionale : vérifiez tôt les frais réels pour un candidat hors zone UEMOA, car ils ne sont pas affichés publiquement et peuvent différer sensiblement du tarif zone.",
+    },
+    sourceOfficielle: { libelle: "cesag.sn", url: "https://www.cesag.sn/" },
+    noteDAdmission:
+      "Admission sur concours d'entrée, deux sessions par an, inscription en ligne.",
+  },
+  {
     id: "ifage-comptabilite-controle-audit",
     statutEtablissement: "Privé",
     fraisDeScolarite: {
@@ -109,6 +161,58 @@ export const formationsGestionCommerce: Formation[] = [
     },
     noteDAdmission:
       "D'autres établissements dakarois proposent un diplôme équivalent : IDG (Institut de Développement et de Gouvernance), Supdeco. Comparez les frais et l'accréditation ANAQ-Sup avant de choisir.",
+  },
+  {
+    id: "idg-finance-comptabilite-audit",
+    statutEtablissement: "Privé",
+    fraisDeScolarite: {
+      montant: "Non publié",
+      detail:
+        "IDG Dakar ne publie pas sa grille tarifaire en ligne. Contactez le service admissions (+221 77 671 02 02, admission@idgdakar.edu.sn) pour connaître le montant applicable.",
+    },
+    filiere: "Finance, Comptabilité et Audit",
+    institut: "IDG - Institut de Développement et de Gouvernance",
+    bacsCompatibles: ["Littéraire", "Scientifique"],
+    description:
+      "École privée membre du Collège de Paris, hébergeant notamment le programme Ascencia Business School à Dakar. Licence orientée finance, comptabilité, audit et techniques de gestion.",
+    debouches: [
+      "Comptable",
+      "Assistant contrôleur de gestion",
+      "Analyste financier junior",
+      "Auditeur junior",
+    ],
+    ville: "Dakar",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Licence en finance, comptabilité et audit",
+    competencesAcquises: [
+      "Comptabilité générale et techniques de gestion",
+      "Analyse financière et gestion budgétaire",
+      "Audit et contrôle interne",
+      "Sciences du management appliquées à la finance",
+      "Formation pratique orientée professionnalisation",
+    ],
+    missionsConcretes: [
+      "Tenir la comptabilité d'une structure de taille moyenne",
+      "Participer à une mission d'audit interne",
+      "Analyser des indicateurs financiers pour la direction",
+      "Préparer les déclarations fiscales courantes",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Mêmes perspectives que les autres formations en comptabilité/audit : toute structure formelle et tout projet financé par des bailleurs a besoin de ces compétences, directement transposables aux Comores.",
+      employeursPotentiels: [
+        "Cabinets comptables et d'audit",
+        "Banques et institutions de microfinance",
+        "ONG et projets de développement",
+        "Entreprises privées",
+      ],
+      conseil:
+        "École adossée à un réseau international (Collège de Paris) : demandez le détail des passerelles et de la reconnaissance du diplôme avant de vous engager, les frais n'étant pas publiés en ligne.",
+    },
+    sourceOfficielle: { libelle: "idgdakar.com", url: "https://www.idgdakar.com/" },
+    noteDAdmission:
+      "Admission sur dossier (diplômes, pièce d'identité, CV) après le baccalauréat.",
   },
   {
     id: "iam-marketing-digital",
@@ -163,6 +267,58 @@ export const formationsGestionCommerce: Formation[] = [
       "Le niveau exact du parcours marketing/communication (licence Bac+3 ou master Bac+5) peut varier selon les années : confirmez l'intitulé précis auprès du service admissions avant de candidater.",
   },
   {
+    id: "afi-ue-marketing-digital",
+    statutEtablissement: "Privé",
+    fraisDeScolarite: {
+      montant: "Non publié",
+      detail:
+        "AFI-l'UE ne publie pas sa grille tarifaire en ligne. Contactez le service admissions (+221 33 824 71 10, afi@afi-ue.sn) pour connaître le montant applicable.",
+    },
+    filiere: "Marketing et Communication Digitale",
+    institut: "AFI-l'UE - AFI, l'Université de l'Entreprise",
+    bacsCompatibles: ["Littéraire", "Scientifique"],
+    description:
+      "École privée dakaroise autorisée par le Ministère de l'Enseignement Supérieur sénégalais et membre de la Fédération Européenne des Écoles (FEDE). Licence en marketing et communication digitale ouverte à tous les profils de bac.",
+    debouches: [
+      "Chargé de marketing digital",
+      "Social media manager",
+      "Web marketer",
+      "Chargé d'évènementiel",
+    ],
+    ville: "Dakar",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Licence en marketing et communication digitale",
+    competencesAcquises: [
+      "Étude de marché et stratégie de marque",
+      "Marketing digital : réseaux sociaux, référencement, e-commerce",
+      "Production de contenus et gestion de campagnes",
+      "Organisation d'évènements professionnels",
+      "Relations presse et attaché de presse",
+    ],
+    missionsConcretes: [
+      "Construire et animer la présence en ligne d'une entreprise",
+      "Lancer et mesurer une campagne publicitaire digitale",
+      "Organiser un évènement professionnel de A à Z",
+      "Accompagner un commerçant dans sa transition numérique",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Même constat que pour les autres formations en marketing digital : marché salarié étroit aux Comores, mais la prestation de services (community management, campagnes ponctuelles) fonctionne bien auprès des commerces et hôtels locaux.",
+      employeursPotentiels: [
+        "Agences de communication et entreprises locales",
+        "ONG et projets de développement",
+        "Opérateurs télécoms et banques",
+        "Activité indépendante auprès de commerces et d'hôtels",
+      ],
+      conseil:
+        "École accréditée par un réseau européen (FEDE), ce qui peut faciliter une poursuite d'études en France. Vérifiez les frais réels avant de vous engager, ils ne sont pas publiés en ligne.",
+    },
+    sourceOfficielle: { libelle: "afi-ue.sn", url: "https://afi-ue.sn/" },
+    noteDAdmission:
+      "Admission sur dossier complet, toutes séries de baccalauréat, après sélection.",
+  },
+  {
     id: "supdeco-transport-logistique",
     statutEtablissement: "Privé",
     fraisDeScolarite: {
@@ -213,5 +369,57 @@ export const formationsGestionCommerce: Formation[] = [
     sourceOfficielle: { libelle: "supdeco.sn", url: "https://supdeco.sn/" },
     noteDAdmission:
       "Le groupe est organisé en pôles spécialisés (management, transport-logistique, informatique, droit, langues, économie, management public) et dispose de campus à Dakar, Thiès, Saint-Louis, Banjul et Djibouti.",
+  },
+  {
+    id: "esmp-transport-logistique",
+    statutEtablissement: "Privé",
+    fraisDeScolarite: {
+      montant: "Non publié",
+      detail:
+        "ESMP ne publie pas sa grille tarifaire en ligne. Contactez le service admissions (+221 33 860 50 54, contact@esmp.sn) pour connaître le montant applicable.",
+    },
+    filiere: "Transport et Logistique",
+    institut: "ESMP - École Supérieure de Management Polytechnique",
+    bacsCompatibles: ["Scientifique", "Littéraire"],
+    description:
+      "École privée dakaroise proposant une licence professionnelle en transport et logistique, accessible après le bac ou en admission parallèle (BTS/DUT/L2), avec cours du soir en 2e et 3e année.",
+    debouches: [
+      "Responsable d'entrepôt",
+      "Coordinateur logistique",
+      "Planificateur transport",
+      "Analyste chaîne d'approvisionnement",
+    ],
+    ville: "Dakar",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Licence professionnelle en transport et logistique",
+    competencesAcquises: [
+      "Gestion d'entrepôt et de stocks",
+      "Planification et optimisation du transport",
+      "Procédures douanières et commerce international",
+      "Systèmes d'information logistiques",
+      "Négociation avec prestataires et transporteurs",
+    ],
+    missionsConcretes: [
+      "Organiser la réception et le stockage de marchandises",
+      "Planifier des tournées de livraison efficaces",
+      "Suivre une chaîne d'approvisionnement de bout en bout",
+      "Créer une petite activité de transit ou de fret",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Mêmes perspectives que les autres formations en logistique : le port et le fret sont au cœur de l'économie comorienne, avec un déficit de profils formés aux procédures modernes de chaîne d'approvisionnement.",
+      employeursPotentiels: [
+        "Transitaires, agences maritimes et de fret",
+        "Importateurs et grandes surfaces",
+        "Port de Moroni, douanes, administration",
+        "ONG (logistique humanitaire) et création d'entreprise de transit",
+      ],
+      conseil:
+        "Alternative privée à Supdeco pour la même filière : comparez les frais réels (non publiés dans les deux cas) et les taux d'insertion avant de choisir.",
+    },
+    sourceOfficielle: { libelle: "esmp.sn", url: "https://esmp.sn/" },
+    noteDAdmission:
+      "Admission après le baccalauréat ou en admission parallèle (BTS, DUT, L2), sur dossier et entretien.",
   },
 ];
