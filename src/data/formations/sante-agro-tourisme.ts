@@ -50,7 +50,7 @@ export const formationsSanteAgroTourisme: Formation[] = [
     },
     sourceOfficielle: { libelle: "fmpos.ucad.sn", url: "https://fmpos.ucad.sn/" },
     noteDAdmission:
-      "L'UCAD est ouverte aux étudiants étrangers dans la limite des places disponibles. Préinscription obligatoire en ligne sur preinscriptionenligne.ucad.sn.",
+      "L'UCAD est ouverte aux étudiants étrangers dans la limite des places disponibles. Préinscription obligatoire en ligne sur preinscriptionenligne.ucad.sn. Accréditation : ce doctorat n'a pas été localisé directement dans la base ANAQ-Sup consultée ; la reconnaissance CAMES de l'UCAD est attestée indirectement (96,2 % de réussite aux évaluations CAMES 2025 rapportés par la presse), mais sans lien direct vers une fiche d'accréditation CAMES dédiée à ce diplôme précis.",
   },
   {
     id: "uidt-medecine",
@@ -97,7 +97,7 @@ export const formationsSanteAgroTourisme: Formation[] = [
     },
     sourceOfficielle: { libelle: "uidt.sn", url: "https://www.uidt.sn/medecine-generale/" },
     noteDAdmission:
-      "Admission des étudiants étrangers par test d'entrée spécifique (contact : ufrsante@univ-thies.sn). Baccalauréat scientifique requis.",
+      "Admission des étudiants étrangers par test d'entrée spécifique (contact : ufrsante@univ-thies.sn). Baccalauréat scientifique requis. Accréditation confirmée : le Conseil Scientifique de l'ANAQ-Sup a accrédité ce doctorat en médecine par acte du 19 novembre 2020 (univ-thies.sn) — accréditation formellement documentée, contrairement au doctorat de l'UCAD non retrouvé directement dans la base.",
   },
   {
     id: "isep-richard-toll-agro",
@@ -151,7 +151,7 @@ export const formationsSanteAgroTourisme: Formation[] = [
       url: "https://iseprichardtoll.sn/",
     },
     noteDAdmission:
-      "Institut public, recrutement par campagne annuelle. L'établissement propose plusieurs parcours agroalimentaires (production, commercialisation, logistique).",
+      "Institut public, recrutement par campagne annuelle. L'établissement propose plusieurs parcours agroalimentaires (production, commercialisation, logistique). Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée — l'habilitation trouvée concerne le réseau ISEP (via ISEP Thiès), pas le site de Richard-Toll individuellement.",
   },
   {
     id: "ensa-thies-agronomie",
@@ -203,7 +203,7 @@ export const formationsSanteAgroTourisme: Formation[] = [
     },
     sourceOfficielle: { libelle: "uidt.sn", url: "https://www.uidt.sn/ensa/" },
     noteDAdmission:
-      "École publique intégrée à l'UIDT depuis 2006. Modalités d'admission des étudiants étrangers non publiées en ligne : à demander directement à l'université.",
+      "École publique intégrée à l'UIDT depuis 2006. Modalités d'admission des étudiants étrangers non publiées en ligne : à demander directement à l'université. Accréditation : ce diplôme d'ingénieur ne figure pas séparément dans la base ANAQ-Sup consultée ; il dépend de l'habilitation institutionnelle de l'UIDT plutôt que d'une accréditation individuelle confirmée.",
   },
   {
     id: "enfht-hotellerie-tourisme",
@@ -255,7 +255,7 @@ export const formationsSanteAgroTourisme: Formation[] = [
     },
     sourceOfficielle: { libelle: "enfht.sn", url: "https://enfht.sn/" },
     noteDAdmission:
-      "Les étudiants étrangers sont admis sur étude de dossier (les Sénégalais passent un concours national). Concours en avril-mai, inscriptions en février-mars ; confirmez les conditions d'âge en vigueur directement auprès de l'école.",
+      "Les étudiants étrangers sont admis sur étude de dossier (les Sénégalais passent un concours national). Concours en avril-mai, inscriptions en février-mars ; confirmez les conditions d'âge en vigueur directement auprès de l'école. Accréditation : malgré son ancienneté (1959) et son statut d'école publique, ce BTS n'a été trouvé ni dans la base ANAQ-Sup ni dans les listes CAMES consultées — sa reconnaissance tient à son statut d'école nationale sous tutelle ministérielle plutôt qu'à une accréditation individuelle documentée en ligne.",
   },
   {
     id: "les-marmitons-hotellerie",
@@ -309,6 +309,8 @@ export const formationsSanteAgroTourisme: Formation[] = [
       libelle: "ecolelesmarmitons.com",
       url: "https://ecolelesmarmitons.com/",
     },
+    noteDAdmission:
+      "Accréditation : école non trouvée dans la base ANAQ-Sup ni dans les listes CAMES consultées ; les diplômes délivrés (BEP, CAP/DEP, BTS) sont présentés comme reconnus par l'État sénégalais, à faire confirmer directement auprès de l'école.",
   },
   {
     id: "isep-thies-multimedia",
@@ -363,7 +365,7 @@ export const formationsSanteAgroTourisme: Formation[] = [
       url: "https://www.isep-thies.sn/formations/",
     },
     noteDAdmission:
-      "Institut public : le recrutement se fait par campagne annuelle, places limitées. Formation courte et très pratique.",
+      "Institut public : le recrutement se fait par campagne annuelle, places limitées. Formation courte et très pratique. Accréditation : ISEP Thiès dispose d'une habilitation ANAQ-Sup confirmée et d'une reconnaissance CAMES au niveau institutionnel (premier ISEP autorisé à délivrer le DiSEP), mais ce parcours multimédia précis n'a pas d'accréditation individuelle confirmée séparément dans les bases consultées.",
   },
   {
     id: "kourtrajme-dakar-audiovisuel",
@@ -418,6 +420,6 @@ export const formationsSanteAgroTourisme: Formation[] = [
       url: "https://ecolekourtrajmedakar.com/",
     },
     noteDAdmission:
-      "Aucune condition de diplôme, d'âge ou de qualification requise. Sélection sur motivation. Appels à candidatures ponctuels : vérifiez le calendrier d'ouverture sur le site officiel avant de postuler.",
+      "Aucune condition de diplôme, d'âge ou de qualification requise. Sélection sur motivation. Appels à candidatures ponctuels : vérifiez le calendrier d'ouverture sur le site officiel avant de postuler. Accréditation : formation libre, explicitement hors système ANAQ-Sup/CAMES (pas de diplôme d'État délivré) ; un partenariat avec l'INA (Institut National de l'Audiovisuel, France) encadre la certification pédagogique, ce qui n'équivaut pas à une accréditation académique sénégalaise.",
   },
 ];
