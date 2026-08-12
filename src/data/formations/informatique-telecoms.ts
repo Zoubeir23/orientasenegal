@@ -2,7 +2,8 @@ import type { Formation } from "@/types/formation";
 
 /**
  * Informatique, génie logiciel, réseaux et télécommunications.
- * Entrées vérifiées sur les sites officiels (ESP, ISM, UAM, ESMT).
+ * Cinq établissements couverts pour donner un vrai choix : public (ESP, UAM, EPT)
+ * et privé (ISM, ISI, UDB), avec un profil télécoms dédié (ESMT).
  */
 export const formationsInformatiqueTelecoms: Formation[] = [
   {
@@ -114,6 +115,162 @@ export const formationsInformatiqueTelecoms: Formation[] = [
     },
     noteDAdmission:
       "Ouverte aux bacs littéraires. Admission ISM sur dossier, tests écrits et entretien en anglais.",
+  },
+  {
+    id: "isi-genie-informatique",
+    statutEtablissement: "Privé",
+    fraisDeScolarite: {
+      montant: "Non publié",
+      detail:
+        "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis par filière et niveau au service admissions (+221 33 822 19 81, isi@isi.sn).",
+    },
+    filiere: "Génie Informatique, Réseaux et Cybersécurité",
+    institut: "ISI - Institut Supérieur d'Informatique",
+    bacsCompatibles: ["Scientifique"],
+    description:
+      "École privée fondée en 1994, accréditée ANAQ-Sup. Plusieurs parcours en licence : génie informatique, réseaux et systèmes, réseaux et télécommunications, cybersécurité, science des données/IA, ainsi qu'un parcours MIAGE. Masters disponibles ensuite (cryptographie et sécurité, génie logiciel, réseaux).",
+    debouches: [
+      "Développeur",
+      "Administrateur réseaux et systèmes",
+      "Analyste cybersécurité",
+      "Data analyst",
+    ],
+    ville: "Dakar",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Licence (Master en 1 à 2 ans supplémentaires)",
+    competencesAcquises: [
+      "Programmation, structures de données et algorithmique",
+      "Architecture réseaux, administration systèmes et virtualisation",
+      "Bases de la cybersécurité : audit, détection, réponse à incident",
+      "Introduction à la science des données et à l'intelligence artificielle",
+      "Gestion de projet informatique et méthodes agiles",
+    ],
+    missionsConcretes: [
+      "Développer une application ou un site pour une entreprise",
+      "Sécuriser le système d'information d'une organisation",
+      "Administrer un parc informatique et des serveurs",
+      "Analyser des données pour appuyer une décision de gestion",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Mêmes perspectives que les autres cursus informatiques : digitalisation des banques, télécoms et administrations, et surtout possibilité de travailler à distance pour des clients étrangers depuis les Comores. La spécialisation cybersécurité reste un créneau rare et recherché.",
+      employeursPotentiels: [
+        "Banques, microfinance, opérateurs télécoms",
+        "Administrations en cours de digitalisation",
+        "Startups et agences web",
+        "Clients internationaux en télétravail (freelance)",
+      ],
+      conseil:
+        "École privée établie de longue date (1994) : vérifiez les frais réels et les modalités d'admission des étudiants étrangers directement auprès du service admissions avant de vous engager.",
+    },
+    sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
+    noteDAdmission:
+      "École privée accréditée ANAQ-Sup, fondée en 1994. Le master est ouvert aux titulaires d'un Bac+3. Frais et modalités précises d'admission des étudiants étrangers non publiés en ligne : à demander directement au service admissions.",
+  },
+  {
+    id: "udb-genie-informatique",
+    statutEtablissement: "Privé",
+    fraisDeScolarite: {
+      montant: "Non publié",
+      detail:
+        "L'UDB ne publie pas sa grille tarifaire en ligne. Contactez le service scolarité (+221 33 825 36 11 / +221 33 825 36 16) pour connaître le montant applicable aux étudiants étrangers.",
+    },
+    filiere: "Génie Informatique et MIAGE",
+    institut: "UDB - Université Dakar Bourguiba",
+    bacsCompatibles: ["Scientifique"],
+    description:
+      "Université privée fondée en 1995, accréditée CAMES et ANAQ-Sup. Licence en génie informatique et parcours MIAGE (méthodes informatiques appliquées à la gestion des entreprises), avec un master en génie logiciel en poursuite d'études.",
+    debouches: [
+      "Développeur d'applications",
+      "Ingénieur logiciel junior",
+      "Administrateur de bases de données",
+      "Analyste informatique de gestion",
+    ],
+    ville: "Dakar",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Licence (Master en génie logiciel possible)",
+    competencesAcquises: [
+      "Programmation et développement d'applications",
+      "Conception et administration de bases de données",
+      "Méthodes informatiques appliquées à la gestion (MIAGE)",
+      "Réseaux et systèmes d'exploitation",
+      "Gestion de projet informatique",
+    ],
+    missionsConcretes: [
+      "Développer et maintenir une application métier",
+      "Informatiser les processus d'une entreprise ou d'une administration",
+      "Administrer une base de données de gestion",
+      "Poursuivre en master pour se spécialiser en génie logiciel",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Mêmes perspectives que les autres formations en informatique de gestion : les organisations comoriennes ont besoin de profils capables d'informatiser leurs processus, et le travail à distance pour des clients étrangers reste une option accessible depuis l'archipel.",
+      employeursPotentiels: [
+        "Banques et institutions de microfinance",
+        "Administrations en cours de digitalisation",
+        "Entreprises de commerce et d'import-export",
+        "Clients internationaux en télétravail (freelance)",
+      ],
+      conseil:
+        "Université privée accréditée CAMES depuis 1995 : demandez la grille tarifaire par écrit et vérifiez la reconnaissance du diplôme avant de vous engager, les frais n'étant pas publiés en ligne.",
+    },
+    sourceOfficielle: { libelle: "udb-sn.com", url: "https://www.udb-sn.com" },
+    noteDAdmission:
+      "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique. Frais et modalités d'admission des étudiants étrangers non publiés en ligne, à demander directement à l'université.",
+  },
+  {
+    id: "ept-genie-informatique-telecoms",
+    statutEtablissement: "Public",
+    fraisDeScolarite: {
+      montant: "50 000 F + 7 000 F de dossier (pays conventionnés)",
+      detail:
+        "École publique d'ingénieurs : 50 000 FCFA de scolarité annuelle + 7 000 FCFA de frais de dossier pour les candidats des pays ayant un accord avec le Sénégal, notamment la zone UEMOA. Les Comores n'étant pas membres de l'UEMOA, le statut tarifaire exact des candidats comoriens doit être confirmé directement auprès de l'EPT.",
+    },
+    filiere: "Génie Informatique et Télécommunications",
+    institut: "EPT - École Polytechnique de Thiès",
+    bacsCompatibles: ["Scientifique"],
+    description:
+      "Première école d'ingénieurs publique du Sénégal (1973). Cursus en 5 ans (2 ans de tronc commun puis 3 ans de spécialisation avec alternance école-entreprise croissante) menant au diplôme d'ingénieur de conception en génie informatique et télécommunications.",
+    debouches: [
+      "Ingénieur télécoms",
+      "Ingénieur réseaux",
+      "Développeur",
+      "Chef de projet IT",
+    ],
+    ville: "Thiès",
+    dureeEnAnnees: 5,
+    diplomePrepare: "Diplôme d'Ingénieur de Conception (Bac+5)",
+    competencesAcquises: [
+      "Mathématiques et sciences de l'ingénieur appliquées à l'informatique",
+      "Réseaux, télécommunications et transmission de données",
+      "Développement logiciel et architecture des systèmes",
+      "Gestion de projet en alternance école-entreprise",
+      "Culture d'entreprise acquise dès la 2e année via les stages alternés",
+    ],
+    missionsConcretes: [
+      "Concevoir et déployer une infrastructure réseau ou télécoms",
+      "Diriger un projet informatique en entreprise dès la formation",
+      "Développer des systèmes et applications à forte exigence technique",
+      "Accéder à des postes d'ingénieur généraliste en Afrique francophone",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Diplôme d'ingénieur généraliste très reconnu en Afrique francophone (CAMES), avec un fort taux d'insertion professionnelle rapporté par l'école. Utile aux Comores aussi bien pour les postes d'infrastructure télécoms que pour le développement logiciel à distance.",
+      employeursPotentiels: [
+        "Opérateurs de téléphonie et fournisseurs d'accès",
+        "Banques et administrations (services informatiques)",
+        "Entreprises d'installation et de maintenance réseau",
+        "Clients internationaux en télétravail (freelance)",
+      ],
+      conseil:
+        "Cursus long et sélectif (concours), mais le tarif conventionné le rend très accessible si les Comores sont éligibles : vérifiez ce point en priorité auprès de l'EPT avant de vous projeter sur ce tarif.",
+    },
+    sourceOfficielle: { libelle: "ept.edu.sn", url: "https://ept.edu.sn/" },
+    noteDAdmission:
+      "Admission sur concours national (candidats libres acceptés), réservé aux candidats de moins de 22 ans au 1er octobre de l'année d'entrée, sur la base d'un bac scientifique ou technique (S1, S2, S3, STIDD). Plus de 85 % des diplômés trouvent un emploi dans les 6 mois selon l'école.",
   },
   {
     id: "uam-informatique",
