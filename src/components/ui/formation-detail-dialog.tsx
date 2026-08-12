@@ -29,20 +29,20 @@ export function FormationDetailDialog({
 
   useEffect(() => {
     const dialogElement = dialogReference.current;
-    if (!dialogElement) return;
+    if (!dialogElement || !formation) return;
 
-    if (formation && !dialogElement.open) {
+    let dialogueOuvertParEffet = false;
+    if (!dialogElement.open) {
       dialogElement.showModal();
       // Empêche la page de défiler derrière la fenêtre.
       document.body.style.overflow = "hidden";
-    }
-
-    if (!formation && dialogElement.open) {
-      dialogElement.close();
+      dialogueOuvertParEffet = true;
     }
 
     return () => {
-      document.body.style.overflow = "";
+      if (dialogueOuvertParEffet) {
+        document.body.style.overflow = "";
+      }
     };
   }, [formation]);
 
@@ -154,7 +154,7 @@ export function FormationDetailDialog({
                 </ul>
 
                 {etablissement.noteDAdmission ? (
-                  <p className="mt-3.5 text-sm leading-relaxed text-ink-soft">
+                  <p className="mt-3.5 text-sm leading-relaxed text-ink-soft break-words">
                     {etablissement.noteDAdmission}
                   </p>
                 ) : null}

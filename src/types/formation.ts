@@ -22,6 +22,21 @@ export interface FraisDeScolarite {
   detail: string;
 }
 
+export const TYPES_DE_BACCALAUREAT = [
+  {
+    valeur: "Scientifique",
+    libelle: "Bac Scientifique (S)",
+    abreviation: "Bac S",
+  },
+  {
+    valeur: "Littéraire",
+    libelle: "Bac Littéraire (L)",
+    abreviation: "Bac L",
+  },
+] as const;
+
+export type TypeDeBaccalaureat = (typeof TYPES_DE_BACCALAUREAT)[number]["valeur"];
+
 /**
  * Un établissement précis qui propose une filière donnée.
  * Plusieurs écoles peuvent proposer la même filière : chacune a ses propres
@@ -32,7 +47,7 @@ export interface EtablissementProposant {
   institut: string;
   ville: string;
   statutEtablissement: StatutEtablissement;
-  bacsCompatibles: string[];
+  bacsCompatibles: TypeDeBaccalaureat[];
   dureeEnAnnees: number;
   diplomePrepare: string;
   fraisDeScolarite: FraisDeScolarite;
@@ -55,19 +70,6 @@ export interface Formation {
   /** Un ou plusieurs établissements proposant cette même filière. */
   etablissements: EtablissementProposant[];
 }
-
-export const TYPES_DE_BACCALAUREAT = [
-  {
-    valeur: "Scientifique",
-    libelle: "Bac Scientifique (S)",
-    abreviation: "Bac S",
-  },
-  {
-    valeur: "Littéraire",
-    libelle: "Bac Littéraire (L)",
-    abreviation: "Bac L",
-  },
-] as const;
 
 /** Mois de la dernière vérification des informations sur les sites officiels. */
 export const DATE_DE_VERIFICATION = "août 2026";

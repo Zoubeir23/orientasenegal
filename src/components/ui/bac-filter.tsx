@@ -95,7 +95,7 @@ export function BacFilter({
         filières, comme l&apos;informatique appliquée à la gestion, sont ouvertes
         aux séries L et S. Elles portent le repère{" "}
         <span className="font-semibold text-papaya-deep">
-          « ouverte aux bacs S et L »
+          « Bacs S et L »
         </span>
         .
       </p>

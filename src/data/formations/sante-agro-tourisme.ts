@@ -232,8 +232,8 @@ export const formationsSanteAgroTourisme: Formation[] = [
         ville: "Dakar",
         statutEtablissement: "Public",
         bacsCompatibles: ["Littéraire", "Scientifique"],
-        dureeEnAnnees: 2,
-        diplomePrepare: "BTS (3 ans en gestion hôtelière, année préparatoire incluse)",
+        dureeEnAnnees: 3,
+        diplomePrepare: "BTS en gestion hôtelière (3 ans, année préparatoire incluse)",
         fraisDeScolarite: {
           montant: "Frais publics réduits",
           detail:

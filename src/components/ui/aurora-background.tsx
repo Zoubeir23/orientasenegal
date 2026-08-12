@@ -161,14 +161,29 @@ export function AuroraBackground() {
     const startTimestamp = performance.now();
     let animationFrameIdentifier = 0;
 
-    const renderFrame = () => {
-      animationFrameIdentifier = window.requestAnimationFrame(renderFrame);
-      if (!reducedMotionQuery.matches) {
-        uniforms.uTime.value = (performance.now() - startTimestamp) / 1000;
-      }
+    const renderSingleFrame = () => {
       renderer.render(scene, camera);
     };
 
+    const renderFrame = () => {
+      if (reducedMotionQuery.matches) {
+        renderSingleFrame();
+        return;
+      }
+      uniforms.uTime.value = (performance.now() - startTimestamp) / 1000;
+      renderer.render(scene, camera);
+      animationFrameIdentifier = window.requestAnimationFrame(renderFrame);
+    };
+
+    const handleMotionPreferenceChange = () => {
+      if (animationFrameIdentifier) {
+        window.cancelAnimationFrame(animationFrameIdentifier);
+        animationFrameIdentifier = 0;
+      }
+      renderFrame();
+    };
+
+    reducedMotionQuery.addEventListener("change", handleMotionPreferenceChange);
     renderFrame();
 
     const handleResize = () => {
@@ -176,13 +191,19 @@ export function AuroraBackground() {
       const height = container.clientHeight;
       renderer.setSize(width, height);
       uniforms.uResolution.value.set(width, height);
+      if (reducedMotionQuery.matches) {
+        renderSingleFrame();
+      }
     };
 
     const resizeObserver = new ResizeObserver(handleResize);
     resizeObserver.observe(container);
 
     return () => {
-      window.cancelAnimationFrame(animationFrameIdentifier);
+      if (animationFrameIdentifier) {
+        window.cancelAnimationFrame(animationFrameIdentifier);
+      }
+      reducedMotionQuery.removeEventListener("change", handleMotionPreferenceChange);
       resizeObserver.disconnect();
       geometry.dispose();
       material.dispose();

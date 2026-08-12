@@ -25,25 +25,33 @@ function DirectoryPage({ formations }: DirectoryPageProps) {
         ? formations
         : formations.filter((formation) =>
             formation.etablissements.some((etablissement) =>
-              etablissement.bacsCompatibles.includes(bacSelectionne)
+              (etablissement.bacsCompatibles as string[]).includes(bacSelectionne)
             )
           ),
     [formations, bacSelectionne]
   );
 
   // Deux facultés d'une même université ne comptent que pour un établissement.
-  const nombreDInstituts = new Set(
-    formations.flatMap((formation) =>
-      formation.etablissements.map(
-        (etablissement) => etablissement.institut.split(" - ")[0].split(" (")[0]
-      )
-    )
-  ).size;
-  const nombreDeVilles = new Set(
-    formations.flatMap((formation) =>
-      formation.etablissements.map((etablissement) => etablissement.ville)
-    )
-  ).size;
+  const nombreDInstituts = useMemo(
+    () =>
+      new Set(
+        formations.flatMap((formation) =>
+          formation.etablissements.map(
+            (etablissement) => etablissement.institut.split(" - ")[0].split(" (")[0]
+          )
+        )
+      ).size,
+    [formations]
+  );
+  const nombreDeVilles = useMemo(
+    () =>
+      new Set(
+        formations.flatMap((formation) =>
+          formation.etablissements.map((etablissement) => etablissement.ville)
+        )
+      ).size,
+    [formations]
+  );
 
   return (
     <div className="relative flex min-h-screen flex-col bg-paper text-ink">

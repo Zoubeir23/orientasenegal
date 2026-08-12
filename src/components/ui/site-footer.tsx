@@ -9,8 +9,8 @@ export function SiteFooter() {
             src="/logo.png"
             alt=""
             aria-hidden="true"
-            width={128}
-            height={128}
+            width={256}
+            height={256}
             className="h-24 w-24 shrink-0 rounded-full bg-paper p-1.5 md:h-28 md:w-28"
           />
           <div>

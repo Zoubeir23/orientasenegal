@@ -68,7 +68,7 @@ export const formationsDroitCommunication: Formation[] = [
         fraisDeScolarite: {
           montant: "165 000 F d'inscription + mensualités (470 000 à 620 000 F/an)",
           detail:
-            "Grille publiée par l'ISDD : 165 000 FCFA d'inscription à chaque niveau, puis une scolarité payable en 8 mensualités croissantes selon l'année : environ 470 000 FCFA/mois de scolarité totale en L1, 570 000 FCFA en L2 et 620 000 FCFA en L3 (montants annuels globaux, à confirmer précisément auprès de l'école pour l'année en cours).",
+            "Grille publiée par l'ISDD : 165 000 FCFA d'inscription à chaque niveau, puis une scolarité payable en 8 mensualités croissantes selon l'année : environ 470 000 FCFA de scolarité totale en L1, 570 000 FCFA en L2 et 620 000 FCFA en L3 (montants annuels globaux, à confirmer précisément auprès de l'école pour l'année en cours).",
         },
         sourceOfficielle: { libelle: "isdd.edu.sn", url: "https://isdd.edu.sn/licence-en-droit/" },
         noteDAdmission:
@@ -182,7 +182,7 @@ export const formationsDroitCommunication: Formation[] = [
         },
         sourceOfficielle: {
           libelle: "ugb.sn",
-          url: "https://ugb.sn/fr/toutes-nos-licences",
+          url: "https://www.ugb.sn/fr/toutes-nos-licences",
         },
         noteDAdmission:
           "Accréditation : cette licence n'apparaît pas séparément dans la base ANAQ-Sup consultée (diplôme public reconnu nationalement).",

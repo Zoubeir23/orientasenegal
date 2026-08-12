@@ -7,8 +7,8 @@ export function SiteHeader() {
         <Image
           src="/logo.png"
           alt="Logo de l'Association des Étudiants de Mitsoudje au Sénégal"
-          width={128}
-          height={128}
+          width={256}
+          height={256}
           priority
           className="h-20 w-20 shrink-0 md:h-28 md:w-28"
         />

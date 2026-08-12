@@ -23,13 +23,15 @@ export function FormationCard({
   const statutsUniques = Array.from(
     new Set(etablissements.map((e) => e.statutEtablissement))
   );
-  const bacsUnion = Array.from(
-    new Set(etablissements.flatMap((e) => e.bacsCompatibles))
+  const accepteBacsSEtL = etablissements.some(
+    (e) =>
+      e.bacsCompatibles.includes("Scientifique") &&
+      e.bacsCompatibles.includes("Littéraire")
   );
 
   return (
     <article
-      className="rise-in group relative flex h-full flex-col bg-paper/85 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:bg-paper hover:shadow-[0_28px_50px_-34px_rgba(15,81,50,0.7)] has-[:focus-visible]:-translate-y-1.5 has-[:focus-visible]:bg-paper"
+      className="rise-in group relative flex h-full flex-col bg-paper/85 backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:bg-paper hover:shadow-[0_28px_50px_-34px_rgba(15,81,50,0.7)] has-[:focus-visible]:-translate-y-1.5 has-[:focus-visible]:bg-paper has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-forest"
       style={{ animationDelay: `${delaiDAnimationEnSecondes}s` }}
     >
       {/* Filet papaye qui se déploie au survol. */}
@@ -74,7 +76,7 @@ export function FormationCard({
               {statut}
             </span>
           ))}
-          {bacsUnion.length > 1 ? (
+          {accepteBacsSEtL ? (
             <span className="rounded-full border border-papaya/45 bg-papaya/10 px-2.5 py-1 text-[10px] font-semibold tracking-[0.1em] text-papaya-deep uppercase">
               Bacs S et L
             </span>

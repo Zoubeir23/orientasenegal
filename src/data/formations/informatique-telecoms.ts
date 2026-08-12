@@ -62,7 +62,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
           url: "https://www.groupeism.sn/formation-ingenieur/license-informatique-gestion-entreprises",
         },
         noteDAdmission:
-          "Ouverte aux bacs littéraires. Admission sur dossier, tests écrits et entretien en anglais. Accréditation : l'ISM revendique une accréditation ANAQ-Sup, mais je n'ai pas trouvé cette filière précise confirmée sur la base officielle anaqsup.sn/accreditations/ (une autre licence ISM, Droit des Affaires, y est en revanche listée) — vérifiez directement sur le site avant de candidater.",
+          "Ouverte aux bacs littéraires. Admission sur dossier, tests écrits et entretien en anglais. Accréditation : l'ISM revendique une accréditation ANAQ-Sup, mais cette filière précise n'apparaît pas confirmée sur la base officielle anaqsup.sn/accreditations/ (une autre licence ISM, Droit des Affaires, y est en revanche listée) — vérifiez directement sur le site avant de candidater.",
       },
       {
         institut: "ISI - Institut Supérieur d'Informatique (campus Keur Massar)",
