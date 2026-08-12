@@ -117,6 +117,61 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       "Ouverte aux bacs littéraires. Admission ISM sur dossier, tests écrits et entretien en anglais. Accréditation : l'ISM revendique une accréditation ANAQ-Sup, mais je n'ai pas trouvé cette filière précise confirmée sur la base officielle anaqsup.sn/accreditations/ (une autre licence ISM, Droit des Affaires, y est en revanche listée) — vérifiez directement sur le site avant de candidater.",
   },
   {
+    id: "isi-informatique-gestion",
+    statutEtablissement: "Privé",
+    fraisDeScolarite: {
+      montant: "Non publié",
+      detail:
+        "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au campus Keur Massar ou au service admissions (+221 33 822 19 81, isi@isi.sn).",
+    },
+    filiere: "Informatique Appliquée à la Gestion des Entreprises",
+    institut: "ISI - Institut Supérieur d'Informatique (campus Keur Massar)",
+    bacsCompatibles: ["Littéraire", "Scientifique"],
+    description:
+      "Exactement le même type de filière que celle de l'ISM : une licence professionnelle en 3 ans (180 crédits ECTS, 6 semestres) qui combine informatique et gestion d'entreprise, proposée par le groupe ISI sur son campus de Keur Massar. Officiellement intitulée « Informatique Appliquée à la Gestion d'Entreprise » sur le site de l'école.",
+    debouches: [
+      "Analyste informatique de gestion",
+      "Administrateur de bases de données",
+      "Développeur d'applications de gestion",
+      "Chef de projet digital",
+    ],
+    ville: "Dakar (Keur Massar)",
+    dureeEnAnnees: 3,
+    diplomePrepare: "Licence professionnelle en informatique appliquée à la gestion",
+    competencesAcquises: [
+      "Programmation appliquée à la gestion et développement de sites web",
+      "Conception et administration de bases de données",
+      "Analyse et informatisation des processus d'une entreprise",
+      "Comptabilité, gestion et organisation de l'entreprise",
+      "Sécurité des systèmes d'information et e-business",
+    ],
+    missionsConcretes: [
+      "Informatiser la facturation, les stocks ou la paie d'une entreprise",
+      "Faire le lien entre les informaticiens et les gestionnaires d'un projet",
+      "Concevoir la base de données d'une administration ou d'une ONG",
+      "Gérer le site et les outils numériques d'une organisation",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Mêmes perspectives que la filière équivalente à l'ISM : beaucoup d'organisations comoriennes gèrent encore stocks, adhérents ou facturation sur papier ou sur Excel. Le profil hybride gestion + informatique reste l'un des plus demandés, quelle que soit l'école d'origine du diplôme.",
+      employeursPotentiels: [
+        "Banques et institutions de microfinance",
+        "ONG et projets de développement (systèmes de suivi)",
+        "Entreprises de commerce et d'import-export",
+        "Administrations en cours de digitalisation",
+      ],
+      conseil:
+        "Comparez concrètement cette filière à celle de l'ISM et à la MIAGE de l'UDB : mêmes débouchés, mais frais, accréditation et ambiance de campus diffèrent. Demandez la grille tarifaire des trois avant de choisir.",
+    },
+    sourceOfficielle: {
+      libelle: "isikeurmassar.com",
+      url: "https://isikeurmassar.com/licence-informatique-appliquee-gestion-entreprise/",
+    },
+    noteDAdmission:
+      "Admission sur dossier après le baccalauréat (toutes séries), ou en L2/L3 pour les titulaires d'un Bac+2 équivalent. Accréditation : le volet Réseaux informatiques du groupe ISI est confirmé accrédité ANAQ-Sup (voir la fiche Génie Informatique ci-dessous), mais cette filière Informatique de Gestion précise n'a pas été retrouvée séparément dans la base — à confirmer auprès de l'école.",
+  },
+  {
     id: "isi-genie-informatique",
     statutEtablissement: "Privé",
     fraisDeScolarite: {
@@ -176,11 +231,11 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       detail:
         "L'UDB ne publie pas sa grille tarifaire en ligne. Contactez le service scolarité (+221 33 825 36 11 / +221 33 825 36 16) pour connaître le montant applicable aux étudiants étrangers.",
     },
-    filiere: "Génie Informatique et MIAGE",
+    filiere: "Informatique Appliquée à la Gestion (MIAGE)",
     institut: "UDB - Université Dakar Bourguiba",
     bacsCompatibles: ["Scientifique"],
     description:
-      "Université privée fondée en 1995. Sa Licence en MIAGE (méthodes informatiques appliquées à la gestion des entreprises) est accréditée ANAQ-Sup (vérifié sur anaqsup.sn) et reconnue CAMES. Le parcours génie informatique général et le master en génie logiciel n'ont pas d'accréditation individuelle confirmée séparément.",
+      "Université privée fondée en 1995. Sa Licence en MIAGE (Méthodes Informatiques Appliquées à la Gestion) — le même type de filière que celle de l'ISM et de l'ISI, informatique combinée à la gestion d'entreprise — est accréditée ANAQ-Sup (vérifié sur anaqsup.sn) et reconnue CAMES : c'est l'option la mieux documentée des trois pour ce profil hybride. L'université propose aussi un parcours génie informatique plus généraliste et un master en génie logiciel, sans accréditation individuelle confirmée séparément.",
     debouches: [
       "Développeur d'applications",
       "Ingénieur logiciel junior",
