@@ -15,7 +15,7 @@ export const formationsSante: Formation[] = [
     id: "medecine",
     filiere: "Médecine",
     description:
-      "Cursus médical complet avec stages hospitaliers, menant au doctorat en médecine. Sélection très exigeante : mention fortement recommandée au baccalauréat. Deux facultés publiques au Sénégal.",
+      "Cursus médical complet avec stages hospitaliers, menant au doctorat en médecine. Sélection très exigeante : mention fortement recommandée au baccalauréat. À Dakar, une faculté publique (UCAD) et deux universités privées accréditées.",
     debouches: ["Médecin généraliste", "Interne", "Chercheur en santé publique"],
     competencesAcquises: [
       "Sciences fondamentales : anatomie, physiologie, biochimie, pharmacologie",
@@ -76,13 +76,51 @@ export const formationsSante: Formation[] = [
         noteDAdmission:
           "Deuxième école de médecine publique du Sénégal (UFR Santé créée en 2008, premiers diplômés en 2017), propose aussi pharmacie, soins infirmiers et orthophonie. Admission des étudiants étrangers par test d'entrée spécifique (contact : ufrsante@univ-thies.sn). Accréditation confirmée : le Conseil Scientifique de l'ANAQ-Sup a accrédité ce doctorat par acte du 19 novembre 2020 (univ-thies.sn).",
       },
+      {
+        institut: "EUROMED Université",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 7,
+        diplomePrepare: "Doctorat en médecine",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "EUROMED ne publie pas sa grille tarifaire en ligne. Établissement privé de sciences de la santé : le budget est sans commune mesure avec celui de la faculté publique. Demandez un devis écrit au +221 33 825 14 37 avant de vous engager.",
+        },
+        sourceOfficielle: {
+          libelle: "euromed.sn",
+          url: "https://www.euromed.sn/",
+        },
+        noteDAdmission:
+          "Créée en octobre 2008, EUROMED est la première université privée sénégalaise à avoir délivré un doctorat en pharmacie reconnu par l'État et le CAMES. Doctorats de médecine et de pharmacie accrédités ANAQ-Sup. Admission sur dossier examiné par une commission, réservée aux titulaires d'un bac S1 ou S2 (ou diplôme jugé équivalent). Durée exacte du cursus à confirmer auprès de l'école.",
+      },
+      {
+        institut: "IPFORMED - Institut Privé de Formation et de Recherches Médicales de Dakar",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 8,
+        diplomePrepare: "Doctorat en médecine (huit ans après le bac)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "IPFORMED ne publie pas ses tarifs en ligne. Cursus privé long (huit ans après le bac) : faites chiffrer la totalité du cursus, pas seulement la première année.",
+        },
+        sourceOfficielle: {
+          libelle: "ipformed.sn",
+          url: "https://ipformed.sn/",
+        },
+        noteDAdmission:
+          "Créé en 2009, deux campus à Dakar (Sacré-Cœur III / VDN et Ouest-Foire). Accrédité ANAQ-Sup au niveau institutionnel depuis 2016, accréditation CAMES en cours, et autorisé à délivrer le titre d'État de docteur en médecine depuis mai 2023. Séries de baccalauréat acceptées à confirmer auprès de l'établissement.",
+      },
     ],
   },
   {
     id: "soins-infirmiers",
     filiere: "Soins Infirmiers",
     description:
-      "Le métier le plus recruté du secteur santé, et l'un des rares cursus courts qui mène à l'hôpital. À Dakar, la voie ouverte aux bacheliers étrangers est le privé : les concours de l'école publique (ENDSS) sont réservés aux candidats sénégalais.",
+      "Le métier le plus recruté du secteur santé, et l'un des rares cursus courts qui mène à l'hôpital. À Dakar, la voie ouverte aux bacheliers étrangers est le privé, où trois écoles accréditées se partagent la filière : les concours de l'école publique (ENDSS) sont réservés aux candidats sénégalais.",
     debouches: [
       "Infirmier d'État",
       "Infirmier de bloc opératoire",
@@ -136,6 +174,44 @@ export const formationsSante: Formation[] = [
         },
         noteDAdmission:
           "Admission sur dossier, ouverte aux titulaires du baccalauréat toutes séries. L'école propose aussi Assistant Infirmier d'État et des masters en sciences infirmières.",
+      },
+      {
+        institut: "IPFORMED - Institut Privé de Formation et de Recherches Médicales de Dakar",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Diplôme d'infirmier (assistant infirmier également proposé)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "IPFORMED ne publie pas ses tarifs en ligne. Cursus privé long (huit ans après le bac) : faites chiffrer la totalité du cursus, pas seulement la première année.",
+        },
+        sourceOfficielle: {
+          libelle: "ipformed.sn",
+          url: "https://ipformed.sn/",
+        },
+        noteDAdmission:
+          "Département santé d'IPFORMED, distinct du cursus de médecine : formations d'infirmier, d'assistant infirmier et de sage-femme. Établissement accrédité ANAQ-Sup au niveau institutionnel. Durée et séries de baccalauréat acceptées à confirmer auprès de l'école.",
+      },
+      {
+        institut: "SUP de Santé - Institut Supérieur des Sciences de la Santé",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Sciences Infirmières et Obstétricales, option Infirmier (BTS d'État également proposé)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "SUP de Santé ne publie pas ses tarifs en ligne. À titre de repère, l'Infirmier d'État à ISSANTE revient à 760 000 FCFA par an. Demandez la grille au campus du 4 VDN Mermoz Pyrotechnique.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/sup-de-sante-institut-superieur-des-sciences-de-la-sante/",
+        },
+        noteDAdmission:
+          "Accréditation ANAQ-Sup confirmée pour cette licence précise (Sciences Infirmières et Obstétricales, option Infirmier). L'école délivre aussi des BTS d'État et des masters en sciences infirmières, biologie médicale et santé publique. Campus au 4 VDN Mermoz Pyrotechnique. Séries de baccalauréat acceptées à confirmer.",
       },
     ],
   },
@@ -197,13 +273,51 @@ export const formationsSante: Formation[] = [
         noteDAdmission:
           "Admission sur dossier, baccalauréat toutes séries accepté. C'est la voie praticable pour un bachelier comorien, les concours publics de l'ENDSS étant réservés aux candidats sénégalais.",
       },
+      {
+        institut: "IPFORMED - Institut Privé de Formation et de Recherches Médicales de Dakar",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Diplôme de sage-femme",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "IPFORMED ne publie pas ses tarifs en ligne. Cursus privé long (huit ans après le bac) : faites chiffrer la totalité du cursus, pas seulement la première année.",
+        },
+        sourceOfficielle: {
+          libelle: "ipformed.sn",
+          url: "https://ipformed.sn/",
+        },
+        noteDAdmission:
+          "Département santé d'IPFORMED, distinct du cursus de médecine : formations d'infirmier, d'assistant infirmier et de sage-femme. Établissement accrédité ANAQ-Sup au niveau institutionnel. Durée et séries de baccalauréat acceptées à confirmer auprès de l'école.",
+      },
+      {
+        institut: "SUP de Santé - Institut Supérieur des Sciences de la Santé",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Sciences Infirmières et Obstétricales, option Sage-femme (BTS d'État également proposé)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "SUP de Santé ne publie pas ses tarifs en ligne. À titre de repère, l'Infirmier d'État à ISSANTE revient à 760 000 FCFA par an. Demandez la grille au campus du 4 VDN Mermoz Pyrotechnique.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/sup-de-sante-institut-superieur-des-sciences-de-la-sante/",
+        },
+        noteDAdmission:
+          "L'accréditation ANAQ-Sup consultée porte sur l'option Infirmier de cette licence ; pour l'option sage-femme, faites confirmer le statut par écrit. BTS d'État de sage-femme également proposé. Campus au 4 VDN Mermoz Pyrotechnique.",
+      },
     ],
   },
   {
     id: "pharmacie",
     filiere: "Pharmacie",
     description:
-      "Cursus long à la faculté de médecine, pharmacie et odontostomatologie de l'UCAD. Débouche sur l'officine, l'industrie du médicament ou la biologie médicale.",
+      "Cursus long, à la faculté publique de l'UCAD ou dans l'une des deux universités privées de santé de Dakar. Débouche sur l'officine, l'industrie du médicament ou la biologie médicale.",
     debouches: [
       "Pharmacien d'officine",
       "Pharmacien hospitalier",
@@ -256,6 +370,44 @@ export const formationsSante: Formation[] = [
         },
         noteDAdmission:
           "La faculté ouvre une période d'admission dédiée aux titulaires d'un baccalauréat étranger. Préinscription obligatoire sur preinscriptionenligne.ucad.sn. La durée exacte du cursus est à confirmer auprès de la scolarité.",
+      },
+      {
+        institut: "EUROMED Université",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 6,
+        diplomePrepare: "Doctorat en pharmacie",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "EUROMED ne publie pas sa grille tarifaire en ligne. Établissement privé de sciences de la santé : le budget est sans commune mesure avec celui de la faculté publique. Demandez un devis écrit au +221 33 825 14 37 avant de vous engager.",
+        },
+        sourceOfficielle: {
+          libelle: "euromed.sn",
+          url: "https://www.euromed.sn/",
+        },
+        noteDAdmission:
+          "Créée en octobre 2008, EUROMED est la première université privée sénégalaise à avoir délivré un doctorat en pharmacie reconnu par l'État et le CAMES. Doctorats de médecine et de pharmacie accrédités ANAQ-Sup. Admission sur dossier examiné par une commission, réservée aux titulaires d'un bac S1 ou S2 (ou diplôme jugé équivalent). Durée exacte du cursus à confirmer auprès de l'école.",
+      },
+      {
+        institut: "IPFORMED - Institut Privé de Formation et de Recherches Médicales de Dakar",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 8,
+        diplomePrepare: "Doctorat en pharmacie (huit ans après le bac)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "IPFORMED ne publie pas ses tarifs en ligne. Cursus privé long (huit ans après le bac) : faites chiffrer la totalité du cursus, pas seulement la première année.",
+        },
+        sourceOfficielle: {
+          libelle: "ipformed.sn",
+          url: "https://ipformed.sn/",
+        },
+        noteDAdmission:
+          "Créé en 2009, deux campus à Dakar (Sacré-Cœur III / VDN et Ouest-Foire). Accrédité ANAQ-Sup au niveau institutionnel depuis 2016, accréditation CAMES en cours, et autorisé à délivrer le titre d'État de docteur en médecine depuis mai 2023. Séries de baccalauréat acceptées à confirmer auprès de l'établissement.",
       },
     ],
   },
@@ -321,7 +473,7 @@ export const formationsSante: Formation[] = [
     id: "analyses-biologiques-medicales",
     filiere: "Analyses Biologiques Médicales",
     description:
-      "Le laboratoire plutôt que le chevet du patient : prélèvements, examens et diagnostic biologique. Formation courte et très employable.",
+      "Le laboratoire plutôt que le chevet du patient : prélèvements, examens et diagnostic biologique. Formation courte (BTS en deux ans) et très employable, avec une poursuite possible en licence puis master de biologie médicale.",
     debouches: [
       "Technicien de laboratoire",
       "Technicien supérieur en biologie médicale",
@@ -372,6 +524,25 @@ export const formationsSante: Formation[] = [
         },
         noteDAdmission:
           "Admission sur dossier. L'établissement accepte le baccalauréat toutes séries pour ses formations professionnelles ; confirmez pour l'option choisie.",
+      },
+      {
+        institut: "SUP de Santé - Institut Supérieur des Sciences de la Santé",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 2,
+        diplomePrepare: "BTS d'État en Biologie (licence et master en biologie médicale également proposés)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "SUP de Santé ne publie pas ses tarifs en ligne. À titre de repère, l'Infirmier d'État à ISSANTE revient à 760 000 FCFA par an. Demandez la grille au campus du 4 VDN Mermoz Pyrotechnique.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/sup-de-sante-institut-superieur-des-sciences-de-la-sante/",
+        },
+        noteDAdmission:
+          "École reconnue par l'État et accréditée ANAQ-Sup (accréditation vérifiée pour sa licence en sciences infirmières). Propose un BTS d'État en biologie, puis licence et master en biologie médicale. Séries de baccalauréat acceptées à confirmer.",
       },
     ],
   },
