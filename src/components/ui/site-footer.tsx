@@ -29,7 +29,7 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-xs font-bold tracking-[0.18em] text-blanc/50 uppercase">
+          <p className="text-xs font-bold tracking-[0.18em] text-blanc/75 uppercase">
             Le site
           </p>
           <ul className="mt-5 space-y-3">
@@ -42,7 +42,7 @@ export function SiteFooter() {
               <li key={lien.href}>
                 <Link
                   href={lien.href}
-                  className="text-lg font-bold transition-colors duration-200 hover:text-magenta"
+                  className="text-lg font-bold transition-colors duration-200 hover:text-jaune"
                 >
                   {lien.libelle}
                 </Link>
@@ -52,21 +52,21 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="text-xs font-bold tracking-[0.18em] text-blanc/50 uppercase">
+          <p className="text-xs font-bold tracking-[0.18em] text-blanc/75 uppercase">
             Une question ?
           </p>
           <a
             href={LIEN_WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
-            className="titre-geant mt-4 block text-2xl text-jaune transition-colors duration-200 hover:text-magenta"
+            className="titre-geant mt-4 block text-2xl text-jaune transition-colors duration-200 hover:text-blanc"
           >
             {NUMERO_DE_TELEPHONE_AFFICHE}
             <span className="sr-only">
               (ouvre une conversation WhatsApp dans un nouvel onglet)
             </span>
           </a>
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-blanc/60">
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-blanc/75">
             Vérifiez toujours les dates, les frais et les conditions
             d&apos;admission auprès de l&apos;établissement lui-même : les
             informations de cet annuaire sont indicatives.
@@ -75,7 +75,7 @@ export function SiteFooter() {
       </div>
 
       <div className="border-t border-blanc/15">
-        <p className="mx-auto max-w-7xl px-5 py-6 text-xs text-blanc/45 md:px-8">
+        <p className="mx-auto max-w-7xl px-5 py-6 text-xs text-blanc/70 md:px-8">
           © {new Date().getFullYear()} AEMS — Annuaire d&apos;orientation des
           bacheliers comoriens à Dakar.
         </p>
