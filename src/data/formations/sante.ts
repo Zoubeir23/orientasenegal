@@ -155,7 +155,7 @@ export const formationsSante: Formation[] = [
         diplomePrepare:
           "Diplôme de Sage-Femme d'État (licence en Sciences Gynéco-Obstétricales également proposée)",
         fraisDeScolarite: {
-          montant: "≈ 760 000 F / an",
+          montant: "Non publié",
           detail:
             "L'école affiche 760 000 FCFA par an pour l'Infirmier d'État (100 000 F d'inscription + 60 000 F par mois). Le tarif exact du cursus sage-femme est à confirmer auprès du service scolarité.",
         },
@@ -215,7 +215,7 @@ export const formationsSante: Formation[] = [
         dureeEnAnnees: 6,
         diplomePrepare: "Doctorat en pharmacie",
         fraisDeScolarite: {
-          montant: "≈ 200 000 F / an (étrangers, à confirmer)",
+          montant: "200 000 à 1 000 000 F / an (à confirmer)",
           detail:
             "Droits d'inscription en faculté à l'UCAD : 200 000 FCFA par an pour les étudiants étrangers contre 25 000 FCFA pour les Sénégalais, et 1 000 000 FCFA pour un doctorat. Ces montants ne sont plus republiés sur le site actuel de la faculté : confirmez auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget.",
         },
@@ -273,7 +273,7 @@ export const formationsSante: Formation[] = [
         dureeEnAnnees: 6,
         diplomePrepare: "Doctorat en chirurgie dentaire",
         fraisDeScolarite: {
-          montant: "≈ 200 000 F / an (étrangers, à confirmer)",
+          montant: "200 000 à 1 000 000 F / an (à confirmer)",
           detail:
             "Mêmes droits d'inscription que les autres cursus de la faculté : 200 000 FCFA par an pour les étrangers en licence, 1 000 000 FCFA pour le doctorat, montants à confirmer auprès de la scolarité. S'y ajoute l'achat du matériel de travaux pratiques.",
         },
@@ -336,11 +336,11 @@ export const formationsSante: Formation[] = [
             "Scolarité publique. Frais de dossier de concours de 10 000 FCFA non remboursables. Tarif applicable aux étrangers non publié.",
         },
         sourceOfficielle: {
-          libelle: "ucad.sn",
-          url: "https://www.ucad.sn/endss-appels-candidatures-licences-2026-2027",
+          libelle: "concours.ucad.sn/ENDSS",
+          url: "https://concours.ucad.sn/ENDSS",
         },
         noteDAdmission:
-          "L'ENDSS ouvre chaque année un appel à candidatures pour treize licences, dont analyses biologiques médicales, génie sanitaire, ergothérapie et orthophonie. Candidature en ligne sur concours.ucad.sn/endss.",
+          "L'appel à candidatures 2026-2027 de l'ENDSS portait sur treize licences, dont analyses biologiques médicales, génie sanitaire, ergothérapie et orthophonie. Candidature en ligne sur concours.ucad.sn/endss, où la liste de l'année en cours fait foi.",
       },
       {
         institut: "ISSANTE - Université Docteur Daouda Sow",
