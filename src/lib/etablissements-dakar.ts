@@ -7,7 +7,13 @@ import { formations } from "@/data/formations";
  * autres villes : le filtrage se fait ici, pour pouvoir rouvrir la couverture
  * plus tard sans réécrire les fiches.
  */
-const VILLES_DE_L_AGGLOMERATION_DE_DAKAR = ["dakar", "diamniadio"];
+const VILLES_DE_L_AGGLOMERATION_DE_DAKAR = [
+  "dakar",
+  "diamniadio",
+  // Keur Massar est aujourd'hui écrit « Dakar (Keur Massar) », mais la commune
+  // est listée pour qu'une fiche ne mentionnant qu'elle reste reconnue.
+  "keur massar",
+];
 
 export function estDansLAgglomerationDeDakar(ville: string): boolean {
   const villeNormalisee = ville.toLowerCase();
