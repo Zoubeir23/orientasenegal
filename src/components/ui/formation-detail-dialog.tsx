@@ -10,9 +10,9 @@ interface FormationDetailDialogProps {
 }
 
 const COULEURS_PAR_NIVEAU_DE_DEMANDE: Record<NiveauDeDemande, string> = {
-  Forte: "bg-brand-primary text-paper",
-  Moyenne: "bg-papaya text-paper",
-  "À construire": "bg-sand text-forest-deep border border-forest/25",
+  Forte: "bg-jaune text-encre",
+  Moyenne: "bg-blanc text-encre",
+  "À construire": "border-2 border-blanc text-blanc",
 };
 
 const LIBELLES_PAR_NIVEAU_DE_DEMANDE: Record<NiveauDeDemande, string> = {
@@ -61,132 +61,123 @@ export function FormationDetailDialog({
           dialogReference.current?.close();
         }
       }}
-      className="m-auto max-h-[88vh] w-[min(46rem,92vw)] overflow-y-auto border border-forest/20 bg-paper p-0 text-ink shadow-[0_40px_90px_-40px_rgba(10,55,34,0.8)] backdrop:bg-forest-deep/45 backdrop:backdrop-blur-sm"
+      className="m-auto max-h-[90vh] w-[min(48rem,94vw)] overflow-y-auto border-2 border-magenta-sombre bg-blanc p-0 text-encre backdrop:bg-magenta-sombre/70 backdrop:backdrop-blur-sm"
     >
       {/* En-tête collant */}
-      <div className="sticky top-0 z-10 flex items-start justify-between gap-6 border-b border-forest/15 bg-paper/95 px-7 py-5 backdrop-blur-md">
-        <div>
-          <p className="text-[11px] font-semibold tracking-[0.16em] text-forest uppercase">
-            {etablissements.length > 1
-              ? `${etablissements.length} établissements proposent cette filière`
-              : "1 établissement propose cette filière"}
-          </p>
-        </div>
+      <div className="sticky top-0 z-10 flex items-center justify-between gap-6 border-b-2 border-magenta-sombre bg-magenta px-6 py-4 text-blanc">
+        <p className="text-[11px] font-bold tracking-[0.16em] uppercase">
+          {etablissements.length > 1
+            ? `${etablissements.length} établissements à Dakar`
+            : "1 établissement à Dakar"}
+        </p>
 
         <button
           type="button"
           onClick={() => dialogReference.current?.close()}
           aria-label="Fermer le détail de la filière"
-          className="shrink-0 rounded-full border border-forest/25 px-3.5 py-1.5 text-xs font-medium text-forest transition-colors duration-200 hover:bg-forest hover:text-paper"
+          className="shrink-0 rounded-full bg-blanc px-4 py-2 text-xs font-bold tracking-[0.1em] text-magenta uppercase transition-colors duration-200 hover:bg-jaune hover:text-encre"
         >
           Fermer
         </button>
       </div>
 
-      <div className="px-7 pt-7 pb-9">
-        <h2
-          id="titre-de-la-formation"
-          className="font-display text-3xl leading-[1.1] font-semibold text-balance text-forest-deep sm:text-4xl"
-        >
+      <div className="px-6 pt-8 pb-10 md:px-9">
+        <h2 id="titre-de-la-formation" className="titre-geant text-4xl sm:text-5xl">
           {formation.filiere}
         </h2>
 
-        <p className="mt-4 leading-relaxed text-ink-soft">
+        <p className="mt-5 text-lg leading-relaxed text-gris">
           {formation.description}
         </p>
 
         {/* Établissements qui proposent cette filière */}
-        <section className="mt-7 space-y-5">
-          <h3 className="text-[11px] font-semibold tracking-[0.2em] text-forest uppercase">
+        <section className="mt-10">
+          <h3 className="text-[11px] font-bold tracking-[0.2em] text-magenta uppercase">
             Où étudier cette filière
           </h3>
 
-          {etablissements.map((etablissement) => (
-            <div
-              key={etablissement.institut}
-              className="border border-forest/15 bg-paper/70"
-            >
-              <div className="flex flex-wrap items-start justify-between gap-3 border-b border-forest/12 px-5 py-4">
-                <div>
-                  <p className="text-sm font-semibold text-forest-deep">
-                    {etablissement.institut}
-                  </p>
-                  <p className="mt-1 flex items-center gap-1.5 text-xs text-ink-soft">
-                    <span
-                      aria-hidden="true"
-                      className="h-1 w-1 rounded-full bg-papaya"
-                    />
-                    {etablissement.ville} · {etablissement.dureeEnAnnees} ans ·{" "}
-                    {etablissement.diplomePrepare}
-                  </p>
-                </div>
-                <span
-                  className={`shrink-0 rounded-full px-2.5 py-1 text-[10px] font-semibold tracking-[0.1em] uppercase ${
-                    etablissement.statutEtablissement === "Public"
-                      ? "border border-forest/30 bg-brand-light text-forest-deep"
-                      : "border border-forest/15 bg-sand/70 text-ink-soft"
-                  }`}
-                >
-                  {etablissement.statutEtablissement}
-                </span>
-              </div>
-
-              <div className="px-5 py-4">
-                <p className="text-[10px] font-semibold tracking-[0.16em] text-ink-soft uppercase">
-                  Combien ça coûte
-                </p>
-                <p className="font-display mt-1.5 text-xl font-semibold text-forest-deep">
-                  {etablissement.fraisDeScolarite.montant}
-                </p>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                  {etablissement.fraisDeScolarite.detail}
-                </p>
-
-                <ul className="mt-3.5 flex flex-wrap gap-2">
-                  {etablissement.bacsCompatibles.map((bac) => (
-                    <li
-                      key={bac}
-                      className="rounded-full bg-forest px-3 py-1 text-xs font-medium text-paper"
-                    >
-                      Bac {bac}
-                    </li>
-                  ))}
-                </ul>
-
-                {etablissement.noteDAdmission ? (
-                  <p className="mt-3.5 text-sm leading-relaxed text-ink-soft break-words">
-                    {etablissement.noteDAdmission}
-                  </p>
-                ) : null}
-
-                <a
-                  href={etablissement.sourceOfficielle.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-forest underline decoration-papaya decoration-2 underline-offset-4 transition-colors duration-200 hover:text-papaya-deep"
-                >
-                  {etablissement.sourceOfficielle.libelle}
-                  <span aria-hidden="true">↗</span>
-                  <span className="sr-only">
-                    (ouvre le site officiel dans un nouvel onglet)
+          <div className="mt-5 space-y-5">
+            {etablissements.map((etablissement) => (
+              <div
+                key={etablissement.institut}
+                className="border-2 border-magenta-sombre"
+              >
+                <div className="flex flex-wrap items-start justify-between gap-3 border-b-2 border-magenta-sombre bg-gris-clair px-5 py-4">
+                  <div>
+                    <p className="font-bold">{etablissement.institut}</p>
+                    <p className="mt-1 text-xs font-semibold text-gris">
+                      {etablissement.ville} · {etablissement.dureeEnAnnees} ans ·{" "}
+                      {etablissement.diplomePrepare}
+                    </p>
+                  </div>
+                  <span
+                    className={`shrink-0 px-2.5 py-1 text-[10px] font-bold tracking-[0.12em] uppercase ${
+                      etablissement.statutEtablissement === "Public"
+                        ? "bg-magenta-deep text-blanc"
+                        : "bg-magenta-sombre text-blanc"
+                    }`}
+                  >
+                    {etablissement.statutEtablissement}
                   </span>
-                </a>
+                </div>
+
+                <div className="px-5 py-5">
+                  <p className="text-[10px] font-bold tracking-[0.16em] text-gris uppercase">
+                    Combien ça coûte
+                  </p>
+                  <p className="titre-geant mt-2 text-2xl text-magenta">
+                    {etablissement.fraisDeScolarite.montant}
+                  </p>
+                  <p className="mt-2.5 text-sm leading-relaxed text-gris">
+                    {etablissement.fraisDeScolarite.detail}
+                  </p>
+
+                  <ul className="mt-4 flex flex-wrap gap-2">
+                    {etablissement.bacsCompatibles.map((bac) => (
+                      <li
+                        key={bac}
+                        className="bg-jaune px-3 py-1 text-xs font-bold text-encre uppercase"
+                      >
+                        Bac {bac}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {etablissement.noteDAdmission ? (
+                    <p className="mt-4 text-sm leading-relaxed break-words text-gris">
+                      {etablissement.noteDAdmission}
+                    </p>
+                  ) : null}
+
+                  <a
+                    href={etablissement.sourceOfficielle.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-magenta underline decoration-2 underline-offset-4 transition-colors duration-200 hover:text-encre"
+                  >
+                    {etablissement.sourceOfficielle.libelle}
+                    <span aria-hidden="true">↗</span>
+                    <span className="sr-only">
+                      (ouvre le site officiel dans un nouvel onglet)
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </section>
 
         {/* Ce que l'on apprend */}
-        <section className="mt-9">
-          <h3 className="text-[11px] font-semibold tracking-[0.2em] text-forest uppercase">
+        <section className="mt-10">
+          <h3 className="text-[11px] font-bold tracking-[0.2em] text-magenta uppercase">
             Ce que vous allez apprendre
           </h3>
-          <ul className="mt-4 space-y-2.5">
+          <ul className="mt-5 space-y-3">
             {formation.competencesAcquises.map((competence) => (
-              <li key={competence} className="flex gap-3 text-sm leading-relaxed">
+              <li key={competence} className="flex gap-4 leading-relaxed">
                 <span
                   aria-hidden="true"
-                  className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-papaya"
+                  className="mt-2 h-2.5 w-2.5 shrink-0 bg-magenta"
                 />
                 {competence}
               </li>
@@ -195,15 +186,15 @@ export function FormationDetailDialog({
         </section>
 
         {/* Ce que cela permet de faire */}
-        <section className="mt-9">
-          <h3 className="text-[11px] font-semibold tracking-[0.2em] text-forest uppercase">
+        <section className="mt-10">
+          <h3 className="text-[11px] font-bold tracking-[0.2em] text-magenta uppercase">
             Ce que ce diplôme vous permet de faire
           </h3>
-          <ul className="mt-4 grid gap-px border border-forest/15 bg-forest/15 sm:grid-cols-2">
+          <ul className="mt-5 grid gap-px bg-magenta-sombre/15 sm:grid-cols-2">
             {formation.missionsConcretes.map((mission) => (
               <li
                 key={mission}
-                className="bg-paper px-4 py-3.5 text-sm leading-relaxed"
+                className="bg-blanc px-5 py-4 text-sm leading-relaxed"
               >
                 {mission}
               </li>
@@ -212,15 +203,15 @@ export function FormationDetailDialog({
         </section>
 
         {/* Débouchés */}
-        <section className="mt-9">
-          <h3 className="text-[11px] font-semibold tracking-[0.2em] text-forest uppercase">
+        <section className="mt-10">
+          <h3 className="text-[11px] font-bold tracking-[0.2em] text-magenta uppercase">
             Métiers visés
           </h3>
-          <ul className="mt-4 flex flex-wrap gap-2">
+          <ul className="mt-5 flex flex-wrap gap-2">
             {formation.debouches.map((debouche) => (
               <li
                 key={debouche}
-                className="rounded-full bg-sand px-3 py-1.5 text-xs font-medium text-forest-deep"
+                className="bg-gris-clair px-3 py-1.5 text-xs font-bold"
               >
                 {debouche}
               </li>
@@ -229,13 +220,13 @@ export function FormationDetailDialog({
         </section>
 
         {/* Retour au pays */}
-        <section className="mt-10 border-t-2 border-papaya bg-forest-deep px-6 py-7 text-paper">
+        <section className="mt-12 bg-magenta-sombre px-6 py-8 text-blanc md:px-8">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <h3 className="text-[11px] font-semibold tracking-[0.2em] uppercase">
-              Et si je veux travailler aux Comores ?
+            <h3 className="titre-geant text-2xl">
+              Et si je rentre aux Comores ?
             </h3>
             <span
-              className={`rounded-full px-3 py-1 text-[11px] font-semibold ${
+              className={`px-3 py-1.5 text-[10px] font-bold tracking-[0.1em] uppercase ${
                 COULEURS_PAR_NIVEAU_DE_DEMANDE[
                   perspectivesAuxComores.niveauDeDemande
                 ]
@@ -249,41 +240,41 @@ export function FormationDetailDialog({
             </span>
           </div>
 
-          <p className="mt-5 leading-relaxed text-paper/85">
+          <p className="mt-6 leading-relaxed text-blanc/85">
             {perspectivesAuxComores.resume}
           </p>
 
-          <p className="mt-7 text-[10px] font-semibold tracking-[0.18em] text-paper/60 uppercase">
+          <p className="mt-8 text-[10px] font-bold tracking-[0.18em] text-blanc/60 uppercase">
             Où travailler au pays
           </p>
           <ul className="mt-3 flex flex-wrap gap-2">
             {perspectivesAuxComores.employeursPotentiels.map((employeur) => (
               <li
                 key={employeur}
-                className="rounded-full border border-paper/25 px-3 py-1.5 text-xs text-paper/90"
+                className="border border-blanc/30 px-3 py-1.5 text-xs text-blanc/90"
               >
                 {employeur}
               </li>
             ))}
           </ul>
 
-          <p className="mt-7 border-l-2 border-papaya pl-4 text-sm leading-relaxed text-paper/90 italic">
-            <span className="font-display not-italic">Conseil de l&apos;AEMS —</span>{" "}
-            {perspectivesAuxComores.conseil}
+          <p className="mt-8 border-l-4 border-jaune pl-5 leading-relaxed text-blanc/90">
+            <span className="titre-geant block text-sm text-jaune">
+              Conseil de l&apos;AEMS
+            </span>
+            <span className="mt-2 block">{perspectivesAuxComores.conseil}</span>
           </p>
         </section>
 
         {/* Note de bas de page */}
-        <div className="mt-8 border-t border-forest/15 pt-5">
-          <p className="text-xs leading-relaxed text-ink-soft">
-            Établissements, intitulés et durées vérifiés sur les sites officiels
-            listés ci-dessus en {DATE_DE_VERIFICATION}. Les frais, dates de
-            concours et places disponibles changent chaque année : confirmez
-            toujours auprès de l&apos;établissement choisi. L&apos;analyse du
-            marché comorien reflète l&apos;expérience des membres de
-            l&apos;association, pas des statistiques officielles.
-          </p>
-        </div>
+        <p className="mt-8 border-t-2 border-magenta-sombre/10 pt-5 text-xs leading-relaxed text-gris">
+          Établissements, intitulés et durées vérifiés sur les sites officiels
+          listés ci-dessus en {DATE_DE_VERIFICATION}. Les frais, dates de
+          concours et places disponibles changent chaque année : confirmez
+          toujours auprès de l&apos;établissement choisi. L&apos;analyse du
+          marché comorien reflète l&apos;expérience des membres de
+          l&apos;association, pas des statistiques officielles.
+        </p>
       </div>
     </dialog>
   );
