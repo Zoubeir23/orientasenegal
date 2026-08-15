@@ -111,8 +111,22 @@ export interface DomaineAvecFormations extends Domaine {
 }
 
 /**
+ * Domaine d'accueil des filières qui n'ont été rattachées à aucun domaine.
+ * Nommé explicitement plutôt que déduit de la position dans DOMAINES :
+ * réordonner la liste ne doit pas déplacer silencieusement ces filières.
+ */
+const IDENTIFIANT_DU_DOMAINE_DE_REPLI = "arts-tourisme";
+
+/** Signale en développement les incohérences de classement, sans casser le rendu. */
+function signalerEnDeveloppement(message: string): void {
+  if (process.env.NODE_ENV !== "production") {
+    console.warn(`[domaines] ${message}`);
+  }
+}
+
+/**
  * Répartit les filières dans leur domaine, en respectant l'ordre déclaré.
- * Une filière absente de tous les domaines est rattachée au dernier domaine
+ * Une filière absente de tous les domaines est rattachée au domaine de repli
  * plutôt que d'être perdue silencieusement.
  */
 export function regrouperParDomaine(
@@ -121,9 +135,23 @@ export function regrouperParDomaine(
   const formationsParIdentifiant = new Map(
     formationsARegrouper.map((formation) => [formation.id, formation])
   );
-  const identifiantsClasses = new Set(
-    DOMAINES.flatMap((domaine) => domaine.identifiantsDeFilieres)
+
+  if (formationsParIdentifiant.size !== formationsARegrouper.length) {
+    signalerEnDeveloppement(
+      "des filières partagent le même identifiant : seule la dernière est affichée."
+    );
+  }
+
+  const identifiantsDeclares = DOMAINES.flatMap(
+    (domaine) => domaine.identifiantsDeFilieres
   );
+  const identifiantsClasses = new Set(identifiantsDeclares);
+
+  if (identifiantsClasses.size !== identifiantsDeclares.length) {
+    signalerEnDeveloppement(
+      "un même identifiant de filière est déclaré dans plusieurs domaines."
+    );
+  }
 
   const domainesRemplis = DOMAINES.map((domaine) => ({
     ...domaine,
@@ -137,11 +165,22 @@ export function regrouperParDomaine(
   );
 
   if (formationsNonClassees.length > 0) {
-    const dernierDomaine = domainesRemplis[domainesRemplis.length - 1];
-    dernierDomaine.formations = [
-      ...dernierDomaine.formations,
-      ...formationsNonClassees,
-    ];
+    const domaineDeRepli = domainesRemplis.find(
+      (domaine) => domaine.id === IDENTIFIANT_DU_DOMAINE_DE_REPLI
+    );
+
+    signalerEnDeveloppement(
+      `filières sans domaine déclaré : ${formationsNonClassees
+        .map((formation) => formation.id)
+        .join(", ")}.`
+    );
+
+    if (domaineDeRepli) {
+      domaineDeRepli.formations = [
+        ...domaineDeRepli.formations,
+        ...formationsNonClassees,
+      ];
+    }
   }
 
   return domainesRemplis.filter((domaine) => domaine.formations.length > 0);
