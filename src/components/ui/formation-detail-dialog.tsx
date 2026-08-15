@@ -67,8 +67,8 @@ export function FormationDetailDialog({
       <div className="sticky top-0 z-10 flex items-center justify-between gap-6 border-b-2 border-magenta-sombre bg-magenta px-6 py-4 text-blanc">
         <p className="text-[11px] font-bold tracking-[0.16em] uppercase">
           {etablissements.length > 1
-            ? `${etablissements.length} établissements à Dakar`
-            : "1 établissement à Dakar"}
+            ? `${etablissements.length} établissements à Dakar et alentours`
+            : "1 établissement à Dakar ou dans son agglomération"}
         </p>
 
         <button
