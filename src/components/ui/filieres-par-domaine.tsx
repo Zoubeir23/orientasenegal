@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Formation } from "@/types/formation";
 import { regrouperParDomaine } from "@/data/domaines";
 import { BacFilter } from "@/components/ui/bac-filter";
+import type { FiltreDeBaccalaureat } from "@/components/ui/bac-filter";
 import { FormationCard } from "@/components/ui/formation-card";
 import { FormationDetailDialog } from "@/components/ui/formation-detail-dialog";
 
@@ -12,7 +14,8 @@ interface FilieresParDomaineProps {
 }
 
 export function FilieresParDomaine({ formations }: FilieresParDomaineProps) {
-  const [bacSelectionne, setBacSelectionne] = useState("");
+  const [bacSelectionne, setBacSelectionne] =
+    useState<FiltreDeBaccalaureat>("");
   const [formationAffichee, setFormationAffichee] = useState<Formation | null>(
     null
   );
@@ -23,9 +26,7 @@ export function FilieresParDomaine({ formations }: FilieresParDomaineProps) {
         ? formations
         : formations.filter((formation) =>
             formation.etablissements.some((etablissement) =>
-              (etablissement.bacsCompatibles as string[]).includes(
-                bacSelectionne
-              )
+              etablissement.bacsCompatibles.includes(bacSelectionne)
             )
           ),
     [formations, bacSelectionne]
@@ -38,6 +39,31 @@ export function FilieresParDomaine({ formations }: FilieresParDomaineProps) {
 
   return (
     <>
+      {/* Sommaire : construit à partir des domaines réellement affichés, pour
+          qu'une ancre ne pointe jamais vers une section masquée par le filtre. */}
+      {domainesAffiches.length > 0 ? (
+        <nav
+          aria-label="Sommaire des domaines"
+          className="mx-auto mb-10 max-w-7xl px-5 md:px-8"
+        >
+          <p className="text-[11px] font-bold tracking-[0.2em] text-gris uppercase">
+            Aller directement à
+          </p>
+          <ul className="mt-4 flex flex-wrap gap-2.5">
+            {domainesAffiches.map((domaine) => (
+              <li key={domaine.id}>
+                <Link
+                  href={`#${domaine.id}`}
+                  className="inline-block border-2 border-magenta-sombre px-4 py-2 text-xs font-bold tracking-[0.08em] uppercase transition-colors duration-200 hover:bg-magenta-sombre hover:text-blanc"
+                >
+                  {domaine.libelle}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      ) : null}
+
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <BacFilter
           bacSelectionne={bacSelectionne}
@@ -102,13 +128,21 @@ export function FilieresParDomaine({ formations }: FilieresParDomaineProps) {
               Notre annuaire s&apos;enrichit chaque année. Écrivez-nous : un
               membre pourra vous orienter personnellement.
             </p>
-            <button
-              type="button"
-              onClick={() => setBacSelectionne("")}
-              className="mt-8 rounded-full bg-magenta px-8 py-4 text-sm font-bold tracking-[0.08em] text-blanc uppercase"
-            >
-              Voir toutes les filières
-            </button>
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <button
+                type="button"
+                onClick={() => setBacSelectionne("")}
+                className="rounded-full bg-magenta px-8 py-4 text-sm font-bold tracking-[0.08em] text-blanc uppercase"
+              >
+                Voir toutes les filières
+              </button>
+              <Link
+                href="/contact"
+                className="rounded-full border-2 border-magenta-sombre px-8 py-4 text-sm font-bold tracking-[0.08em] text-magenta-sombre uppercase transition-colors duration-200 hover:bg-magenta-sombre hover:text-blanc"
+              >
+                Nous écrire
+              </Link>
+            </div>
           </div>
         </div>
       )}

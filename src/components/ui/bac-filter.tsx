@@ -1,14 +1,24 @@
 "use client";
 
 import { TYPES_DE_BACCALAUREAT } from "@/types/formation";
+import type { TypeDeBaccalaureat } from "@/types/formation";
+
+/** Chaîne vide = aucun filtre, donc toutes les filières. */
+export type FiltreDeBaccalaureat = TypeDeBaccalaureat | "";
 
 interface BacFilterProps {
-  bacSelectionne: string;
-  onBacSelectionneChange: (bac: string) => void;
+  bacSelectionne: FiltreDeBaccalaureat;
+  onBacSelectionneChange: (bac: FiltreDeBaccalaureat) => void;
   nombreDeResultats: number;
 }
 
-const OPTIONS_DE_FILTRE = [
+interface OptionDeFiltre {
+  valeur: FiltreDeBaccalaureat;
+  libelle: string;
+  abreviation: string;
+}
+
+const OPTIONS_DE_FILTRE: OptionDeFiltre[] = [
   { valeur: "", libelle: "Tous les bacs", abreviation: "Tous" },
   ...TYPES_DE_BACCALAUREAT.map((typeDeBaccalaureat) => ({
     valeur: typeDeBaccalaureat.valeur,

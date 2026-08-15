@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { FilieresParDomaine } from "@/components/ui/filieres-par-domaine";
-import { regrouperParDomaine } from "@/data/domaines";
 import { formationsDeDakar } from "@/lib/etablissements-dakar";
 import { DATE_DE_VERIFICATION } from "@/types/formation";
 
@@ -12,8 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function PageFilieres() {
-  const domaines = regrouperParDomaine(formationsDeDakar);
-
   return (
     <>
       {/* En-tête de page */}
@@ -32,22 +28,6 @@ export default function PageFilieres() {
             établissements qui la proposent, les frais de scolarité et ce
             qu&apos;elle vaut une fois de retour aux Comores.
           </p>
-
-          {/* Sommaire des domaines */}
-          <nav aria-label="Sommaire des domaines" className="mt-10">
-            <ul className="flex flex-wrap gap-2.5">
-              {domaines.map((domaine) => (
-                <li key={domaine.id}>
-                  <Link
-                    href={`#${domaine.id}`}
-                    className="inline-block border-2 border-blanc px-4 py-2 text-xs font-bold tracking-[0.08em] uppercase transition-colors duration-200 hover:bg-blanc hover:text-magenta"
-                  >
-                    {domaine.libelle}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
         </div>
       </section>
 
