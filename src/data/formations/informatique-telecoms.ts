@@ -114,7 +114,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         },
         sourceOfficielle: { libelle: "st-michel.sn", url: "https://www.st-michel.sn/" },
         noteDAdmission:
-          "Admission après examen du dossier puis entretien avec le responsable de département. Université confessionnelle présente dans quatre pays d'Afrique de l'Ouest.",
+          "Admission après examen du dossier puis entretien avec le responsable de département. Université confessionnelle présente dans quatre pays d'Afrique de l'Ouest. Accréditation : aucun statut ANAQ-Sup ni CAMES retrouvé pour cette filière dans les sources consultées — à faire confirmer par écrit avant inscription.",
       },
       {
         institut: "ESCOA - École Supérieure de Commerce et d'Administration",
@@ -130,7 +130,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         },
         sourceOfficielle: { libelle: "escoa.edu.sn", url: "https://www.escoa.edu.sn/" },
         noteDAdmission:
-          "École membre de la FEDE (Fédération Européenne des Écoles), orientée gestion, commerce, administration et informatique appliquée.",
+          "École membre de la FEDE (Fédération Européenne des Écoles), orientée gestion, commerce, administration et informatique appliquée. Attention : l'adhésion à la FEDE est un réseau privé, pas une accréditation nationale — aucun statut ANAQ-Sup ni CAMES n'a été retrouvé dans les sources consultées, à faire confirmer avant inscription.",
       },
     ],
   },

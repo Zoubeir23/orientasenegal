@@ -311,7 +311,7 @@ export const formationsGestionCommerce: Formation[] = [
           url: "https://www.st-michel.sn/",
         },
         noteDAdmission:
-          "L'UCAO propose également des licences en comptabilité-finance, droit des affaires, commerce international et ressources humaines, ainsi que des BTS en deux ans. Admission sur dossier puis entretien.",
+          "L'UCAO propose également des licences en comptabilité-finance, droit des affaires, commerce international et ressources humaines, ainsi que des BTS en deux ans. Admission sur dossier puis entretien. Accréditation : aucun statut ANAQ-Sup ni CAMES retrouvé pour cette filière dans les sources consultées — à faire confirmer par écrit.",
       },
     ],
   },
