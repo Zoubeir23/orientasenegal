@@ -1,80 +1,13 @@
 import type { Formation } from "@/types/formation";
 
 /**
- * Médecine, agro-industrie, hôtellerie-tourisme, création multimédia.
- * "Médecine" regroupe UCAD et UIDT (les deux facultés publiques) ;
+ * Agro-industrie, hôtellerie-tourisme, création multimédia et cinéma.
+ * Les filières de santé sont regroupées à part, dans sante.ts.
  * "Hôtellerie, Restauration et Tourisme" regroupe ENFHT et Les Marmitons.
  * ISEP Richard-Toll/ENSA Thiès et ISEP Thiès/Kourtrajmé restent distincts :
  * niveaux de diplôme et natures de formation trop différents pour fusionner.
  */
-export const formationsSanteAgroTourisme: Formation[] = [
-  {
-    id: "medecine",
-    filiere: "Médecine",
-    description:
-      "Cursus médical complet avec stages hospitaliers, menant au doctorat en médecine. Sélection très exigeante : mention fortement recommandée au baccalauréat. Deux facultés publiques au Sénégal.",
-    debouches: ["Médecin généraliste", "Interne", "Chercheur en santé publique"],
-    competencesAcquises: [
-      "Sciences fondamentales : anatomie, physiologie, biochimie, pharmacologie",
-      "Sémiologie et démarche diagnostique",
-      "Stages hospitaliers dans les grands services",
-      "Urgences, pédiatrie, gynécologie, maladies tropicales",
-      "Santé publique et épidémiologie de terrain",
-    ],
-    missionsConcretes: [
-      "Consulter, diagnostiquer et prescrire en cabinet ou en hôpital",
-      "Prendre en charge les urgences et les maladies courantes",
-      "Se spécialiser ensuite (chirurgie, pédiatrie, cardiologie…)",
-      "Mener des campagnes de prévention et de vaccination",
-    ],
-    perspectivesAuxComores: {
-      niveauDeDemande: "Forte",
-      resume:
-        "Le manque de médecins est structurel aux Comores, en particulier hors de Moroni. Un médecin formé revient avec la certitude de trouver un poste, mais dans des conditions de travail exigeantes : plateaux techniques limités, évacuations sanitaires fréquentes.",
-      employeursPotentiels: [
-        "Hôpital El-Maarouf et centres hospitaliers régionaux",
-        "Centres de santé de district",
-        "ONG médicales et organisations internationales",
-        "Cabinet privé",
-      ],
-      conseil:
-        "Cursus long et très sélectif : ne vous engagez que si les sciences vous passionnent vraiment. Renseignez-vous dès la 3e année sur les équivalences et l'inscription à l'Ordre aux Comores. UIDT a l'accréditation la mieux documentée des deux facultés (acte ANAQ-Sup daté), mais l'UCAD reste la plus ancienne et la plus reconnue.",
-    },
-    etablissements: [
-      {
-        institut: "UCAD - Faculté de Médecine, Pharmacie et Odontostomatologie",
-        ville: "Dakar",
-        statutEtablissement: "Public",
-        bacsCompatibles: ["Scientifique"],
-        dureeEnAnnees: 7,
-        diplomePrepare: "Doctorat en médecine",
-        fraisDeScolarite: {
-          montant: "≈ 200 000 F / an (étrangers, à confirmer)",
-          detail:
-            "Droits d'inscription historiquement rapportés à la FMPOS de l'UCAD : 200 000 FCFA par an en licence pour les étudiants étrangers, contre 25 000 FCFA pour les Sénégalais et boursiers, et 1 000 000 FCFA pour le doctorat. Ces montants ne sont plus republiés sur le site actuel de la faculté : confirmez le tarif en vigueur auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget. S'ajoutent le logement, la nourriture et le matériel médical.",
-        },
-        sourceOfficielle: { libelle: "fmpos.ucad.sn", url: "https://fmpos.ucad.sn/" },
-        noteDAdmission:
-          "L'UCAD est ouverte aux étudiants étrangers dans la limite des places disponibles. Préinscription obligatoire en ligne sur preinscriptionenligne.ucad.sn. Accréditation : ce doctorat n'a pas été localisé directement dans la base ANAQ-Sup consultée ; la reconnaissance CAMES de l'UCAD est attestée indirectement (96,2 % de réussite aux évaluations CAMES 2025 rapportés par la presse), sans lien direct vers une fiche d'accréditation CAMES dédiée à ce diplôme précis.",
-      },
-      {
-        institut: "UIDT - Université Iba Der Thiam de Thiès (UFR Santé)",
-        ville: "Thiès",
-        statutEtablissement: "Public",
-        bacsCompatibles: ["Scientifique"],
-        dureeEnAnnees: 8,
-        diplomePrepare: "Doctorat en médecine",
-        fraisDeScolarite: {
-          montant: "Non publié",
-          detail:
-            "Deuxième faculté de médecine publique du Sénégal : le tarif applicable aux étudiants étrangers n'est pas publié en ligne. Contactez ufrsante@univ-thies.sn pour connaître le montant applicable aux candidats comoriens.",
-        },
-        sourceOfficielle: { libelle: "uidt.sn", url: "https://www.uidt.sn/medecine-generale/" },
-        noteDAdmission:
-          "Deuxième école de médecine publique du Sénégal (UFR Santé créée en 2008, premiers diplômés en 2017), propose aussi pharmacie, soins infirmiers et orthophonie. Admission des étudiants étrangers par test d'entrée spécifique (contact : ufrsante@univ-thies.sn). Accréditation confirmée : le Conseil Scientifique de l'ANAQ-Sup a accrédité ce doctorat par acte du 19 novembre 2020 (univ-thies.sn).",
-      },
-    ],
-  },
+export const formationsAgroTourismeAudiovisuel: Formation[] = [
   {
     id: "isep-richard-toll-agro",
     filiere: "Production Agro-Industrielle",

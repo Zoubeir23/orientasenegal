@@ -1,66 +1,83 @@
 import Image from "next/image";
+import Link from "next/link";
+
+export const NUMERO_DE_TELEPHONE_AFFICHE = "+221 78 594 10 71";
+export const LIEN_WHATSAPP = "https://wa.me/221785941071";
 
 export function SiteFooter() {
   return (
-    <footer className="relative z-10 mt-24 border-t border-forest/12 bg-forest-deep text-paper">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-14 md:flex-row md:items-start md:justify-between">
-        <div className="flex items-start gap-4">
-          <Image
-            src="/logo.png"
-            alt=""
-            aria-hidden="true"
-            width={256}
-            height={256}
-            className="h-24 w-24 shrink-0 rounded-full bg-paper p-1.5 md:h-28 md:w-28"
-          />
-          <div>
-            <p className="font-display text-xl font-semibold">AEMS</p>
-            <p className="mt-1 max-w-xs text-sm leading-relaxed text-paper/70">
-              Association des Étudiants de Mitsoudje au Sénégal
-            </p>
-            <p className="mt-3 text-[11px] tracking-[0.18em] text-papaya uppercase">
-              Unité · Solidarité · Développement
-            </p>
+    <footer className="mt-auto bg-magenta-sombre text-blanc">
+      <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-3 md:px-8 md:py-20">
+        <div>
+          <div className="flex items-center gap-4">
+            <Image
+              src="/logo-aems.png"
+              alt=""
+              aria-hidden="true"
+              width={256}
+              height={256}
+              className="h-20 w-20 shrink-0 rounded-full"
+            />
+            <p className="titre-geant text-4xl">AEMS</p>
           </div>
+          <p className="mt-5 max-w-xs leading-relaxed text-blanc/70">
+            Association des Étudiants de Mitsoudje au Sénégal
+          </p>
+          <p className="mt-4 text-xs font-bold tracking-[0.18em] text-jaune uppercase">
+            Unité · Solidarité · Développement
+          </p>
         </div>
 
-        <div className="text-sm text-paper/70">
-          <p className="mb-2 text-[11px] font-semibold tracking-[0.18em] text-paper uppercase">
+        <div>
+          <p className="text-xs font-bold tracking-[0.18em] text-blanc/75 uppercase">
+            Le site
+          </p>
+          <ul className="mt-5 space-y-3">
+            {[
+              { href: "/", libelle: "Accueil" },
+              { href: "/a-propos", libelle: "À propos" },
+              { href: "/filieres", libelle: "Filières" },
+              { href: "/contact", libelle: "Contact" },
+            ].map((lien) => (
+              <li key={lien.href}>
+                <Link
+                  href={lien.href}
+                  className="text-lg font-bold transition-colors duration-200 hover:text-jaune"
+                >
+                  {lien.libelle}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-xs font-bold tracking-[0.18em] text-blanc/75 uppercase">
             Une question ?
           </p>
           <a
-            href="https://wa.me/221785941071"
+            href={LIEN_WHATSAPP}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 font-medium text-paper underline decoration-papaya decoration-2 underline-offset-4 transition-colors duration-200 hover:text-papaya"
+            className="titre-geant mt-4 block text-2xl text-jaune transition-colors duration-200 hover:text-blanc"
           >
-            WhatsApp : +221 78 594 10 71
-            <span aria-hidden="true">↗</span>
-            <span className="sr-only">(ouvre une conversation WhatsApp dans un nouvel onglet)</span>
+            {NUMERO_DE_TELEPHONE_AFFICHE}
+            <span className="sr-only">
+              (ouvre une conversation WhatsApp dans un nouvel onglet)
+            </span>
           </a>
-        </div>
-
-        <div className="text-sm text-paper/70">
-          <p className="mb-2 text-[11px] font-semibold tracking-[0.18em] text-paper uppercase">
-            Avant de vous inscrire
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-blanc/75">
+            Vérifiez toujours les dates, les frais et les conditions
+            d&apos;admission auprès de l&apos;établissement lui-même : les
+            informations de cet annuaire sont indicatives.
           </p>
-          <ul className="max-w-sm space-y-1.5 leading-relaxed">
-            <li>
-              Vérifiez toujours les dates et conditions auprès de l&apos;institut
-              lui-même.
-            </li>
-            <li>
-              Les informations de cet annuaire sont indicatives et mises à jour
-              par l&apos;association.
-            </li>
-          </ul>
         </div>
       </div>
 
-      <div className="border-t border-paper/12">
-        <p className="mx-auto max-w-6xl px-6 py-5 text-xs text-paper/50">
+      <div className="border-t border-blanc/15">
+        <p className="mx-auto max-w-7xl px-5 py-6 text-xs text-blanc/70 md:px-8">
           © {new Date().getFullYear()} AEMS — Annuaire d&apos;orientation des
-          bacheliers comoriens au Sénégal.
+          bacheliers comoriens à Dakar.
         </p>
       </div>
     </footer>

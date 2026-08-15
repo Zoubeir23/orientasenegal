@@ -1,9 +1,10 @@
 import type { Formation } from "@/types/formation";
 import { formationsInformatiqueTelecoms } from "./informatique-telecoms";
-import { formationsDroitCommunication } from "./droit-communication";
+import { formationsSante } from "./sante";
 import { formationsIngenierieBtpEnergie } from "./ingenierie-btp-energie";
 import { formationsGestionCommerce } from "./gestion-commerce";
-import { formationsSanteAgroTourisme } from "./sante-agro-tourisme";
+import { formationsDroitCommunication } from "./droit-communication";
+import { formationsAgroTourismeAudiovisuel } from "./agro-tourisme-audiovisuel";
 
 /**
  * Annuaire tenu par l'AEMS.
@@ -12,14 +13,15 @@ import { formationsSanteAgroTourisme } from "./sante-agro-tourisme";
  * (voir `sourceOfficielle` de chaque entrée). Les appréciations du marché
  * comorien restent l'avis de l'association, pas des statistiques officielles.
  *
- * Le fichier est découpé par domaine (src/data/formations/*.ts) pour rester
- * lisible : chaque domaine propose au moins deux établissements quand une
- * alternative crédible existe, plutôt qu'un seul institut par filière.
+ * Un fichier par domaine, dans le même ordre que DOMAINES (src/data/domaines.ts)
+ * pour que les deux listes restent faciles à confronter. Une filière proposée
+ * par plusieurs écoles reste une seule fiche, avec plusieurs établissements.
  */
 export const formations: Formation[] = [
   ...formationsInformatiqueTelecoms,
-  ...formationsDroitCommunication,
+  ...formationsSante,
   ...formationsIngenierieBtpEnergie,
   ...formationsGestionCommerce,
-  ...formationsSanteAgroTourisme,
+  ...formationsDroitCommunication,
+  ...formationsAgroTourismeAudiovisuel,
 ];
