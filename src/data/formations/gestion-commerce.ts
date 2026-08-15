@@ -293,6 +293,26 @@ export const formationsGestionCommerce: Formation[] = [
         noteDAdmission:
           "Admission après le baccalauréat ou en admission parallèle (BTS, DUT, L2), sur dossier et entretien, avec cours du soir en 2e et 3e année. Accréditation : l'ESMP n'apparaît sur ANAQ-Sup qu'au statut d'« habilitation » (étape préalable à l'accréditation complète), pas encore en accréditation confirmée pour cette filière.",
       },
+      {
+        institut:
+          "UCAO - Université Catholique de l'Afrique de l'Ouest (Institut Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Transport et Logistique",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "Tarifs non publiés. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander à stmichel@ucao.edu.sn.",
+        },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/",
+        },
+        noteDAdmission:
+          "L'UCAO propose également des licences en comptabilité-finance, droit des affaires, commerce international et ressources humaines, ainsi que des BTS en deux ans. Admission sur dossier puis entretien.",
+      },
     ],
   },
 ];
