@@ -1,18 +1,88 @@
 import type { Formation } from "@/types/formation";
 
 /**
- * Filières de santé proposées à Dakar, hors médecine générale
- * (voir sante-agro-tourisme.ts pour la médecine).
+ * Filières de santé proposées à Dakar.
  *
- * Deux voies coexistent : le public (UCAD, ENDSS), très peu coûteux mais
- * sur concours, et le privé (ISSANTE), accessible sur dossier mais payant.
+ * L'ENDSS, école publique de référence pour les métiers infirmiers, n'y figure
+ * pas : ses concours directs exigent « être de nationalité sénégalaise »
+ * (conditions d'admission publiées pour les parcours infirmier et sage-femme).
+ * Cette voie étant fermée aux bacheliers comoriens, la faire figurer comme
+ * établissement d'accueil serait trompeur. La faculté de l'UCAD, elle, accueille
+ * les bacheliers étrangers ; le privé (ISSANTE) admet sur dossier.
  */
 export const formationsSante: Formation[] = [
+  {
+    id: "medecine",
+    filiere: "Médecine",
+    description:
+      "Cursus médical complet avec stages hospitaliers, menant au doctorat en médecine. Sélection très exigeante : mention fortement recommandée au baccalauréat. Deux facultés publiques au Sénégal.",
+    debouches: ["Médecin généraliste", "Interne", "Chercheur en santé publique"],
+    competencesAcquises: [
+      "Sciences fondamentales : anatomie, physiologie, biochimie, pharmacologie",
+      "Sémiologie et démarche diagnostique",
+      "Stages hospitaliers dans les grands services",
+      "Urgences, pédiatrie, gynécologie, maladies tropicales",
+      "Santé publique et épidémiologie de terrain",
+    ],
+    missionsConcretes: [
+      "Consulter, diagnostiquer et prescrire en cabinet ou en hôpital",
+      "Prendre en charge les urgences et les maladies courantes",
+      "Se spécialiser ensuite (chirurgie, pédiatrie, cardiologie…)",
+      "Mener des campagnes de prévention et de vaccination",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Le manque de médecins est structurel aux Comores, en particulier hors de Moroni. Un médecin formé revient avec la certitude de trouver un poste, mais dans des conditions de travail exigeantes : plateaux techniques limités, évacuations sanitaires fréquentes.",
+      employeursPotentiels: [
+        "Hôpital El-Maarouf et centres hospitaliers régionaux",
+        "Centres de santé de district",
+        "ONG médicales et organisations internationales",
+        "Cabinet privé",
+      ],
+      conseil:
+        "Cursus long et très sélectif : ne vous engagez que si les sciences vous passionnent vraiment. Renseignez-vous dès la 3e année sur les équivalences et l'inscription à l'Ordre aux Comores. UIDT a l'accréditation la mieux documentée des deux facultés (acte ANAQ-Sup daté), mais l'UCAD reste la plus ancienne et la plus reconnue.",
+    },
+    etablissements: [
+      {
+        institut: "UCAD - Faculté de Médecine, Pharmacie et Odontostomatologie",
+        ville: "Dakar",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 7,
+        diplomePrepare: "Doctorat en médecine",
+        fraisDeScolarite: {
+          montant: "≈ 200 000 F / an (étrangers, à confirmer)",
+          detail:
+            "Droits d'inscription historiquement rapportés à la FMPOS de l'UCAD : 200 000 FCFA par an en licence pour les étudiants étrangers, contre 25 000 FCFA pour les Sénégalais et boursiers, et 1 000 000 FCFA pour le doctorat. Ces montants ne sont plus republiés sur le site actuel de la faculté : confirmez le tarif en vigueur auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget. S'ajoutent le logement, la nourriture et le matériel médical.",
+        },
+        sourceOfficielle: { libelle: "fmpos.ucad.sn", url: "https://fmpos.ucad.sn/" },
+        noteDAdmission:
+          "L'UCAD est ouverte aux étudiants étrangers dans la limite des places disponibles. Préinscription obligatoire en ligne sur preinscriptionenligne.ucad.sn. Accréditation : ce doctorat n'a pas été localisé directement dans la base ANAQ-Sup consultée ; la reconnaissance CAMES de l'UCAD est attestée indirectement (96,2 % de réussite aux évaluations CAMES 2025 rapportés par la presse), sans lien direct vers une fiche d'accréditation CAMES dédiée à ce diplôme précis.",
+      },
+      {
+        institut: "UIDT - Université Iba Der Thiam de Thiès (UFR Santé)",
+        ville: "Thiès",
+        statutEtablissement: "Public",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 8,
+        diplomePrepare: "Doctorat en médecine",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "Deuxième faculté de médecine publique du Sénégal : le tarif applicable aux étudiants étrangers n'est pas publié en ligne. Contactez ufrsante@univ-thies.sn pour connaître le montant applicable aux candidats comoriens.",
+        },
+        sourceOfficielle: { libelle: "uidt.sn", url: "https://www.uidt.sn/medecine-generale/" },
+        noteDAdmission:
+          "Deuxième école de médecine publique du Sénégal (UFR Santé créée en 2008, premiers diplômés en 2017), propose aussi pharmacie, soins infirmiers et orthophonie. Admission des étudiants étrangers par test d'entrée spécifique (contact : ufrsante@univ-thies.sn). Accréditation confirmée : le Conseil Scientifique de l'ANAQ-Sup a accrédité ce doctorat par acte du 19 novembre 2020 (univ-thies.sn).",
+      },
+    ],
+  },
   {
     id: "soins-infirmiers",
     filiere: "Soins Infirmiers",
     description:
-      "Le métier le plus recruté du secteur santé. Deux voies à Dakar : la licence publique de l'ENDSS, sur concours, ou le diplôme d'Infirmier d'État en école privée, sur dossier.",
+      "Le métier le plus recruté du secteur santé, et l'un des rares cursus courts qui mène à l'hôpital. À Dakar, la voie ouverte aux bacheliers étrangers est le privé : les concours de l'école publique (ENDSS) sont réservés aux candidats sénégalais.",
     debouches: [
       "Infirmier d'État",
       "Infirmier de bloc opératoire",
@@ -47,25 +117,6 @@ export const formationsSante: Formation[] = [
         "Vérifiez avant de vous inscrire que le diplôme de l'école choisie est reconnu par le ministère de la Santé sénégalais : c'est cette reconnaissance qui conditionne l'équivalence aux Comores. Une spécialisation (bloc opératoire, anesthésie, néonatalogie) vous rendra beaucoup plus rare au retour.",
     },
     etablissements: [
-      {
-        institut: "ENDSS - École Nationale de Développement Sanitaire et Social",
-        ville: "Dakar",
-        statutEtablissement: "Public",
-        bacsCompatibles: ["Scientifique", "Littéraire"],
-        dureeEnAnnees: 3,
-        diplomePrepare: "Licence en Sciences Infirmières et Obstétricales",
-        fraisDeScolarite: {
-          montant: "Droits publics + 10 000 F de dossier",
-          detail:
-            "École publique rattachée à l'UCAD : la scolarité est sans commune mesure avec le privé. Les frais de dossier du concours sont de 10 000 FCFA non remboursables. Le tarif d'inscription applicable aux étudiants étrangers n'est pas publié (repère UCAD : 200 000 FCFA par an en licence).",
-        },
-        sourceOfficielle: {
-          libelle: "concours.ucad.sn/ENDSS",
-          url: "https://concours.ucad.sn/ENDSS",
-        },
-        noteDAdmission:
-          "Admission sur concours, candidatures uniquement en ligne sur la plateforme UCAD. L'UCAD déclare être ouverte à toutes les nationalités, mais attention : l'appel à candidatures du parcours sage-femme réservait le concours direct aux candidates de nationalité sénégalaise. Écrivez à l'ENDSS pour confirmer votre éligibilité avant de préparer un dossier.",
-      },
       {
         institut: "ISSANTE - Université Docteur Daouda Sow",
         ville: "Dakar",
@@ -123,29 +174,9 @@ export const formationsSante: Formation[] = [
         "Cliniques privées",
       ],
       conseil:
-        "Le concours public sénégalais est très sélectif et sa condition de nationalité doit être vérifiée : préparez en parallèle un dossier dans le privé pour ne pas perdre une année.",
+        "L'ENDSS, école publique, réserve ses concours directs aux candidats de nationalité sénégalaise : pour un bachelier comorien, le privé est aujourd'hui la seule porte d'entrée à Dakar. Prévoyez ce budget dès le départ, et faites confirmer par écrit la reconnaissance du diplôme par le ministère de la Santé.",
     },
     etablissements: [
-      {
-        institut: "ENDSS - École Nationale de Développement Sanitaire et Social",
-        ville: "Dakar",
-        statutEtablissement: "Public",
-        bacsCompatibles: ["Scientifique", "Littéraire"],
-        dureeEnAnnees: 3,
-        diplomePrepare:
-          "Licence en Sciences Infirmières et Obstétricales, parcours sage-femme",
-        fraisDeScolarite: {
-          montant: "Droits publics + 10 000 F de dossier",
-          detail:
-            "Frais de dossier du concours : 10 000 FCFA non remboursables. Scolarité publique, tarif étranger non publié.",
-        },
-        sourceOfficielle: {
-          libelle: "concours.ucad.sn/ENDSS",
-          url: "https://concours.ucad.sn/ENDSS",
-        },
-        noteDAdmission:
-          "Concours d'entrée ouvert aux titulaires d'un bac L ou S. L'appel à candidatures consulté réservait le concours direct aux candidates de nationalité sénégalaise : cette condition doit impérativement être vérifiée auprès de l'école avant tout projet.",
-      },
       {
         institut: "ISSANTE - Université Docteur Daouda Sow",
         ville: "Dakar",
@@ -164,7 +195,7 @@ export const formationsSante: Formation[] = [
           url: "https://univ.issante.org/campus-dakar1/",
         },
         noteDAdmission:
-          "Admission sur dossier, baccalauréat toutes séries accepté. Voie privée à privilégier si le concours public vous est fermé.",
+          "Admission sur dossier, baccalauréat toutes séries accepté. C'est la voie praticable pour un bachelier comorien, les concours publics de l'ENDSS étant réservés aux candidats sénégalais.",
       },
     ],
   },
@@ -323,25 +354,6 @@ export const formationsSante: Formation[] = [
         "Filière courte, technique et directement transposable. Ajoutez-y la maintenance des équipements : aux Comores, celui qui sait réparer un automate est aussi précieux que celui qui sait l'utiliser.",
     },
     etablissements: [
-      {
-        institut: "ENDSS - École Nationale de Développement Sanitaire et Social",
-        ville: "Dakar",
-        statutEtablissement: "Public",
-        bacsCompatibles: ["Scientifique"],
-        dureeEnAnnees: 3,
-        diplomePrepare: "Licence en Analyses Biologiques Médicales",
-        fraisDeScolarite: {
-          montant: "Droits publics + 10 000 F de dossier",
-          detail:
-            "Scolarité publique. Frais de dossier de concours de 10 000 FCFA non remboursables. Tarif applicable aux étrangers non publié.",
-        },
-        sourceOfficielle: {
-          libelle: "concours.ucad.sn/ENDSS",
-          url: "https://concours.ucad.sn/ENDSS",
-        },
-        noteDAdmission:
-          "L'appel à candidatures 2026-2027 de l'ENDSS portait sur treize licences, dont analyses biologiques médicales, génie sanitaire, ergothérapie et orthophonie. Candidature en ligne sur concours.ucad.sn/endss, où la liste de l'année en cours fait foi.",
-      },
       {
         institut: "ISSANTE - Université Docteur Daouda Sow",
         ville: "Dakar",
