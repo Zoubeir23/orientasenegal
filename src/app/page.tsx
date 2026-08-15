@@ -21,7 +21,7 @@ const OBJECTIFS = [
     numero: "03",
     titre: "Penser au retour au pays",
     texte:
-      "Chaque filière est évaluée du point de vue du marché comorien : ce qui recrute, ce qui n'existe pas encore, et ce qu'il faut ajouter à son diplôme pour être employable à Moroni.",
+      "Chaque filière est appréciée du point de vue du marché comorien : ce qui recrute, ce qui n'existe pas encore, et ce qu'il faut ajouter à son diplôme pour être employable à Moroni. Ces appréciations sont celles de nos membres, pas des statistiques officielles.",
   },
 ];
 

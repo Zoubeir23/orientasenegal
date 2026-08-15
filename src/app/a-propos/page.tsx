@@ -77,7 +77,9 @@ export default function PageAPropos() {
             leurs démarches d&apos;inscription et de logement, et les oriente
             vers les établissements qu&apos;elle connaît de l&apos;intérieur.
             Ce site prolonge ce travail : il rassemble ce que nos membres ont
-            vérifié, école par école, pour que le choix se fasse avant le départ.
+            pu vérifier sur les sites officiels des établissements, pour que le
+            choix se fasse avant le départ. Ce qui n&apos;a pas pu être confirmé
+            est signalé comme tel dans les fiches, jamais présenté comme acquis.
           </p>
         </div>
       </section>
