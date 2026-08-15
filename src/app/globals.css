@@ -7,14 +7,18 @@
    Palette volontairement limitee au rose, au blanc et au jaune.
    -------------------------------------------------------------------------- */
 
-/* Palette volontairement réduite à trois couleurs : rose, blanc, jaune.
-   « encre » n'est pas un noir mais un prune très foncé dérivé du rose :
-   il assure le contraste des textes sans réintroduire de neutre froid. */
-/* Essai vert : seules les valeurs changent, les noms de classes restent
-   « magenta » pour pouvoir revenir en arrière en une seule édition. */
+/* Palette volontairement réduite à trois couleurs : vert, blanc, jaune.
+   Les noms de classes restent « magenta » : la charte a d'abord été testée en
+   rose, un retour en arrière ne demande qu'une seule édition ici.
+
+   Les trois verts sont calibrés pour porter du texte blanc à 4,5:1 minimum
+   (WCAG AA) : le vert de base sert de fond à la barre de navigation, aux
+   boutons et aux bandeaux, tous en texte blanc. Un vert plus clair y ferait
+   tomber le contraste sous 3:1. « encre » n'est pas un noir mais un vert
+   nuit, pour ne pas réintroduire de neutre froid. */
 @theme {
-  --color-magenta: #00b843;
-  --color-magenta-deep: #00913a;
+  --color-magenta: #008236;
+  --color-magenta-deep: #006b2c;
   --color-magenta-sombre: #044f26;
   --color-jaune: #ffd400;
   --color-jaune-clair: #fff4c2;
@@ -43,9 +47,13 @@ body {
   color: var(--color-blanc);
 }
 
+/* Indicateur de focus à deux couleurs : le jaune ressort sur les fonds verts
+   et sombres, l'anneau « encre » qui l'entoure le rend visible sur le blanc.
+   Un contour jaune seul disparaîtrait sur les sections claires. */
 :where(a, button, input, select, [tabindex]):focus-visible {
   outline: 3px solid var(--color-jaune);
-  outline-offset: 3px;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--color-encre);
 }
 
 /* --------------------------------------------------------------------------
