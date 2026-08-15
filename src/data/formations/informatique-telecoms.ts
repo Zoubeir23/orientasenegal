@@ -99,6 +99,39 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         noteDAdmission:
           "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique (contrairement à ISM et ISI, ouvertes aux littéraires). Accréditation confirmée sur anaqsup.sn/accreditations/universite-dakar-bourguiba-udb-licence-en-methodes-informatiques-appliquees-a-la-gestion-miage/ — la mieux documentée des trois options.",
       },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (Institut Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence en Informatique de Gestion (Systèmes d'information et Réseaux également proposés)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'UCAO ne publie pas ses tarifs en ligne. Le paiement est fractionné : frais d'inscription et un quart de la scolarité au moment de l'inscription, le solde en décembre, février et avril. Demandez la grille à stmichel@ucao.edu.sn ou au +221 33 823 08 40.",
+        },
+        sourceOfficielle: { libelle: "st-michel.sn", url: "https://www.st-michel.sn/" },
+        noteDAdmission:
+          "Admission après examen du dossier puis entretien avec le responsable de département. Université confessionnelle présente dans quatre pays d'Afrique de l'Ouest.",
+      },
+      {
+        institut: "ESCOA - École Supérieure de Commerce et d'Administration",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique", "Littéraire"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence / Bachelor en Informatique de Gestion",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "Tarifs non publiés en ligne : à demander au service admissions de l'école, avenue Cheikh Anta Diop à Dakar.",
+        },
+        sourceOfficielle: { libelle: "escoa.edu.sn", url: "https://www.escoa.edu.sn/" },
+        noteDAdmission:
+          "École membre de la FEDE (Fédération Européenne des Écoles), orientée gestion, commerce, administration et informatique appliquée.",
+      },
     ],
   },
   {
