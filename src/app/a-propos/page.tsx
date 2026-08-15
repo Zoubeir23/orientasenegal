@@ -33,7 +33,7 @@ export default function PageAPropos() {
       <section className="bg-magenta-sombre text-blanc">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-[auto_1fr] md:items-center md:px-8 md:py-24">
           <Image
-            src="/logo-aems.png"
+            src="/logo-aems.jpg"
             alt="Logo de l'Association des Étudiants de Mitsoudje au Sénégal"
             width={512}
             height={512}
