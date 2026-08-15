@@ -23,6 +23,27 @@ export function SiteNav() {
     };
   }, [menuMobileOuvert]);
 
+  // Au passage en affichage bureau, le menu mobile disparaît (md:hidden) mais
+  // son état resterait « ouvert » : le défilement de la page demeurerait
+  // bloqué. On referme donc explicitement au franchissement du point de
+  // rupture.
+  useEffect(() => {
+    const requeteBureau = window.matchMedia("(min-width: 48rem)");
+
+    const fermerSiBureau = (evenement: MediaQueryListEvent | MediaQueryList) => {
+      if (evenement.matches) {
+        setMenuMobileOuvert(false);
+      }
+    };
+
+    fermerSiBureau(requeteBureau);
+    requeteBureau.addEventListener("change", fermerSiBureau);
+
+    return () => {
+      requeteBureau.removeEventListener("change", fermerSiBureau);
+    };
+  }, []);
+
   const estActif = (href: string) =>
     href === "/" ? cheminActuel === "/" : cheminActuel.startsWith(href);
 
@@ -130,6 +151,9 @@ export function SiteNav() {
               href="https://wa.me/221785941071"
               target="_blank"
               rel="noopener noreferrer"
+              // WhatsApp s'ouvre dans un autre onglet : sans cette fermeture,
+              // l'utilisateur retrouverait le menu ouvert en revenant.
+              onClick={() => setMenuMobileOuvert(false)}
               className="mt-5 block rounded-full bg-jaune px-5 py-3.5 text-center text-sm font-bold tracking-[0.08em] text-encre uppercase"
             >
               WhatsApp : +221 78 594 10 71
