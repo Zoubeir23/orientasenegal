@@ -4,6 +4,7 @@ import { formationsDroitCommunication } from "./droit-communication";
 import { formationsIngenierieBtpEnergie } from "./ingenierie-btp-energie";
 import { formationsGestionCommerce } from "./gestion-commerce";
 import { formationsSanteAgroTourisme } from "./sante-agro-tourisme";
+import { formationsSante } from "./sante";
 
 /**
  * Annuaire tenu par l'AEMS.
@@ -22,4 +23,5 @@ export const formations: Formation[] = [
   ...formationsIngenierieBtpEnergie,
   ...formationsGestionCommerce,
   ...formationsSanteAgroTourisme,
+  ...formationsSante,
 ];
