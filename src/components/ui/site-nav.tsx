@@ -57,7 +57,7 @@ export function SiteNav() {
           aria-label="AEMS — retour à l'accueil"
         >
           <Image
-            src="/logo-aems.png"
+            src="/logo-aems.jpg"
             alt=""
             aria-hidden="true"
             width={256}

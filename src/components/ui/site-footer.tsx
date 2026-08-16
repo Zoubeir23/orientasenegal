@@ -11,7 +11,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-4">
             <Image
-              src="/logo-aems.png"
+              src="/logo-aems.jpg"
               alt=""
               aria-hidden="true"
               width={256}
