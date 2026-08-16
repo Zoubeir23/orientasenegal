@@ -67,23 +67,25 @@ export default function PageAccueil() {
           </p>
 
           <h1 className="titre-geant mt-7 max-w-5xl text-[3.25rem] sm:text-7xl lg:text-[6.5rem]">
+            {/* Chaque ligne est enveloppée dans un bloc : les classes de
+                surlignage imposent display:inline, donc un utilitaire « block »
+                posé directement dessus serait sans effet et les barres se
+                chevaucheraient. Le bloc porte aussi l'animation, qu'un élément
+                inline ignorerait. */}
+            <span className="rise-in block" style={{ animationDelay: "0.08s" }}>
+              <span className="titre-surligne">Étudier</span>
+            </span>
             <span
-              className="rise-in titre-surligne inline-block"
-              style={{ animationDelay: "0.08s" }}
-            >
-              Après le bac,
-            </span>{" "}
-            <span
-              className="rise-in titre-surligne-jaune inline-block"
+              className="rise-in mt-1 block"
               style={{ animationDelay: "0.18s" }}
             >
-              direction
-            </span>{" "}
+              <span className="titre-surligne-jaune">au Sénégal</span>
+            </span>
             <span
-              className="rise-in titre-surligne inline-block"
+              className="rise-in mt-1 block"
               style={{ animationDelay: "0.28s" }}
             >
-              Dakar.
+              <span className="titre-surligne">après le bac.</span>
             </span>
           </h1>
 
