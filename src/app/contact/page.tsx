@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  ADRESSE_ELECTRONIQUE,
   LIEN_WHATSAPP,
+  LIEN_WHATSAPP_SECONDAIRE,
   NUMERO_DE_TELEPHONE_AFFICHE,
+  NUMERO_SECONDAIRE_AFFICHE,
 } from "@/components/ui/site-footer";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez l'AEMS par WhatsApp au +221 78 594 10 71 pour toute question sur les études à Dakar.",
+    "Contactez l'AEMS par WhatsApp au +221 78 594 10 71 ou au +221 77 348 45 75, ou par courriel, pour toute question sur les études au Sénégal.",
 };
 
 const QUESTIONS_FREQUENTES = [
@@ -16,6 +19,8 @@ const QUESTIONS_FREQUENTES = [
   "Quel est le vrai budget d'une année à Dakar, logement compris ?",
   "Comment se passe l'inscription quand on a un bac comorien ?",
   "Cette école est-elle sérieuse et reconnue ?",
+  "Je cherche une formation qui n'est pas sur le site : existe-t-elle au Sénégal ?",
+  "Ces frais sont-ils toujours d'actualité cette année ?",
 ];
 
 export default function PageContact() {
@@ -35,26 +40,44 @@ export default function PageContact() {
             moindre franc pour vous orienter.
           </p>
 
+          <div className="mt-12 flex flex-wrap gap-5">
+            {[
+              { lien: LIEN_WHATSAPP, numero: NUMERO_DE_TELEPHONE_AFFICHE },
+              {
+                lien: LIEN_WHATSAPP_SECONDAIRE,
+                numero: NUMERO_SECONDAIRE_AFFICHE,
+              },
+            ].map((contact) => (
+              <a
+                key={contact.numero}
+                href={contact.lien}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-magenta px-8 py-7 transition-transform duration-200 hover:scale-[1.03] sm:px-12"
+              >
+                <span className="block text-xs font-bold tracking-[0.2em] text-blanc/80 uppercase">
+                  WhatsApp
+                </span>
+                <span className="titre-geant mt-2 block text-3xl text-blanc sm:text-4xl">
+                  {contact.numero}
+                </span>
+                <span className="sr-only">
+                  (ouvre une conversation WhatsApp dans un nouvel onglet)
+                </span>
+              </a>
+            ))}
+          </div>
+
           <a
-            href={LIEN_WHATSAPP}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-12 inline-block bg-magenta px-8 py-7 transition-transform duration-200 hover:scale-[1.03] sm:px-12"
+            href={`mailto:${ADRESSE_ELECTRONIQUE}`}
+            className="titre-geant mt-8 inline-block text-xl break-all text-jaune underline decoration-2 underline-offset-8 transition-colors duration-200 hover:text-blanc sm:text-2xl"
           >
-            <span className="block text-xs font-bold tracking-[0.2em] text-blanc/80 uppercase">
-              WhatsApp
-            </span>
-            <span className="titre-geant mt-2 block text-3xl text-blanc sm:text-5xl">
-              {NUMERO_DE_TELEPHONE_AFFICHE}
-            </span>
-            <span className="sr-only">
-              (ouvre une conversation WhatsApp dans un nouvel onglet)
-            </span>
+            {ADRESSE_ELECTRONIQUE}
           </a>
 
-          <p className="mt-6 text-sm text-blanc/60">
-            Vous pouvez aussi appeler ce numéro directement depuis les Comores
-            ou le Sénégal.
+          <p className="mt-8 text-sm text-blanc/70">
+            Ces deux numéros sont joignables par appel comme par WhatsApp,
+            depuis les Comores ou le Sénégal.
           </p>
         </div>
       </section>
