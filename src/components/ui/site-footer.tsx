@@ -4,6 +4,10 @@ import Link from "next/link";
 export const NUMERO_DE_TELEPHONE_AFFICHE = "+221 78 594 10 71";
 export const LIEN_WHATSAPP = "https://wa.me/221785941071";
 
+export const NUMERO_SECONDAIRE_AFFICHE = "+221 77 348 45 75";
+export const LIEN_WHATSAPP_SECONDAIRE = "https://wa.me/221773484575";
+export const ADRESSE_ELECTRONIQUE = "senegalmitsousdje@gmail.com";
+
 export function SiteFooter() {
   return (
     <footer className="mt-auto bg-magenta-sombre text-blanc">
@@ -66,11 +70,53 @@ export function SiteFooter() {
               (ouvre une conversation WhatsApp dans un nouvel onglet)
             </span>
           </a>
-          <p className="mt-5 max-w-sm text-sm leading-relaxed text-blanc/75">
-            Vérifiez toujours les dates, les frais et les conditions
-            d&apos;admission auprès de l&apos;établissement lui-même : les
-            informations de cet annuaire sont indicatives.
-          </p>
+          <a
+            href={LIEN_WHATSAPP_SECONDAIRE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="titre-geant mt-2 block text-2xl text-jaune transition-colors duration-200 hover:text-blanc"
+          >
+            {NUMERO_SECONDAIRE_AFFICHE}
+            <span className="sr-only">
+              (ouvre une conversation WhatsApp dans un nouvel onglet)
+            </span>
+          </a>
+          <a
+            href={`mailto:${ADRESSE_ELECTRONIQUE}`}
+            className="mt-4 inline-block font-bold break-all text-blanc underline decoration-jaune decoration-2 underline-offset-4 transition-colors duration-200 hover:text-jaune"
+          >
+            {ADRESSE_ELECTRONIQUE}
+          </a>
+        </div>
+      </div>
+
+      {/* Deux mises en garde qui valent pour tout le site : l'annuaire vieillit,
+          et il ne prétend pas être exhaustif. */}
+      <div className="border-t border-blanc/15">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 md:grid-cols-2 md:px-8">
+          <div className="border-l-4 border-jaune pl-5">
+            <p className="titre-geant text-lg">Ces informations vieillissent</p>
+            <p className="mt-3 leading-relaxed text-blanc/80">
+              Les frais, les dates de concours et les conditions d&apos;admission
+              publiés ici sont ceux que nous avons pu vérifier au moment de la
+              mise en ligne. Les établissements les modifient chaque année.
+              Avant de constituer un dossier ou de payer quoi que ce soit,
+              écrivez-nous : nous vérifions l&apos;information avec vous.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-jaune pl-5">
+            <p className="titre-geant text-lg">
+              Toutes les formations n&apos;y sont pas
+            </p>
+            <p className="mt-3 leading-relaxed text-blanc/80">
+              Le Sénégal compte bien plus de filières et d&apos;écoles que
+              celles réunies sur ce site : nous ajoutons celles que nos membres
+              connaissent de l&apos;intérieur. Si la formation que vous cherchez
+              n&apos;apparaît pas, contactez-nous — elle existe peut-être, et
+              nous vous dirons où.
+            </p>
+          </div>
         </div>
       </div>
 
