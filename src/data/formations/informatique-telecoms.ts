@@ -72,9 +72,9 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence professionnelle en informatique appliquée à la gestion",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
           detail:
-            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au campus Keur Massar ou au service admissions (+221 33 822 19 81, isi@isi.sn).",
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (dont 255 000 FCFA de droits d'inscription), mensualités de 80 000 FCFA. En L3 : 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Tenue obligatoire en 1re et 2e année (70 000 FCFA), ordinateur portable obligatoire, aucun remboursement en cas d'abandon.",
         },
         sourceOfficielle: {
           libelle: "isikeurmassar.com",
@@ -199,9 +199,9 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence professionnelle en Génie Logiciel (Master en Génie Logiciel possible)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "1 055 000 F/an en L1-L2, 1 155 000 F en L3",
           detail:
-            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au service admissions (+221 33 822 19 81 / +221 76 644 85 44, contact@groupeisi.com).",
+            "Brochure officielle ISI, édition 2024-2025 : le Génie Logiciel fait partie des filières à tarif majoré. L1-L2 = 1 055 000 FCFA/an (dont 255 000 FCFA de droits d'inscription), mensualités de 100 000 FCFA. En L3 : 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Ordinateur portable obligatoire, aucun remboursement en cas d'abandon.",
         },
         sourceOfficielle: {
           libelle: "groupeisi.com",
@@ -258,9 +258,9 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence (Master en 1 à 2 ans supplémentaires)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3, 1 355 000 F en Master",
           detail:
-            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis par filière et niveau au service admissions (+221 33 822 19 81, isi@isi.sn).",
+            "Brochure officielle ISI, édition 2024-2025. Licence (Réseaux informatiques, Cybersécurité) : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA ; L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Master Professionnel : 1 355 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 120 000 FCFA.",
         },
         sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
         noteDAdmission:
@@ -442,9 +442,9 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence professionnelle en Réseaux et Télécommunications (Master possible)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
           detail:
-            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au service admissions (+221 33 822 19 81 / +221 76 644 85 44, contact@groupeisi.com).",
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (dont 255 000 FCFA de droits d'inscription), mensualités de 80 000 FCFA. En L3 : 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Master Professionnel Réseaux et Systèmes Informatiques ensuite : 1 355 000 FCFA/an. Ordinateur portable obligatoire, aucun remboursement en cas d'abandon.",
         },
         sourceOfficielle: {
           libelle: "groupeisi.com",
@@ -452,6 +452,361 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         },
         noteDAdmission:
           "Formation en 6 semestres (180 crédits ECTS), ouverte aux titulaires du bac ou d'un diplôme équivalent. Débouchés visés : ingénieur réseaux, administrateur systèmes et réseaux, technicien télécoms, consultant cybersécurité réseaux. Accréditation confirmée pour la Licence professionnelle en Réseaux informatiques du même groupe : anaqsup.sn/accreditations/isi-institut-superieur-dinformatique/.",
+      },
+    ],
+  },
+  {
+    id: "isi-cybersecurite",
+    filiere: "Cybersécurité et Cyberdéfense",
+    description:
+      "Licence professionnelle du département Réseaux & Systèmes de l'ISI, centrée sur la sécurité des réseaux et des systèmes d'information : administration de la sécurité, analyse de risques, audit et réponse à incident.",
+    debouches: [
+      "Analyste cybersécurité",
+      "Administrateur sécurité réseau",
+      "Auditeur en sécurité des systèmes d'information",
+      "Consultant en gestion des incidents",
+    ],
+    competencesAcquises: [
+      "Identification des failles et vulnérabilités d'un réseau ou d'un système",
+      "Conception de politiques de sécurité des données d'entreprise",
+      "Protocoles réseau et sécurisation des communications",
+      "Audit de sécurité et réponse à incident",
+      "Sensibilisation et formation des utilisateurs à la sécurité informatique",
+    ],
+    missionsConcretes: [
+      "Auditer la sécurité du système d'information d'une banque ou d'une administration",
+      "Détecter et contenir une intrusion sur un réseau d'entreprise",
+      "Mettre en place une politique de sécurité des données",
+      "Former des équipes non techniques aux bons réflexes de cybersécurité",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "La cybersécurité reste un créneau quasi vierge aux Comores : très peu de professionnels formés, alors que banques, opérateurs télécoms et administrations digitalisent leurs services sans toujours les sécuriser. C'est l'une des spécialisations informatiques les plus rares et les mieux valorisées sur le marché régional.",
+      employeursPotentiels: [
+        "Banques et institutions de microfinance",
+        "Opérateurs télécoms et fournisseurs d'accès",
+        "Administrations en cours de digitalisation",
+        "Cabinets de conseil en sécurité informatique (à distance ou en régional)",
+      ],
+      conseil:
+        "Complétez la licence par des certifications reconnues (Cisco Certified CyberOps Associate, CEH, ISO 27001) : dans ce métier, la certification pèse souvent plus que le diplôme seul aux yeux des recruteurs.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Cybersécurité et Cyberdéfense",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (dont 255 000 FCFA de droits d'inscription), mensualités de 80 000 FCFA. En L3 : 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=48041",
+        },
+        noteDAdmission:
+          "Formation en 6 semestres (180 crédits ECTS), ouverte aux titulaires du bac ou d'un diplôme équivalent. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée, contrairement à la Licence Réseaux informatiques et à la Licence Génie Logiciel du même groupe, elles bien accréditées — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
+  {
+    id: "isi-data-science-ia",
+    filiere: "Data Science, Big Data et Intelligence Artificielle",
+    description:
+      "Licence (Bachelor) du département IA et Ingénierie des Données de l'ISI, centrée sur la collecte, le traitement et l'analyse de grands volumes de données. Poursuite possible en Master Data Science et Intelligence Artificielle.",
+    debouches: [
+      "Data analyst",
+      "Data scientist",
+      "Administrateur de bases de données Big Data",
+      "Développeur fullstack spécialisé Big Data",
+    ],
+    competencesAcquises: [
+      "Programmation (Python) et statistiques appliquées",
+      "Collecte, nettoyage et modélisation de grands volumes de données",
+      "Bases de données et infrastructures Big Data",
+      "Introduction au machine learning et à l'intelligence artificielle",
+      "Visualisation de données et aide à la décision (Power BI)",
+    ],
+    missionsConcretes: [
+      "Analyser les données de vente ou d'usage d'une entreprise pour orienter ses décisions",
+      "Construire un tableau de bord de pilotage pour une administration ou une ONG",
+      "Nettoyer et structurer des jeux de données pour un projet de recherche",
+      "Travailler à distance sur des projets de data pour des clients étrangers",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le marché comorien de la data est encore embryonnaire, mais bailleurs, banques et opérateurs télécoms commencent à réclamer des tableaux de bord et des analyses chiffrées. Le vrai potentiel de cette filière est le travail à distance pour des entreprises étrangères, où la demande en data analysts est forte.",
+      employeursPotentiels: [
+        "Banques et opérateurs télécoms (analyse client)",
+        "ONG et bailleurs (suivi-évaluation de projets)",
+        "Administrations (statistiques publiques)",
+        "Clients internationaux en télétravail (freelance)",
+      ],
+      conseil:
+        "Construisez un portfolio de projets data publics (Kaggle, GitHub) : c'est ce qui convainc un client étranger à distance, bien avant le nom de l'école.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence (Bachelor) en Data Science & Big Data Technology (Master Data Science et IA possible)",
+        fraisDeScolarite: {
+          montant: "1 055 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : filière à tarif majoré, comme le Génie Logiciel. L1-L2 = 1 055 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Le Master Data Science & Intelligence Artificielle qui suit est au tarif le plus élevé du groupe : 1 605 000 FCFA/an (255 000 FCFA d'inscription, mensualités de 150 000 FCFA).",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=49884",
+        },
+        noteDAdmission:
+          "Formation en 6 semestres (1 800 heures), ouverte aux titulaires du bac ou d'un diplôme équivalent. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
+  {
+    id: "isi-systemes-embarques-iot",
+    filiere: "Systèmes Embarqués et Internet des Objets (IoT)",
+    description:
+      "Licence du département Réseaux & Systèmes de l'ISI, à la frontière entre informatique et électronique : programmation de systèmes embarqués, objets connectés et automatismes industriels.",
+    debouches: [
+      "Technicien en systèmes embarqués",
+      "Développeur IoT",
+      "Technicien en automatisme et communication industrielle",
+      "Intégrateur d'objets connectés",
+    ],
+    competencesAcquises: [
+      "Programmation de microcontrôleurs et systèmes embarqués",
+      "Réseaux de capteurs et objets connectés (IoT)",
+      "Automatisme et communication industrielle",
+      "Électronique appliquée à l'informatique",
+      "Intégration matériel-logiciel de bout en bout",
+    ],
+    missionsConcretes: [
+      "Concevoir un système de télérelève (eau, électricité) connecté",
+      "Automatiser une chaîne de production ou un bâtiment (domotique)",
+      "Développer un prototype d'objet connecté pour l'agriculture ou la santé",
+      "Maintenir des équipements industriels pilotés par des automates",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "À construire",
+      resume:
+        "Filière de niche : il n'existe quasiment pas d'infrastructure industrielle lourde aux Comores, donc peu de débouchés salariés immédiats. Mais l'IoT appliqué à l'agriculture, l'eau ou l'énergie solaire est un terrain vierge pour qui veut créer sa propre activité plutôt que chercher un poste.",
+      employeursPotentiels: [
+        "Opérateurs télécoms et fournisseurs d'énergie",
+        "Projets agricoles et environnementaux financés par les bailleurs",
+        "Entreprises d'installation électrique et solaire",
+        "Création d'entreprise (prototypage, importation de matériel)",
+      ],
+      conseil:
+        "Filière à ne choisir que si vous êtes prêt à entreprendre : peu de postes salariés vous attendent au retour, mais les compétences sont rares et applicables à l'agriculture ou l'énergie solaire, deux secteurs porteurs aux Comores.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Systèmes Embarqués et IoT",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=48049",
+        },
+        noteDAdmission:
+          "Formation destinée à former des techniciens en automatisme et réseaux de communication industrielle, ouverte aux titulaires du bac ou d'un diplôme équivalent. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
+  {
+    id: "isi-diti-ingenieur",
+    filiere: "Diplôme d'Ingénieur en Techniques Informatiques (DITI)",
+    description:
+      "Diplôme d'ingénieur Bac+5 de l'ISI, accrédité ANAQ-Sup. Ne se choisit pas directement à la sortie du bac : il prolonge la licence professionnelle ISI (génie logiciel ou réseaux) de deux années supplémentaires, ou s'ouvre en admission parallèle aux titulaires d'un Bac+2 (BTS, DUT, L2).",
+    debouches: [
+      "Ingénieur informatique généraliste",
+      "Chef de projet IT",
+      "Architecte logiciel ou réseau",
+      "Consultant en systèmes d'information",
+    ],
+    competencesAcquises: [
+      "Approfondissement technique en génie logiciel et réseaux",
+      "Gestion de projets informatiques complexes",
+      "Architecture des systèmes d'information",
+      "Certifications constructeur intégrées (CCNA, CCNP, DEVNET, Oracle)",
+      "Culture d'ingénieur généraliste, au-delà d'une seule spécialité",
+    ],
+    missionsConcretes: [
+      "Piloter un projet informatique de bout en bout dans une entreprise ou une administration",
+      "Concevoir l'architecture technique d'un système d'information",
+      "Encadrer une équipe de développeurs ou de techniciens réseau",
+      "Accéder à des postes d'ingénieur généraliste, plus larges qu'un profil de licence",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Un diplôme d'ingénieur reste plus reconnu qu'une licence auprès des grandes structures (banques, télécoms, administrations) partout en Afrique francophone, y compris aux Comores. C'est un investissement en temps (5 ans au total depuis le bac) qui paie surtout pour l'accès à des postes d'encadrement.",
+      employeursPotentiels: [
+        "Banques et grandes administrations",
+        "Opérateurs télécoms",
+        "Cabinets de conseil en systèmes d'information",
+        "Clients internationaux en télétravail (freelance senior)",
+      ],
+      conseil:
+        "Ne vous engagez dans ce cycle qu'après avoir validé une licence professionnelle solide (génie logiciel ou réseaux) : le DITI prolonge un socle, ce n'est pas un point de départ. Vérifiez le tarif exact du cycle DITI, distinct de celui de la licence, avant de vous engager.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 5,
+        diplomePrepare: "Diplôme d'Ingénieur en Techniques Informatiques (Bac+5)",
+        fraisDeScolarite: {
+          montant: "≈ 1 355 000 F/an (cycle ingénieur)",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : le tarif du Master Professionnel, palier auquel se situe le DITI, est de 1 355 000 FCFA/an (255 000 FCFA d'inscription, mensualités de 120 000 FCFA). Confirmez ce montant pour le cycle DITI précisément, la brochure ne le détaillant pas séparément du Master Génie Logiciel.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=47993",
+        },
+        noteDAdmission:
+          "Diplôme accrédité ANAQ-Sup pour l'édition 2024-2025 : anaqsup.sn/accreditations/isi-institut-superieur-dinformatique-diplome-dingenieur-en-techniques-informatiques/. Accès en admission parallèle pour les titulaires d'un Bac+2, BTS, DUT ou Licence, ou en poursuite d'études après la licence professionnelle ISI. Ne se choisit donc pas directement à la sortie du bac.",
+      },
+    ],
+  },
+  {
+    id: "isi-infographie-multimedia",
+    filiere: "Infographie et Multimédia",
+    description:
+      "Licence du département Génie Informatique de l'ISI : conception graphique, animation 3D, montage vidéo et développement web, à la croisée du design et de l'informatique.",
+    debouches: [
+      "Infographiste / designer graphique",
+      "Intégrateur web",
+      "Monteur vidéo / motion designer",
+      "Concepteur multimédia (jeux, publicité, contenus interactifs)",
+    ],
+    competencesAcquises: [
+      "Logiciels de design graphique et de retouche d'image",
+      "Modélisation et animation 3D",
+      "Montage vidéo et narration visuelle",
+      "Développement web et intégration de contenus multimédias",
+      "Ergonomie et conception d'expériences interactives",
+    ],
+    missionsConcretes: [
+      "Créer l'identité visuelle et les supports de communication d'une entreprise",
+      "Concevoir le site web ou l'application d'une organisation",
+      "Réaliser des animations ou vidéos publicitaires",
+      "Travailler en freelance pour des clients locaux ou internationaux",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Les entreprises et institutions comoriennes ont besoin de supports visuels et de sites web, mais font souvent appel à des indépendants non formés faute d'offre locale structurée. Un profil qui allie design et compétences techniques (web, vidéo) se distingue facilement, surtout en freelance.",
+      employeursPotentiels: [
+        "Agences de communication",
+        "Entreprises et ONG (supports visuels, sites web)",
+        "Médias et production audiovisuelle",
+        "Activité indépendante (freelance local ou international)",
+      ],
+      conseil:
+        "Constituez un portfolio en ligne dès la 1re année : dans ce métier, ce que vous montrez compte plus que le diplôme. Les plateformes de freelance internationales sont accessibles depuis les Comores pour ce type de compétences.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Infographie et Multimédia",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=47953",
+        },
+        noteDAdmission:
+          "Ouverte aux titulaires du bac ou d'un diplôme équivalent, toutes séries. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
+  {
+    id: "isi-geomatique-developpement",
+    filiere: "Géomatique et Développement d'Applications",
+    description:
+      "Licence professionnelle du département Génie Informatique de l'ISI, qui combine systèmes d'information géographique (SIG), cartographie numérique et développement logiciel.",
+    debouches: [
+      "Développeur SIG",
+      "Administrateur de bases de données géographiques",
+      "Chargé d'études cartographiques",
+      "Consultant en géomarketing",
+    ],
+    competencesAcquises: [
+      "Systèmes d'information géographique (SIG) et télédétection",
+      "Cartographie numérique, géodésie et topographie",
+      "Développement d'applications liées à la donnée géographique",
+      "Bases de données géospatiales",
+      "Photogrammétrie et traitement d'images satellite",
+    ],
+    missionsConcretes: [
+      "Cartographier le foncier ou les infrastructures d'une administration",
+      "Développer une application de suivi géolocalisé (agriculture, urbanisme, réseaux)",
+      "Appuyer un projet d'aménagement du territoire avec des données SIG",
+      "Réaliser des études géomarketing pour une entreprise ou une ONG",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "À construire",
+      resume:
+        "La gestion du foncier, de l'urbanisme et des risques naturels aux Comores repose encore largement sur des méthodes manuelles, alors que les bailleurs internationaux financent de plus en plus de projets cartographiques et de SIG. Filière de niche, mais avec très peu de concurrence locale formée.",
+      employeursPotentiels: [
+        "Administrations (cadastre, urbanisme, environnement)",
+        "ONG et bailleurs (cartographie de projets)",
+        "Bureaux d'études en aménagement du territoire",
+        "Entreprises de télécoms et d'énergie (planification de réseaux)",
+      ],
+      conseil:
+        "Filière peu connue mais stratégique pour la gestion du territoire : rapprochez-vous des projets financés par les bailleurs (Banque mondiale, AFD) pendant vos études, c'est souvent leur porte d'entrée.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Géomatique et Développement d'Applications",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=47963",
+        },
+        noteDAdmission:
+          "Formation en 6 semestres, ouverte aux titulaires du bac ou d'un diplôme équivalent. Passage en L2 possible dès 70 % des crédits de L1 validés. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
       },
     ],
   },

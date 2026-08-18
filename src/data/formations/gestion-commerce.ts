@@ -85,7 +85,7 @@ export const formationsGestionCommerce: Formation[] = [
     id: "comptabilite-controle-audit",
     filiere: "Comptabilité, Contrôle et Audit",
     description:
-      "Licence spécialisée sur l'environnement comptable OHADA : comptabilité générale, contrôle de gestion et audit financier. Proposée par deux écoles privées dakaroises.",
+      "Licence spécialisée sur l'environnement comptable OHADA : comptabilité générale, contrôle de gestion et audit financier. Proposée par plusieurs écoles privées dakaroises, en présentiel ou à distance.",
     debouches: ["Comptable", "Auditeur junior", "Contrôleur de gestion", "Fiscaliste"],
     competencesAcquises: [
       "Comptabilité générale et analytique au référentiel SYSCOHADA",
@@ -111,7 +111,7 @@ export const formationsGestionCommerce: Formation[] = [
         "Entreprises privées, administration fiscale",
       ],
       conseil:
-        "Visez une expérience en cabinet pendant vos stages : l'audit de projets financés par les bailleurs est le créneau le mieux rémunéré au retour. IFAGE a l'accréditation la mieux documentée des deux écoles.",
+        "Visez une expérience en cabinet pendant vos stages : l'audit de projets financés par les bailleurs est le créneau le mieux rémunéré au retour. IFAGE et ISI ont chacune une accréditation confirmée pour cette filière précise, contrairement à IDG.",
     },
     etablissements: [
       {
@@ -149,13 +149,29 @@ export const formationsGestionCommerce: Formation[] = [
         noteDAdmission:
           "École membre du Collège de Paris, hébergeant notamment le programme Ascencia Business School à Dakar. Admission sur dossier (diplômes, pièce d'identité, CV) après le baccalauréat. Accréditation : école non trouvée ni dans la base ANAQ-Sup ni dans les listes CAMES consultées — demandez explicitement le statut d'accréditation avant de vous engager.",
       },
+      {
+        institut: "ISI - Institut Supérieur d'Informatique (Groupe ISI en Ligne)",
+        ville: "Dakar (formation à distance)",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Comptabilité Finance (100 % à distance)",
+        fraisDeScolarite: {
+          montant: "À confirmer",
+          detail:
+            "La brochure officielle ISI, édition 2024-2025, ne détaille pas de tarif spécifique au format à distance. Les licences professionnelles en présentiel sont à 895 000 FCFA/an en L1-L2 (255 000 FCFA d'inscription, mensualités de 80 000 FCFA) et 1 155 000 FCFA/an en L3 (255 000 FCFA d'inscription, mensualités de 100 000 FCFA) : confirmez si ce tarif s'applique aussi au format à distance auprès du service admissions.",
+        },
+        sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
+        noteDAdmission:
+          "Proposée via « Groupe ISI en Ligne », le programme d'études à distance de l'ISI : utile pour étudier sans s'installer à Dakar. Accréditation confirmée : anaqsup.sn/accreditations/institut-superieur-dinformatique-isi-de-dakar-licence-professionnelle-en-comptabilite-finance/.",
+      },
     ],
   },
   {
     id: "marketing-communication-digitale",
     filiere: "Marketing et Communication Digitale",
     description:
-      "Licence orientée marketing, communication et outils numériques, accessible aux profils littéraires. Proposée par deux écoles privées dakaroises aux positionnements proches.",
+      "Licence orientée marketing, communication et outils numériques, accessible aux profils littéraires. Proposée par plusieurs écoles privées dakaroises aux positionnements proches.",
     debouches: [
       "Chargé de marketing digital",
       "Community manager",
@@ -220,6 +236,22 @@ export const formationsGestionCommerce: Formation[] = [
         sourceOfficielle: { libelle: "afi-ue.sn", url: "https://afi-ue.sn/" },
         noteDAdmission:
           "École autorisée par le Ministère de l'Enseignement Supérieur sénégalais et membre de la Fédération Européenne des Écoles (FEDE), ce qui peut faciliter une poursuite d'études en France. Admission sur dossier complet, toutes séries de baccalauréat. Accréditation : AFI-l'UE a d'autres programmes accrédités ANAQ-Sup (affaires internationales, banque/assurance), mais cette filière précise n'apparaît pas séparément dans la base consultée.",
+      },
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Marketing et Communication Digitale",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
+        noteDAdmission:
+          "Proposée par le département Génie Informatique de l'ISI, qui combine marketing digital et outils numériques — un profil hybride rare chez les écoles de gestion classiques. Ouverte aux titulaires du bac, toutes séries. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
       },
     ],
   },
