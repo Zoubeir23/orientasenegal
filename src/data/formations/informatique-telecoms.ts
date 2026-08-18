@@ -191,6 +191,25 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         noteDAdmission:
           "Candidature via mycandidature.esp puis admission.ucad.sn. Filière scientifique exigeante en mathématiques. Confirmez la catégorie tarifaire applicable aux bacheliers comoriens avant de candidater. Accréditation : cette licence n'apparaît pas dans la base ANAQ-Sup consultée ; l'ESP a engagé une démarche d'accréditation de ses formations auprès de l'ANAQ-Sup (annoncée sur esp.sn), non finalisée à ce jour pour ce diplôme précis.",
       },
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Génie Logiciel (Master en Génie Logiciel possible)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au service admissions (+221 33 822 19 81 / +221 76 644 85 44, contact@groupeisi.com).",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=47946",
+        },
+        noteDAdmission:
+          "Formation en 6 semestres (1 800 heures), ouverte aux titulaires du bac ou d'un diplôme équivalent. Poursuite possible en Master Génie Logiciel au sein du même groupe. Accréditation confirmée : anaqsup.sn/accreditations/isi-institut-superieur-dinformatique-4/.",
+      },
     ],
   },
   {
@@ -414,6 +433,25 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         sourceOfficielle: { libelle: "esmt.sn", url: "https://esmt.sn/" },
         noteDAdmission:
           "L'école accueille en formation initiale ou continue des étudiants de tous les pays africains francophones, recrutés sur concours d'entrée (session annuelle, ex. fin juillet) ou sur dossier. Accréditation ANAQ-Sup confirmée pour la spécialité Administration et Sécurité des Réseaux (ASR) et plusieurs autres spécialités de la licence : anaqsup.sn/accreditations/esmt-licence-professionnelle-en-telecommunications-et-informatique-specialite-administration-et-securite-des-reseaux-asr/.",
+      },
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Réseaux et Télécommunications (Master possible)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au service admissions (+221 33 822 19 81 / +221 76 644 85 44, contact@groupeisi.com).",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=48034",
+        },
+        noteDAdmission:
+          "Formation en 6 semestres (180 crédits ECTS), ouverte aux titulaires du bac ou d'un diplôme équivalent. Débouchés visés : ingénieur réseaux, administrateur systèmes et réseaux, technicien télécoms, consultant cybersécurité réseaux. Accréditation confirmée pour la Licence professionnelle en Réseaux informatiques du même groupe : anaqsup.sn/accreditations/isi-institut-superieur-dinformatique/.",
       },
     ],
   },
