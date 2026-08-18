@@ -258,9 +258,9 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence (Master en 1 à 2 ans supplémentaires)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3, 1 355 000 F en Master",
           detail:
-            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis par filière et niveau au service admissions (+221 33 822 19 81, isi@isi.sn).",
+            "Brochure officielle ISI, édition 2024-2025. Licence (Réseaux informatiques, Cybersécurité) : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA ; L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Master Professionnel : 1 355 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 120 000 FCFA.",
         },
         sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
         noteDAdmission:
