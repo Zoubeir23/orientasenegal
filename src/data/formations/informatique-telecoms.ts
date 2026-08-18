@@ -514,4 +514,64 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       },
     ],
   },
+  {
+    id: "isi-data-science-ia",
+    filiere: "Data Science, Big Data et Intelligence Artificielle",
+    description:
+      "Licence (Bachelor) du département IA et Ingénierie des Données de l'ISI, centrée sur la collecte, le traitement et l'analyse de grands volumes de données. Poursuite possible en Master Data Science et Intelligence Artificielle.",
+    debouches: [
+      "Data analyst",
+      "Data scientist",
+      "Administrateur de bases de données Big Data",
+      "Développeur fullstack spécialisé Big Data",
+    ],
+    competencesAcquises: [
+      "Programmation (Python) et statistiques appliquées",
+      "Collecte, nettoyage et modélisation de grands volumes de données",
+      "Bases de données et infrastructures Big Data",
+      "Introduction au machine learning et à l'intelligence artificielle",
+      "Visualisation de données et aide à la décision (Power BI)",
+    ],
+    missionsConcretes: [
+      "Analyser les données de vente ou d'usage d'une entreprise pour orienter ses décisions",
+      "Construire un tableau de bord de pilotage pour une administration ou une ONG",
+      "Nettoyer et structurer des jeux de données pour un projet de recherche",
+      "Travailler à distance sur des projets de data pour des clients étrangers",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le marché comorien de la data est encore embryonnaire, mais bailleurs, banques et opérateurs télécoms commencent à réclamer des tableaux de bord et des analyses chiffrées. Le vrai potentiel de cette filière est le travail à distance pour des entreprises étrangères, où la demande en data analysts est forte.",
+      employeursPotentiels: [
+        "Banques et opérateurs télécoms (analyse client)",
+        "ONG et bailleurs (suivi-évaluation de projets)",
+        "Administrations (statistiques publiques)",
+        "Clients internationaux en télétravail (freelance)",
+      ],
+      conseil:
+        "Construisez un portfolio de projets data publics (Kaggle, GitHub) : c'est ce qui convainc un client étranger à distance, bien avant le nom de l'école.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence (Bachelor) en Data Science & Big Data Technology (Master Data Science et IA possible)",
+        fraisDeScolarite: {
+          montant: "1 055 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : filière à tarif majoré, comme le Génie Logiciel. L1-L2 = 1 055 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Le Master Data Science & Intelligence Artificielle qui suit est au tarif le plus élevé du groupe : 1 605 000 FCFA/an (255 000 FCFA d'inscription, mensualités de 150 000 FCFA).",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=49884",
+        },
+        noteDAdmission:
+          "Formation en 6 semestres (1 800 heures), ouverte aux titulaires du bac ou d'un diplôme équivalent. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
 ];
