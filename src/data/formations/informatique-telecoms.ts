@@ -455,4 +455,63 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       },
     ],
   },
+  {
+    id: "isi-cybersecurite",
+    filiere: "Cybersécurité et Cyberdéfense",
+    description:
+      "Licence professionnelle du département Réseaux & Systèmes de l'ISI, centrée sur la sécurité des réseaux et des systèmes d'information : administration de la sécurité, analyse de risques, audit et réponse à incident.",
+    debouches: [
+      "Analyste cybersécurité",
+      "Administrateur sécurité réseau",
+      "Auditeur en sécurité des systèmes d'information",
+      "Consultant en gestion des incidents",
+    ],
+    competencesAcquises: [
+      "Identification des failles et vulnérabilités d'un réseau ou d'un système",
+      "Conception de politiques de sécurité des données d'entreprise",
+      "Protocoles réseau et sécurisation des communications",
+      "Audit de sécurité et réponse à incident",
+      "Sensibilisation et formation des utilisateurs à la sécurité informatique",
+    ],
+    missionsConcretes: [
+      "Auditer la sécurité du système d'information d'une banque ou d'une administration",
+      "Détecter et contenir une intrusion sur un réseau d'entreprise",
+      "Mettre en place une politique de sécurité des données",
+      "Former des équipes non techniques aux bons réflexes de cybersécurité",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "La cybersécurité reste un créneau quasi vierge aux Comores : très peu de professionnels formés, alors que banques, opérateurs télécoms et administrations digitalisent leurs services sans toujours les sécuriser. C'est l'une des spécialisations informatiques les plus rares et les mieux valorisées sur le marché régional.",
+      employeursPotentiels: [
+        "Banques et institutions de microfinance",
+        "Opérateurs télécoms et fournisseurs d'accès",
+        "Administrations en cours de digitalisation",
+        "Cabinets de conseil en sécurité informatique (à distance ou en régional)",
+      ],
+      conseil:
+        "Complétez la licence par des certifications reconnues (CCNA Security, CEH, ISO 27001) : dans ce métier, la certification pèse souvent plus que le diplôme seul aux yeux des recruteurs.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Cybersécurité et Cyberdéfense",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (dont 255 000 FCFA de droits d'inscription), mensualités de 80 000 FCFA. En L3 : 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=48041",
+        },
+        noteDAdmission:
+          "Formation en 6 semestres (180 crédits ECTS), ouverte aux titulaires du bac ou d'un diplôme équivalent. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée, contrairement à la Licence Réseaux informatiques et à la Licence Génie Logiciel du même groupe, elles bien accréditées — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
 ];
