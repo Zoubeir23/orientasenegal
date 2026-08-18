@@ -149,6 +149,22 @@ export const formationsGestionCommerce: Formation[] = [
         noteDAdmission:
           "École membre du Collège de Paris, hébergeant notamment le programme Ascencia Business School à Dakar. Admission sur dossier (diplômes, pièce d'identité, CV) après le baccalauréat. Accréditation : école non trouvée ni dans la base ANAQ-Sup ni dans les listes CAMES consultées — demandez explicitement le statut d'accréditation avant de vous engager.",
       },
+      {
+        institut: "ISI - Institut Supérieur d'Informatique (Groupe ISI en Ligne)",
+        ville: "Dakar (formation à distance)",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Comptabilité Finance (100 % à distance)",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : mêmes tarifs que les licences professionnelles en présentiel — L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA ; L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Confirmez ce montant pour le format à distance, la brochure ne le détaillant pas séparément.",
+        },
+        sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
+        noteDAdmission:
+          "Proposée via « Groupe ISI en Ligne », le programme d'études à distance de l'ISI : utile pour étudier sans s'installer à Dakar. Accréditation confirmée : anaqsup.sn/accreditations/institut-superieur-dinformatique-isi-de-dakar-licence-professionnelle-en-comptabilite-finance/.",
+      },
     ],
   },
   {
