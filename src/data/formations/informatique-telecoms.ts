@@ -442,9 +442,9 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence professionnelle en Réseaux et Télécommunications (Master possible)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
           detail:
-            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au service admissions (+221 33 822 19 81 / +221 76 644 85 44, contact@groupeisi.com).",
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (dont 255 000 FCFA de droits d'inscription), mensualités de 80 000 FCFA. En L3 : 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Master Professionnel Réseaux et Systèmes Informatiques ensuite : 1 355 000 FCFA/an. Ordinateur portable obligatoire, aucun remboursement en cas d'abandon.",
         },
         sourceOfficielle: {
           libelle: "groupeisi.com",
