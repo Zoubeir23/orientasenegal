@@ -751,4 +751,63 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       },
     ],
   },
+  {
+    id: "isi-geomatique-developpement",
+    filiere: "Géomatique et Développement d'Applications",
+    description:
+      "Licence professionnelle du département Génie Informatique de l'ISI, qui combine systèmes d'information géographique (SIG), cartographie numérique et développement logiciel.",
+    debouches: [
+      "Développeur SIG",
+      "Administrateur de bases de données géographiques",
+      "Chargé d'études cartographiques",
+      "Consultant en géomarketing",
+    ],
+    competencesAcquises: [
+      "Systèmes d'information géographique (SIG) et télédétection",
+      "Cartographie numérique, géodésie et topographie",
+      "Développement d'applications liées à la donnée géographique",
+      "Bases de données géospatiales",
+      "Photogrammétrie et traitement d'images satellite",
+    ],
+    missionsConcretes: [
+      "Cartographier le foncier ou les infrastructures d'une administration",
+      "Développer une application de suivi géolocalisé (agriculture, urbanisme, réseaux)",
+      "Appuyer un projet d'aménagement du territoire avec des données SIG",
+      "Réaliser des études géomarketing pour une entreprise ou une ONG",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "À construire",
+      resume:
+        "La gestion du foncier, de l'urbanisme et des risques naturels aux Comores repose encore largement sur des méthodes manuelles, alors que les bailleurs internationaux financent de plus en plus de projets cartographiques et de SIG. Filière de niche, mais avec très peu de concurrence locale formée.",
+      employeursPotentiels: [
+        "Administrations (cadastre, urbanisme, environnement)",
+        "ONG et bailleurs (cartographie de projets)",
+        "Bureaux d'études en aménagement du territoire",
+        "Entreprises de télécoms et d'énergie (planification de réseaux)",
+      ],
+      conseil:
+        "Filière peu connue mais stratégique pour la gestion du territoire : rapprochez-vous des projets financés par les bailleurs (Banque mondiale, AFD) pendant vos études, c'est souvent leur porte d'entrée.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Géomatique et Développement d'Applications",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=47963",
+        },
+        noteDAdmission:
+          "Formation en 6 semestres, ouverte aux titulaires du bac ou d'un diplôme équivalent. Passage en L2 possible dès 70 % des crédits de L1 validés. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
 ];
