@@ -221,6 +221,22 @@ export const formationsGestionCommerce: Formation[] = [
         noteDAdmission:
           "École autorisée par le Ministère de l'Enseignement Supérieur sénégalais et membre de la Fédération Européenne des Écoles (FEDE), ce qui peut faciliter une poursuite d'études en France. Admission sur dossier complet, toutes séries de baccalauréat. Accréditation : AFI-l'UE a d'autres programmes accrédités ANAQ-Sup (affaires internationales, banque/assurance), mais cette filière précise n'apparaît pas séparément dans la base consultée.",
       },
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Marketing et Communication Digitale",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
+        noteDAdmission:
+          "Proposée par le département Génie Informatique de l'ISI, qui combine marketing digital et outils numériques — un profil hybride rare chez les écoles de gestion classiques. Ouverte aux titulaires du bac, toutes séries. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
+      },
     ],
   },
   {
