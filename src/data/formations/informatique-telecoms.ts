@@ -574,4 +574,63 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       },
     ],
   },
+  {
+    id: "isi-systemes-embarques-iot",
+    filiere: "Systèmes Embarqués et Internet des Objets (IoT)",
+    description:
+      "Licence du département Réseaux & Systèmes de l'ISI, à la frontière entre informatique et électronique : programmation de systèmes embarqués, objets connectés et automatismes industriels.",
+    debouches: [
+      "Technicien en systèmes embarqués",
+      "Développeur IoT",
+      "Technicien en automatisme et communication industrielle",
+      "Intégrateur d'objets connectés",
+    ],
+    competencesAcquises: [
+      "Programmation de microcontrôleurs et systèmes embarqués",
+      "Réseaux de capteurs et objets connectés (IoT)",
+      "Automatisme et communication industrielle",
+      "Électronique appliquée à l'informatique",
+      "Intégration matériel-logiciel de bout en bout",
+    ],
+    missionsConcretes: [
+      "Concevoir un système de télérelève (eau, électricité) connecté",
+      "Automatiser une chaîne de production ou un bâtiment (domotique)",
+      "Développer un prototype d'objet connecté pour l'agriculture ou la santé",
+      "Maintenir des équipements industriels pilotés par des automates",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "À construire",
+      resume:
+        "Filière de niche : il n'existe quasiment pas d'infrastructure industrielle lourde aux Comores, donc peu de débouchés salariés immédiats. Mais l'IoT appliqué à l'agriculture, l'eau ou l'énergie solaire est un terrain vierge pour qui veut créer sa propre activité plutôt que chercher un poste.",
+      employeursPotentiels: [
+        "Opérateurs télécoms et fournisseurs d'énergie",
+        "Projets agricoles et environnementaux financés par les bailleurs",
+        "Entreprises d'installation électrique et solaire",
+        "Création d'entreprise (prototypage, importation de matériel)",
+      ],
+      conseil:
+        "Filière à ne choisir que si vous êtes prêt à entreprendre : peu de postes salariés vous attendent au retour, mais les compétences sont rares et applicables à l'agriculture ou l'énergie solaire, deux secteurs porteurs aux Comores.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Systèmes Embarqués et IoT",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=48049",
+        },
+        noteDAdmission:
+          "Formation destinée à former des techniciens en automatisme et réseaux de communication industrielle, ouverte aux titulaires du bac ou d'un diplôme équivalent. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
 ];
