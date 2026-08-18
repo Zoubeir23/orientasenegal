@@ -72,9 +72,9 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence professionnelle en informatique appliquée à la gestion",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
           detail:
-            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au campus Keur Massar ou au service admissions (+221 33 822 19 81, isi@isi.sn).",
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (dont 255 000 FCFA de droits d'inscription), mensualités de 80 000 FCFA. En L3 : 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Tenue obligatoire en 1re et 2e année (70 000 FCFA), ordinateur portable obligatoire, aucun remboursement en cas d'abandon.",
         },
         sourceOfficielle: {
           libelle: "isikeurmassar.com",
