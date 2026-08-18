@@ -490,7 +490,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         "Cabinets de conseil en sécurité informatique (à distance ou en régional)",
       ],
       conseil:
-        "Complétez la licence par des certifications reconnues (CCNA Security, CEH, ISO 27001) : dans ce métier, la certification pèse souvent plus que le diplôme seul aux yeux des recruteurs.",
+        "Complétez la licence par des certifications reconnues (Cisco Certified CyberOps Associate, CEH, ISO 27001) : dans ce métier, la certification pèse souvent plus que le diplôme seul aux yeux des recruteurs.",
     },
     etablissements: [
       {
