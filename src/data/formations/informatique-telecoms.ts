@@ -692,4 +692,63 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       },
     ],
   },
+  {
+    id: "isi-infographie-multimedia",
+    filiere: "Infographie et Multimédia",
+    description:
+      "Licence du département Génie Informatique de l'ISI : conception graphique, animation 3D, montage vidéo et développement web, à la croisée du design et de l'informatique.",
+    debouches: [
+      "Infographiste / designer graphique",
+      "Intégrateur web",
+      "Monteur vidéo / motion designer",
+      "Concepteur multimédia (jeux, publicité, contenus interactifs)",
+    ],
+    competencesAcquises: [
+      "Logiciels de design graphique et de retouche d'image",
+      "Modélisation et animation 3D",
+      "Montage vidéo et narration visuelle",
+      "Développement web et intégration de contenus multimédias",
+      "Ergonomie et conception d'expériences interactives",
+    ],
+    missionsConcretes: [
+      "Créer l'identité visuelle et les supports de communication d'une entreprise",
+      "Concevoir le site web ou l'application d'une organisation",
+      "Réaliser des animations ou vidéos publicitaires",
+      "Travailler en freelance pour des clients locaux ou internationaux",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Les entreprises et institutions comoriennes ont besoin de supports visuels et de sites web, mais font souvent appel à des indépendants non formés faute d'offre locale structurée. Un profil qui allie design et compétences techniques (web, vidéo) se distingue facilement, surtout en freelance.",
+      employeursPotentiels: [
+        "Agences de communication",
+        "Entreprises et ONG (supports visuels, sites web)",
+        "Médias et production audiovisuelle",
+        "Activité indépendante (freelance local ou international)",
+      ],
+      conseil:
+        "Constituez un portfolio en ligne dès la 1re année : dans ce métier, ce que vous montrez compte plus que le diplôme. Les plateformes de freelance internationales sont accessibles depuis les Comores pour ce type de compétences.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence professionnelle en Infographie et Multimédia",
+        fraisDeScolarite: {
+          montant: "895 000 F/an en L1-L2, 1 155 000 F en L3",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : L1-L2 = 895 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 80 000 FCFA. L3 = 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=47953",
+        },
+        noteDAdmission:
+          "Ouverte aux titulaires du bac ou d'un diplôme équivalent, toutes séries. Accréditation : cette filière précise n'a pas été retrouvée dans la base ANAQ-Sup consultée — à faire confirmer auprès de l'école avant inscription.",
+      },
+    ],
+  },
 ];
