@@ -633,4 +633,63 @@ export const formationsInformatiqueTelecoms: Formation[] = [
       },
     ],
   },
+  {
+    id: "isi-diti-ingenieur",
+    filiere: "Diplôme d'Ingénieur en Techniques Informatiques (DITI)",
+    description:
+      "Diplôme d'ingénieur Bac+5 de l'ISI, accrédité ANAQ-Sup. Ne se choisit pas directement à la sortie du bac : il prolonge la licence professionnelle ISI (génie logiciel ou réseaux) de deux années supplémentaires, ou s'ouvre en admission parallèle aux titulaires d'un Bac+2 (BTS, DUT, L2).",
+    debouches: [
+      "Ingénieur informatique généraliste",
+      "Chef de projet IT",
+      "Architecte logiciel ou réseau",
+      "Consultant en systèmes d'information",
+    ],
+    competencesAcquises: [
+      "Approfondissement technique en génie logiciel et réseaux",
+      "Gestion de projets informatiques complexes",
+      "Architecture des systèmes d'information",
+      "Certifications constructeur intégrées (CCNA, CCNP, DEVNET, Oracle)",
+      "Culture d'ingénieur généraliste, au-delà d'une seule spécialité",
+    ],
+    missionsConcretes: [
+      "Piloter un projet informatique de bout en bout dans une entreprise ou une administration",
+      "Concevoir l'architecture technique d'un système d'information",
+      "Encadrer une équipe de développeurs ou de techniciens réseau",
+      "Accéder à des postes d'ingénieur généraliste, plus larges qu'un profil de licence",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Forte",
+      resume:
+        "Un diplôme d'ingénieur reste plus reconnu qu'une licence auprès des grandes structures (banques, télécoms, administrations) partout en Afrique francophone, y compris aux Comores. C'est un investissement en temps (5 ans au total depuis le bac) qui paie surtout pour l'accès à des postes d'encadrement.",
+      employeursPotentiels: [
+        "Banques et grandes administrations",
+        "Opérateurs télécoms",
+        "Cabinets de conseil en systèmes d'information",
+        "Clients internationaux en télétravail (freelance senior)",
+      ],
+      conseil:
+        "Ne vous engagez dans ce cycle qu'après avoir validé une licence professionnelle solide (génie logiciel ou réseaux) : le DITI prolonge un socle, ce n'est pas un point de départ. Vérifiez le tarif exact du cycle DITI, distinct de celui de la licence, avant de vous engager.",
+    },
+    etablissements: [
+      {
+        institut: "ISI - Institut Supérieur d'Informatique",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 5,
+        diplomePrepare: "Diplôme d'Ingénieur en Techniques Informatiques (Bac+5)",
+        fraisDeScolarite: {
+          montant: "≈ 1 355 000 F/an (cycle ingénieur)",
+          detail:
+            "Brochure officielle ISI, édition 2024-2025 : le tarif du Master Professionnel, palier auquel se situe le DITI, est de 1 355 000 FCFA/an (255 000 FCFA d'inscription, mensualités de 120 000 FCFA). Confirmez ce montant pour le cycle DITI précisément, la brochure ne le détaillant pas séparément du Master Génie Logiciel.",
+        },
+        sourceOfficielle: {
+          libelle: "groupeisi.com",
+          url: "https://www.groupeisi.com/?page_id=47993",
+        },
+        noteDAdmission:
+          "Diplôme accrédité ANAQ-Sup pour l'édition 2024-2025 : anaqsup.sn/accreditations/isi-institut-superieur-dinformatique-diplome-dingenieur-en-techniques-informatiques/. Accès en admission parallèle pour les titulaires d'un Bac+2, BTS, DUT ou Licence, ou en poursuite d'études après la licence professionnelle ISI. Ne se choisit donc pas directement à la sortie du bac.",
+      },
+    ],
+  },
 ];
