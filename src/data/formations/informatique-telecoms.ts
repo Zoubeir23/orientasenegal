@@ -199,9 +199,9 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence professionnelle en Génie Logiciel (Master en Génie Logiciel possible)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "1 055 000 F/an en L1-L2, 1 155 000 F en L3",
           detail:
-            "L'ISI ne publie pas sa grille tarifaire complète en ligne. Demandez un devis précis au service admissions (+221 33 822 19 81 / +221 76 644 85 44, contact@groupeisi.com).",
+            "Brochure officielle ISI, édition 2024-2025 : le Génie Logiciel fait partie des filières à tarif majoré. L1-L2 = 1 055 000 FCFA/an (dont 255 000 FCFA de droits d'inscription), mensualités de 100 000 FCFA. En L3 : 1 155 000 FCFA/an (255 000 FCFA d'inscription), mensualités de 100 000 FCFA. Ordinateur portable obligatoire, aucun remboursement en cas d'abandon.",
         },
         sourceOfficielle: {
           libelle: "groupeisi.com",
