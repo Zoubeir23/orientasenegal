@@ -4,8 +4,124 @@ import type { Formation } from "@/types/formation";
  * Droit, journalisme et communication.
  * "Droit" (licence généraliste) regroupe UCAD et ISDD, qui proposent la même
  * filière. UGB Droit Privé reste distincte car explicitement spécialisée.
+ * IJBA et SGDAI (UDB) sont les deux parcours de spécialisation en L3 du
+ * cycle Licence Génie Juridique de l'Université Dakar-Bourguiba : même
+ * tronc commun en L1-L2, fiches séparées car débouchés et masters distincts.
  */
 export const formationsDroitCommunication: Formation[] = [
+  {
+    id: "udb-ijba",
+    filiere: "Ingénierie Juridique Banque-Assurance (IJBA)",
+    description:
+      "Licence de droit spécialisée banque, assurance et crédit : tronc commun juridique en L1-L2 (droit civil, droit public, institutions judiciaires), puis spécialisation en L3 (droit bancaire, droit des assurances, droit des sûretés, fiscalité des affaires). Proposée par l'Université Dakar-Bourguiba (UDB), au sein de l'Unité de Formation et de Recherche Génie Juridique.",
+    debouches: [
+      "Juriste de banque",
+      "Juriste des assurances",
+      "Analyste de crédit",
+      "Conseiller juridique",
+    ],
+    competencesAcquises: [
+      "Droit civil, droit des obligations et droit des biens (tronc commun L1-L2)",
+      "Droit bancaire, droit du crédit et droit des sûretés",
+      "Droit des assurances, techniques bancaires et techniques des assurances",
+      "Fiscalité des affaires, finance et gestion financière",
+      "Anglais juridique et techniques d'expression professionnelle",
+    ],
+    missionsConcretes: [
+      "Sécuriser juridiquement des opérations bancaires et des contrats d'assurance",
+      "Instruire un dossier de crédit ou évaluer un risque assurantiel",
+      "Conseiller une banque, une compagnie d'assurance ou une entreprise sur ses obligations",
+      "Poursuivre en Master (IJBA, Ingénierie Juridique Bancaire, Ingénierie Juridique des Assurances)",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le secteur bancaire et assurantiel comorien est restreint mais structuré (banques commerciales, institutions de microfinance, quelques assureurs), avec un besoin réel de juristes spécialisés en conformité et en gestion du risque de crédit. Les postes existent surtout dans les rares établissements financiers formels du pays.",
+      employeursPotentiels: [
+        "Banques commerciales",
+        "Institutions de microfinance",
+        "Compagnies et courtiers d'assurance",
+        "Cabinets de conseil juridique et fiscal",
+      ],
+      conseil:
+        "Un Master reste quasi indispensable pour accéder aux postes de juriste bancaire ou d'assurance : le nombre d'employeurs financiers formels aux Comores est restreint mais stable, et une expérience régionale en Afrique de l'Ouest reste une option à envisager avant le retour.",
+    },
+    etablissements: [
+      {
+        institut: "UDB - Université Dakar-Bourguiba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Ingénierie Juridique Banque-Assurance (IJBA)",
+        fraisDeScolarite: {
+          montant: "40 000 F d'inscription + 40 000 F/mois",
+          detail:
+            "Grille publiée sur la plaquette UDB du cycle Licence Génie Juridique (2026) : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. Un régime particulier existe pour les étudiants travailleurs, à préciser auprès de l'établissement.",
+        },
+        sourceOfficielle: { libelle: "udb.sn", url: "https://www.udb.sn/" },
+        noteDAdmission:
+          "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup annoncée sur la plaquette de l'école — à confirmer sur anaqsup.sn avant inscription, cette filière n'ayant pas été retrouvée séparément dans la base consultée. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
+      },
+    ],
+  },
+  {
+    id: "udb-sgdai",
+    filiere: "Sciences de Gestion et Droit des Affaires Internationales (SGDAI)",
+    description:
+      "Licence de droit des affaires à dimension internationale : tronc commun juridique en L1-L2 (droit civil, droit public, institutions judiciaires), puis spécialisation en L3 (droit international public et privé, droit communautaire, propriété industrielle, relations internationales). Proposée par l'Université Dakar-Bourguiba (UDB), au sein de l'Unité de Formation et de Recherche Génie Juridique.",
+    debouches: [
+      "Juriste d'affaires",
+      "Avocat d'affaires",
+      "Conseiller juridique",
+      "Administrateur de société",
+    ],
+    competencesAcquises: [
+      "Droit civil, droit des obligations et droit des biens (tronc commun L1-L2)",
+      "Droit international public et privé, droit communautaire",
+      "Droit des sûretés, droit des procédures collectives et propriété industrielle",
+      "Fiscalité des affaires, gestion financière et économie de l'entreprise",
+      "Anglais juridique et relations internationales",
+    ],
+    missionsConcretes: [
+      "Rédiger et sécuriser des contrats internationaux",
+      "Conseiller une entreprise sur ses opérations transfrontalières et communautaires",
+      "Suivre le contentieux et les procédures collectives d'une société",
+      "Poursuivre en Master (SGDAI, Gestion Juridique des Affaires, Droit Maritime)",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le droit des affaires internationales trouve peu de débouchés institutionnels directs aux Comores, mais reste utile pour accompagner les entreprises exportatrices, les organismes régionaux (COI, coopération) et les rares filiales de groupes internationaux présentes dans le pays.",
+      employeursPotentiels: [
+        "Organismes régionaux et de coopération (COI, agences internationales)",
+        "Entreprises d'import-export",
+        "Cabinets d'avocats d'affaires",
+        "Administration et douanes",
+      ],
+      conseil:
+        "Un Master reste indispensable pour la plupart des débouchés. Le droit maritime, accessible via le Master Droit Maritime, peut être une spécialisation différenciante pour un pays insulaire comme les Comores.",
+    },
+    etablissements: [
+      {
+        institut: "UDB - Université Dakar-Bourguiba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence en Sciences de Gestion et Droit des Affaires Internationales (SGDAI)",
+        fraisDeScolarite: {
+          montant: "40 000 F d'inscription + 40 000 F/mois",
+          detail:
+            "Grille publiée sur la plaquette UDB du cycle Licence Génie Juridique (2026) : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. Un régime particulier existe pour les étudiants travailleurs, à préciser auprès de l'établissement.",
+        },
+        sourceOfficielle: { libelle: "udb.sn", url: "https://www.udb.sn/" },
+        noteDAdmission:
+          "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup annoncée sur la plaquette de l'école — à confirmer sur anaqsup.sn avant inscription, cette filière n'ayant pas été retrouvée séparément dans la base consultée. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
+      },
+    ],
+  },
   {
     id: "droit-licence-generaliste",
     filiere: "Droit",
