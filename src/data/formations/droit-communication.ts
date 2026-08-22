@@ -163,9 +163,9 @@ export const formationsDroitCommunication: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence en droit (privé ou public)",
         fraisDeScolarite: {
-          montant: "25 000 à 200 000 F / an selon la source",
+          montant: "25 000 F (CAMPUSEN) + 200 000 F/an de scolarité pour les étrangers",
           detail:
-            "Le portail d'orientation CAMPUSEN affiche 25 000 FCFA d'inscription + 500 FCFA de frais de transfert pour la procédure de candidature, tandis que des sources antérieures mentionnent 200 000 FCFA/an de scolarité pour les étudiants étrangers en faculté (contre 25 000 FCFA pour les Sénégalais et boursiers). Ces deux montants ne se recoupent pas clairement : confirmez le tarif exact applicable auprès de la DAP (dap@ucad.edu.sn) avant de bâtir un budget. Frais de dossier de 5 000 FCFA non remboursables.",
+            "Le portail d'orientation CAMPUSEN (orientation.campusen.sn) affiche 25 000 FCFA d'inscription + 500 FCFA de frais de transfert pour la procédure de candidature. À cela s'ajoute la scolarité annuelle en faculté : 200 000 FCFA/an pour les étudiants étrangers contre 25 000 FCFA pour les Sénégalais et boursiers — montant recoupé sur plusieurs sources récentes (2025-2026), mais non retrouvé sur un document officiel UCAD daté et détaillé par cycle : confirmez le tarif exact applicable auprès de la DAP (dap@ucad.edu.sn) avant de bâtir un budget. Frais de dossier de 5 000 FCFA non remboursables.",
         },
         sourceOfficielle: {
           libelle: "ucad.sn",
@@ -389,13 +389,16 @@ export const formationsDroitCommunication: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Diplôme Supérieur de Journalisme (équivalent Licence)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "10 000 F de frais de concours ; scolarité non publiée",
           detail:
-            "Centre public rattaché à l'UCAD : les frais spécifiques au CESTI ne sont pas publiés en ligne. Contactez cesti@ucad.edu.sn pour connaître le montant applicable aux candidats étrangers.",
+            "Le concours d'entrée coûte 10 000 FCFA (10 100 FCFA à Dakar avec frais Wave), non remboursables, payables lors du dépôt du dossier. La scolarité une fois admis (frais spécifiques au CESTI) n'est en revanche pas publiée en ligne : contactez cesti@ucad.edu.sn ou +221 77 587 07 64 pour connaître le montant applicable aux candidats étrangers.",
         },
-        sourceOfficielle: { libelle: "cesti.ucad.sn", url: "https://cesti.ucad.sn/" },
+        sourceOfficielle: {
+          libelle: "cesti.ucad.sn",
+          url: "https://cesti.ucad.sn/2026/04/29/concours-dentree-au-cesti-pour-lannee-2026-2027/",
+        },
         noteDAdmission:
-          "Admission par concours (présélection sur dossier puis épreuves écrites), ouvert à toutes nationalités, sans distinction, dans la limite des places disponibles. Calendrier annuel à surveiller sur le site du CESTI. Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée (le CESTI est une composante publique de l'UCAD, dont l'école doctorale a fait l'objet d'une auto-évaluation ANAQ-Sup, mais pas ce diplôme précis).",
+          "Admission par concours, ouvert à toutes nationalités sans distinction, dans la limite des places disponibles : entrée en L1 sur dossier de baccalauréat (candidats âgés de 17 à 24 ans) ou, sans limite d'âge, sur dossier de professionnel des médias justifiant de 4 ans d'expérience ; entrée en L2 possible pour les titulaires d'un Bac+5 ou équivalent. Session 2026-2027 : dépôt des dossiers jusqu'au 31 juillet 2026. Contact : cesti@ucad.edu.sn, +221 77 587 07 64, BP 5005 Dakar. Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée (le CESTI est une composante publique de l'UCAD, dont l'école doctorale a fait l'objet d'une auto-évaluation ANAQ-Sup, mais pas ce diplôme précis).",
       },
     ],
   },
