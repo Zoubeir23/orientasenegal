@@ -87,13 +87,16 @@ export const formationsGestionCommerce: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence en Sciences de Gestion (LSG)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "80 000 F d'inscription + ≈ 580 500 F la 1re année (grille datée 2022)",
           detail:
-            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+            "Grille officielle publiée sur st-michel.sn (document daté 2022, toujours en ligne — demandez confirmation du tarif en vigueur avant inscription) : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches mensuelles (novembre à avril) incluant scolarité, tenue et accès aux ressources numériques, pour un total L1 d'environ 580 500 FCFA. L2 ≈ 630 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 770 500 FCFA (droits d'inscription 120 000 F, frais de diplomation inclus). Un uniforme (60 000 FCFA) et un ordinateur ou une tablette (achat obligatoire, payable en 12 mois) s'ajoutent.",
         },
-        sourceOfficielle: { libelle: "st-michel.sn", url: "https://www.st-michel.sn/licence/" },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/wp-content/uploads/2022/07/LDEA-LSG_2022.pdf",
+        },
         noteDAdmission:
-          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), reconnu CAMES d'après le site de l'école. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD), reconnu CAMES d'après le site de l'école. Quatre options possibles à partir de la 3e année (Micro Finance, Marketing, GRH, Management des Organisations) ; cours proposés en journée ou en soirée. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie légalisée de l'attestation du Bac (L, STEG ou S), copie légalisée du relevé détaillé des notes du Bac, copie des bulletins de Terminale, 4 photos d'identité, puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
@@ -218,7 +221,7 @@ export const formationsGestionCommerce: Formation[] = [
           url: "https://www.st-michel.sn/2025/10/06/accreditation-de-la-licence-hecf-par-lanaq-sup/",
         },
         noteDAdmission:
-          "Département Comptabilité-Finance-Audit (chef de département : +221 76 223 21 99). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988 avec le DEC (Diplôme Elémentaire Comptable), sa formation historique. Diplôme délivré par l'UCAO (système LMD) ; la licence HECF a été accréditée ANAQ-Sup en octobre 2025. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+          "Département Comptabilité-Finance-Audit (chef de département : +221 76 223 21 99). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable), sa formation historique. Diplôme délivré par l'UCAO (système LMD) ; la licence HECF a été accréditée ANAQ-Sup en octobre 2025. Admission sur dossier (extrait de naissance, copie de la CNI ou du passeport, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes, 4 photos d'identité) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
@@ -448,16 +451,16 @@ export const formationsGestionCommerce: Formation[] = [
         diplomePrepare:
           "Licence Professionnelle en Transport Logistique (LPTL) — Commerce et Echanges Internationaux (LPCEI) également proposée",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "80 000 F d'inscription + ≈ 583 500 F la 1re année (LPCEI, grille 2024-2025)",
           detail:
-            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+            "Grille officielle LPCEI 2024-2025 publiée sur st-michel.sn : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches (novembre à avril) incluant scolarité, tenue et ressources numériques, pour un total L1 d'environ 583 500 FCFA. L2 ≈ 633 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 773 500 FCFA (droits d'inscription 120 000 F, diplomation incluse). Un uniforme (60 000 FCFA) s'ajoute. Cette grille est publiée pour la spécialité LPCEI ; le tarif LPTL n'a pas de PDF dédié retrouvé en ligne, mais suit vraisemblablement le même barème — à confirmer auprès du service scolarité.",
         },
         sourceOfficielle: {
           libelle: "st-michel.sn",
-          url: "https://www.st-michel.sn/nos-formations/licence-professionnelle-en-transport-logistique/",
+          url: "https://www.st-michel.sn/wp-content/uploads/2024/07/LPCEI-2024-2025.pdf",
         },
         noteDAdmission:
-          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD) ; aucune fiche ANAQ-Sup dédiée à cette filière précise n'a été retrouvée (seule l'habilitation institutionnelle de l'ISG Saint Michel est confirmée) — à faire confirmer avant inscription. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie légalisée de l'attestation du Bac (L, G ou S), copie légalisée du relevé détaillé des notes du Bac, copie des bulletins de Terminale, 4 photos d'identité, puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
