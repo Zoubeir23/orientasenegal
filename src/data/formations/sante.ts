@@ -143,11 +143,11 @@ export const formationsSante: Formation[] = [
             "Aucun tarif n'est publié dans la plaquette de l'école ni sur son site. Demandez la grille complète du cursus (Licence 3 ans + Master 2 ans + Doctorat 3 ans) par écrit avant de vous engager, en précisant le statut d'étudiant étranger.",
         },
         sourceOfficielle: {
-          libelle: "anaqsup.sn",
-          url: "https://anaqsup.sn/accreditations/uein-universite-el-hadj-ibrahima-niasse-ecole-de-medecine-saint-christopher-iba-mar-diop-2/",
+          libelle: "universitestchristopher.net",
+          url: "https://www.universitestchristopher.net/",
         },
         noteDAdmission:
-          "Première université privée de sciences médicales du Sénégal, fondée en 2000 et inaugurée en 2003 par le Président de la République. Attention à la raison sociale : l'accréditation ANAQ-Sup est enregistrée sous le nom « UEIN - Université El Hadj Ibrahima Niasse / École de Médecine Saint Christopher Iba Mar Diop », distinct du nom commercial « Université St. Christopher » utilisé dans la communication de l'école — vérifiez la cohérence des documents avant de candidater. Accréditations ANAQ-Sup et CAMES annoncées par l'école, ainsi qu'une accréditation ECFMG permettant aux diplômés de faire leur résidence aux États-Unis et au Canada. Deux rentrées par an (janvier et août). Stages cliniques en hôpitaux partenaires et centre de simulation avancé. Contact : Immeuble Nadiema, Point E, rue 7xb, Dakar ; +221 76 620 38 62 ; info@stchris.edu.",
+          "Première université privée de sciences médicales du Sénégal, fondée en 2000 et inaugurée en 2003 par le Président de la République. Attention à la raison sociale : l'accréditation ANAQ-Sup (anaqsup.sn/accreditations/uein-universite-el-hadj-ibrahima-niasse-ecole-de-medecine-saint-christopher-iba-mar-diop-2/) est enregistrée sous le nom « UEIN - Université El Hadj Ibrahima Niasse / École de Médecine Saint Christopher Iba Mar Diop », distinct du nom commercial « Université St. Christopher » utilisé dans la communication de l'école — vérifiez la cohérence des documents avant de candidater. Accréditations ANAQ-Sup et CAMES annoncées par l'école, ainsi qu'une accréditation ECFMG permettant aux diplômés de faire leur résidence aux États-Unis et au Canada. Deux rentrées par an (janvier et août). Stages cliniques en hôpitaux partenaires et centre de simulation avancé. Contact : Immeuble Nadiema, Point E, rue 7xb, Dakar ; +221 76 620 38 62 ; info@stchris.edu.",
       },
     ],
   },
@@ -457,11 +457,11 @@ export const formationsSante: Formation[] = [
             "Aucun tarif n'est publié dans la plaquette de l'école ni sur son site. Demandez la grille complète du cursus (Licence 3 ans + Master 2 ans + Doctorat 1 an) par écrit avant de vous engager, en précisant le statut d'étudiant étranger.",
         },
         sourceOfficielle: {
-          libelle: "anaqsup.sn",
-          url: "https://anaqsup.sn/accreditations/uein-universite-el-hadj-ibrahima-niasse-ecole-de-medecine-saint-christopher-iba-mar-diop-3/",
+          libelle: "universitestchristopher.net",
+          url: "https://www.universitestchristopher.net/",
         },
         noteDAdmission:
-          "Première université privée de sciences médicales du Sénégal, fondée en 2000 et inaugurée en 2003 par le Président de la République. Attention à la raison sociale : l'accréditation ANAQ-Sup est enregistrée sous le nom « UEIN - Université El Hadj Ibrahima Niasse / École de Médecine Saint Christopher Iba Mar Diop », distinct du nom commercial « Université St. Christopher » utilisé dans la communication de l'école — vérifiez la cohérence des documents avant de candidater. Accréditations ANAQ-Sup et CAMES annoncées par l'école. Officine de simulation et laboratoires modernes. Deux rentrées par an (janvier et août). Contact : Immeuble Nadiema, Point E, rue 7xb, Dakar ; +221 76 620 38 62 ; info@stchris.edu.",
+          "Première université privée de sciences médicales du Sénégal, fondée en 2000 et inaugurée en 2003 par le Président de la République. Attention à la raison sociale : l'accréditation ANAQ-Sup (anaqsup.sn/accreditations/uein-universite-el-hadj-ibrahima-niasse-ecole-de-medecine-saint-christopher-iba-mar-diop-3/) est enregistrée sous le nom « UEIN - Université El Hadj Ibrahima Niasse / École de Médecine Saint Christopher Iba Mar Diop », distinct du nom commercial « Université St. Christopher » utilisé dans la communication de l'école — vérifiez la cohérence des documents avant de candidater. Accréditations ANAQ-Sup et CAMES annoncées par l'école. Officine de simulation et laboratoires modernes. Deux rentrées par an (janvier et août). Contact : Immeuble Nadiema, Point E, rue 7xb, Dakar ; +221 76 620 38 62 ; info@stchris.edu.",
       },
     ],
   },
@@ -534,11 +534,11 @@ export const formationsSante: Formation[] = [
             "Aucun tarif n'est publié dans la plaquette de l'école ni sur son site. Demandez la grille complète du cursus (Licence 3 ans + Master 2 ans + Doctorat 1 an) par écrit avant de vous engager, en précisant le statut d'étudiant étranger.",
         },
         sourceOfficielle: {
-          libelle: "anaqsup.sn",
-          url: "https://anaqsup.sn/accreditations/uein-universite-el-hadj-ibrahima-niasse-ecole-de-medecine-saint-christopher-iba-mar-diop/",
+          libelle: "universitestchristopher.net",
+          url: "https://www.universitestchristopher.net/",
         },
         noteDAdmission:
-          "Première université privée de sciences médicales du Sénégal, fondée en 2000 et inaugurée en 2003 par le Président de la République. Attention à la raison sociale : l'accréditation ANAQ-Sup est enregistrée sous le nom « UEIN - Université El Hadj Ibrahima Niasse / École de Médecine Saint Christopher Iba Mar Diop », distinct du nom commercial « Université St. Christopher » utilisé dans la communication de l'école — vérifiez la cohérence des documents avant de candidater. Fauteuils dentaires ultra-modernes et formation sur fantômes dentaires avant les patients réels. Deux rentrées par an (janvier et août). Contact : Immeuble Nadiema, Point E, rue 7xb, Dakar ; +221 76 620 38 62 ; info@stchris.edu.",
+          "Première université privée de sciences médicales du Sénégal, fondée en 2000 et inaugurée en 2003 par le Président de la République. Attention à la raison sociale : l'accréditation ANAQ-Sup (anaqsup.sn/accreditations/uein-universite-el-hadj-ibrahima-niasse-ecole-de-medecine-saint-christopher-iba-mar-diop/) est enregistrée sous le nom « UEIN - Université El Hadj Ibrahima Niasse / École de Médecine Saint Christopher Iba Mar Diop », distinct du nom commercial « Université St. Christopher » utilisé dans la communication de l'école — vérifiez la cohérence des documents avant de candidater. Fauteuils dentaires ultra-modernes et formation sur fantômes dentaires avant les patients réels. Deux rentrées par an (janvier et août). Contact : Immeuble Nadiema, Point E, rue 7xb, Dakar ; +221 76 620 38 62 ; info@stchris.edu.",
       },
     ],
   },
