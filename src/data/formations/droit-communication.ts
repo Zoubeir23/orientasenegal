@@ -209,6 +209,22 @@ export const formationsDroitCommunication: Formation[] = [
         noteDAdmission:
           "Troisième établissement du Groupe Scolaire Jean de la Fontaine (SUARL dirigée par Michel Claver Gbaya), université privée laïque depuis 2006, habilitée à délivrer des diplômes LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). Le parcours Droit Public est accrédité ANAQ-Sup et CAMES depuis le 30/10/2021 ; le parcours Droit Privé est habilité mais son accréditation ANAQ-Sup était encore en attente de résultats d'après le site de l'école — à confirmer avant inscription. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
       },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Droit Economique et des Affaires (LDEA)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+        },
+        sourceOfficielle: { libelle: "st-michel.sn", url: "https://www.st-michel.sn/licence/" },
+        noteDAdmission:
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30), avec un Club des Juristes créé par les étudiants de cette filière. Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), reconnu CAMES d'après le site de l'école. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+      },
     ],
   },
   {
