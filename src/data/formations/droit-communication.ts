@@ -190,6 +190,25 @@ export const formationsDroitCommunication: Formation[] = [
         noteDAdmission:
           "École privée fondée en 2005 par le professeur Babacar Guèye, avec plus de 1 000 étudiants de 18 nationalités. Admission sur dossier après le baccalauréat, toutes séries. Pré-inscription en ligne sur le site de l'école (contact : +221 33 827 48 36, contact@isdd.edu.sn). Accréditation ANAQ-Sup confirmée (liste officielle des programmes accrédités) ; l'école est par ailleurs reconnue CAMES au niveau institutionnel.",
       },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Sciences Juridiques (spécialité Droit Public ou Droit Privé)",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-16/",
+        },
+        noteDAdmission:
+          "Troisième établissement du Groupe Scolaire Jean de la Fontaine (SUARL dirigée par Michel Claver Gbaya), université privée laïque depuis 2006, habilitée à délivrer des diplômes LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). Le parcours Droit Public est accrédité ANAQ-Sup et CAMES depuis le 30/10/2021 ; le parcours Droit Privé est habilité mais son accréditation ANAQ-Sup était encore en attente de résultats d'après le site de l'école — à confirmer avant inscription. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
     ],
   },
   {
