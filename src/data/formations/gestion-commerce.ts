@@ -87,7 +87,7 @@ export const formationsGestionCommerce: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence en Sciences de Gestion (LSG)",
         fraisDeScolarite: {
-          montant: "80 000 F d'inscription + ≈ 580 500 F la 1re année (grille datée 2022)",
+          montant: "≈ 580 500 F la 1re année, droits d'inscription inclus (grille datée 2022)",
           detail:
             "Grille officielle publiée sur st-michel.sn (document daté 2022, toujours en ligne — demandez confirmation du tarif en vigueur avant inscription) : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches mensuelles (novembre à avril) incluant scolarité, tenue et accès aux ressources numériques, pour un total L1 d'environ 580 500 FCFA. L2 ≈ 630 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 770 500 FCFA (droits d'inscription 120 000 F, frais de diplomation inclus). Un uniforme (60 000 FCFA) et un ordinateur ou une tablette (achat obligatoire, payable en 12 mois) s'ajoutent.",
         },
@@ -194,7 +194,7 @@ export const formationsGestionCommerce: Formation[] = [
         fraisDeScolarite: {
           montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+            "Grille tirée de la plaquette tarifaire imprimée UAHB 2024-2025 (catégorie « Droit & Gestion », mensualité versée sur 9 mois), distincte de la page de reconnaissances citée ci-dessous et non retrouvée en ligne : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
         },
         sourceOfficielle: {
           libelle: "uahb.sn",
@@ -273,7 +273,7 @@ export const formationsGestionCommerce: Formation[] = [
         fraisDeScolarite: {
           montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
         },
         sourceOfficielle: {
           libelle: "anaqsup.sn",
@@ -451,7 +451,7 @@ export const formationsGestionCommerce: Formation[] = [
         diplomePrepare:
           "Licence Professionnelle en Transport Logistique (LPTL) — Commerce et Echanges Internationaux (LPCEI) également proposée",
         fraisDeScolarite: {
-          montant: "80 000 F d'inscription + ≈ 583 500 F la 1re année (LPCEI, grille 2024-2025)",
+          montant: "≈ 583 500 F la 1re année, droits d'inscription inclus (LPCEI, grille 2024-2025)",
           detail:
             "Grille officielle LPCEI 2024-2025 publiée sur st-michel.sn : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches (novembre à avril) incluant scolarité, tenue et ressources numériques, pour un total L1 d'environ 583 500 FCFA. L2 ≈ 633 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 773 500 FCFA (droits d'inscription 120 000 F, diplomation incluse). Un uniforme (60 000 FCFA) s'ajoute. Cette grille est publiée pour la spécialité LPCEI ; le tarif LPTL n'a pas de PDF dédié retrouvé en ligne, mais suit vraisemblablement le même barème — à confirmer auprès du service scolarité.",
         },
