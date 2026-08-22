@@ -100,21 +100,23 @@ export const formationsInformatiqueTelecoms: Formation[] = [
           "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique (contrairement à ISM et ISI, ouvertes aux littéraires). Accréditation confirmée sur anaqsup.sn/accreditations/universite-dakar-bourguiba-udb-licence-en-methodes-informatiques-appliquees-a-la-gestion-miage/ — la mieux documentée des trois options. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact général (plaquette 2026) : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com — pour la scolarité MIAGE spécifiquement, une ligne alternative a été signalée par le passé (+221 33 825 36 16).",
       },
       {
-        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (Institut Saint Michel)",
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
         ville: "Dakar",
         statutEtablissement: "Privé",
         bacsCompatibles: ["Scientifique", "Littéraire"],
         dureeEnAnnees: 3,
-        diplomePrepare:
-          "Licence en Informatique de Gestion (Systèmes d'information et Réseaux également proposés)",
+        diplomePrepare: "Licence Professionnelle en Informatique de Gestion (LPIG)",
         fraisDeScolarite: {
           montant: "Non publié",
           detail:
-            "L'UCAO ne publie pas ses tarifs en ligne. Le paiement est fractionné : frais d'inscription et un quart de la scolarité au moment de l'inscription, le solde en décembre, février et avril. Demandez la grille à stmichel@ucao.edu.sn ou au +221 33 823 08 40.",
+            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Le paiement est fractionné : frais d'inscription et un quart de la scolarité au moment de l'inscription, le solde en décembre, février et avril. Demandez la grille au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
         },
-        sourceOfficielle: { libelle: "st-michel.sn", url: "https://www.st-michel.sn/" },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/nos-formations/licence-professionnelle-en-informatique-de-gestion/",
+        },
         noteDAdmission:
-          "Admission après examen du dossier puis entretien avec le responsable de département. Université confessionnelle présente dans quatre pays d'Afrique de l'Ouest. Accréditation : aucun statut ANAQ-Sup ni CAMES retrouvé pour cette filière dans les sources consultées — à faire confirmer par écrit avant inscription.",
+          "Département Informatique-Mathématiques (contact chef de département : +221 77 525 49 61). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
       {
         institut: "ESCOA - École Supérieure de Commerce et d'Administration",
@@ -492,6 +494,25 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         },
         noteDAdmission:
           "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019) et accréditée ANAQ-Sup pour cette filière précise. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence Professionnelle en Réseaux et Systèmes Informatiques (LRSI)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Le paiement est fractionné : frais d'inscription et un quart de la scolarité au moment de l'inscription, le solde en décembre, février et avril. Demandez la grille au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+        },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/nos-formations/licence-professionnelle-en-reseaux-et-systemes-informatiques/",
+        },
+        noteDAdmission:
+          "Département Informatique-Mathématiques (contact chef de département : +221 77 525 49 61). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
