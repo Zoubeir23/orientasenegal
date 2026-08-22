@@ -50,6 +50,7 @@ export const DOMAINES: Domaine[] = [
       "sage-femme",
       "analyses-biologiques-medicales",
       "chirurgie-dentaire",
+      "uahb-sante-communautaire",
     ],
   },
   {
@@ -76,6 +77,7 @@ export const DOMAINES: Domaine[] = [
     couleurDeTexte: "text-encre",
     identifiantsDeFilieres: [
       "comptabilite-controle-audit",
+      "banque-assurance-gestion",
       "transport-logistique",
       "sciences-gestion-management",
       "marketing-communication-digitale",
