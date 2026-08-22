@@ -145,7 +145,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         fraisDeScolarite: {
           montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/80 000 en L3)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « STIC » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 70 000/mois (750 000 FCFA/an) ; L3 = 130 000 + 80 000/mois (850 000 FCFA/an) — soit environ 2 250 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+            "Grille officielle UAHB 2024-2025, catégorie « STIC » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 70 000/mois (750 000 FCFA/an) ; L3 = 130 000 + 80 000/mois (850 000 FCFA/an) — soit environ 2 250 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
         },
         sourceOfficielle: {
           libelle: "uahb.sn",
@@ -486,7 +486,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         fraisDeScolarite: {
           montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/80 000 en L3)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « STIC » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 70 000/mois (750 000 FCFA/an) ; L3 = 130 000 + 80 000/mois (850 000 FCFA/an) — soit environ 2 250 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+            "Grille officielle UAHB 2024-2025, catégorie « STIC » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 70 000/mois (750 000 FCFA/an) ; L3 = 130 000 + 80 000/mois (850 000 FCFA/an) — soit environ 2 250 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
         },
         sourceOfficielle: {
           libelle: "anaqsup.sn",
@@ -503,7 +503,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence Professionnelle en Réseaux et Systèmes Informatiques (LRSI)",
         fraisDeScolarite: {
-          montant: "80 000 F d'inscription + ≈ 583 500 F la 1re année (grille 2024-2025)",
+          montant: "≈ 583 500 F la 1re année, droits d'inscription inclus (grille 2024-2025)",
           detail:
             "Grille officielle LRSI 2024-2025 publiée sur st-michel.sn : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches (novembre à avril) incluant scolarité, tenue et ressources numériques, pour un total L1 d'environ 583 500 FCFA. L2 ≈ 633 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 773 500 FCFA (droits d'inscription 120 000 F, diplomation incluse). Un uniforme (60 000 FCFA) s'ajoute ; préparation aux certifications CISCO, Microsoft et/ou Linux incluse dans le cursus.",
         },

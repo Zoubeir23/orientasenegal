@@ -76,7 +76,7 @@ export const formationsAgroTourismeAudiovisuel: Formation[] = [
         fraisDeScolarite: {
           montant: "110 000 F d'inscription + 90 000 F/mois en L1 (jusqu'à 130 000/90 000 en L3)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « Agro » : L1 = 110 000 FCFA d'inscription + 90 000 FCFA/mois (920 000 FCFA/an) ; L2 = 120 000 + 90 000/mois (930 000 FCFA/an) ; L3 = 130 000 + 90 000/mois (940 000 FCFA/an) — soit environ 2 790 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+            "Grille officielle UAHB 2024-2025, catégorie « Agro » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 90 000 FCFA/mois (920 000 FCFA/an) ; L2 = 120 000 + 90 000/mois (930 000 FCFA/an) ; L3 = 130 000 + 90 000/mois (940 000 FCFA/an) — soit environ 2 790 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
         },
         sourceOfficielle: {
           libelle: "anaqsup.sn",
@@ -135,7 +135,7 @@ export const formationsAgroTourismeAudiovisuel: Formation[] = [
         fraisDeScolarite: {
           montant: "110 000 F d'inscription + 90 000 F/mois en L1 (jusqu'à 130 000/90 000 en L3)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « Agro » : L1 = 110 000 FCFA d'inscription + 90 000 FCFA/mois (920 000 FCFA/an) ; L2 = 120 000 + 90 000/mois (930 000 FCFA/an) ; L3 = 130 000 + 90 000/mois (940 000 FCFA/an) — soit environ 2 790 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+            "Grille officielle UAHB 2024-2025, catégorie « Agro » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 90 000 FCFA/mois (920 000 FCFA/an) ; L2 = 120 000 + 90 000/mois (930 000 FCFA/an) ; L3 = 130 000 + 90 000/mois (940 000 FCFA/an) — soit environ 2 790 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
         },
         sourceOfficielle: {
           libelle: "anaqsup.sn",
