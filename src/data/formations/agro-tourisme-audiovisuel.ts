@@ -6,6 +6,8 @@ import type { Formation } from "@/types/formation";
  * "Hôtellerie, Restauration et Tourisme" regroupe ENFHT et Les Marmitons.
  * ISEP Richard-Toll/ENSA Thiès et ISEP Thiès/Kourtrajmé restent distincts :
  * niveaux de diplôme et natures de formation trop différents pour fusionner.
+ * "Agronomie et Production Végétale" (UAHB) reste distincte de l'ingénieur
+ * agronome ENSA Thiès : Licence Bac+3 professionnalisante, pas Bac+5.
  */
 export const formationsAgroTourismeAudiovisuel: Formation[] = [
   {
@@ -63,6 +65,84 @@ export const formationsAgroTourismeAudiovisuel: Formation[] = [
         },
         noteDAdmission:
           "Recrutement par campagne annuelle. L'établissement propose plusieurs parcours agroalimentaires (production, commercialisation, logistique). Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée — l'habilitation trouvée concerne le réseau ISEP (via ISEP Thiès), pas le site de Richard-Toll individuellement.",
+      },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Sciences Agroalimentaires, spécialité Industries Agroalimentaires",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 90 000 F/mois en L1 (jusqu'à 130 000/90 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « Agro » : L1 = 110 000 FCFA d'inscription + 90 000 FCFA/mois (920 000 FCFA/an) ; L2 = 120 000 + 90 000/mois (930 000 FCFA/an) ; L3 = 130 000 + 90 000/mois (940 000 FCFA/an) — soit environ 2 790 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-4/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019), accréditée ANAQ-Sup et CAMES pour cette filière depuis le 30/10/2021. Licence Bac+3 en présentiel à Dakar, à distinguer du diplôme d'ingénieur (Bac+5) de l'ENSA Thiès. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
+    ],
+  },
+  {
+    id: "uahb-agronomie-production-vegetale",
+    filiere: "Agronomie et Production Végétale",
+    description:
+      "Licence professionnelle en sciences agroalimentaires, spécialité agronomie et production végétale : techniques culturales, protection des plantes, amélioration des rendements. Formation Bac+3 professionnalisante, à distinguer du diplôme d'ingénieur agronome (Bac+5) de l'ENSA Thiès. Proposée par l'Université Amadou Hampaté Ba (UAHB).",
+    debouches: [
+      "Technicien agricole",
+      "Conseiller agricole",
+      "Responsable de production végétale",
+      "Chargé de projet agricole",
+    ],
+    competencesAcquises: [
+      "Agronomie générale et techniques culturales",
+      "Physiologie végétale et amélioration des plantes",
+      "Protection des cultures et gestion des sols",
+      "Irrigation et gestion de l'eau agricole",
+      "Suivi et évaluation de projets agricoles",
+    ],
+    missionsConcretes: [
+      "Conseiller des exploitants sur les techniques de culture",
+      "Améliorer le rendement d'une parcelle ou d'une coopérative agricole",
+      "Mettre en place un système d'irrigation adapté",
+      "Suivre un projet agricole pour une ONG ou une administration",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "À construire",
+      resume:
+        "Les Comores dépendent largement de l'agriculture vivrière et de quelques cultures d'exportation (vanille, ylang-ylang, girofle), mais les emplois salariés techniques restent rares. Ce diplôme, plus court que celui d'ingénieur agronome, convient à qui veut se rendre utile rapidement sur le terrain plutôt que piloter de grands projets.",
+      employeursPotentiels: [
+        "Coopératives agricoles et filières d'exportation",
+        "ONG et projets de sécurité alimentaire",
+        "Services techniques agricoles",
+        "Création de sa propre exploitation",
+      ],
+      conseil:
+        "Filière plus courte et plus opérationnelle que l'ingénieur agronome ENSA Thiès (Bac+5) : un bon choix si vous voulez revenir vite sur le terrain plutôt que viser des postes de pilotage de grands projets.",
+    },
+    etablissements: [
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence Professionnelle en Sciences Agroalimentaires, spécialité Agronomie et Production Végétale",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 90 000 F/mois en L1 (jusqu'à 130 000/90 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « Agro » : L1 = 110 000 FCFA d'inscription + 90 000 FCFA/mois (920 000 FCFA/an) ; L2 = 120 000 + 90 000/mois (930 000 FCFA/an) ; L3 = 130 000 + 90 000/mois (940 000 FCFA/an) — soit environ 2 790 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-3/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019), accréditée ANAQ-Sup pour cette filière précise. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
       },
     ],
   },
