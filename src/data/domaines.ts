@@ -89,7 +89,12 @@ export const DOMAINES: Domaine[] = [
       "Droit foncier, OHADA, journalisme. Des professions où le master est presque toujours nécessaire.",
     couleurDeFond: "bg-magenta-sombre",
     couleurDeTexte: "text-blanc",
-    identifiantsDeFilieres: ["droit-licence-generaliste", "cesti-journalisme"],
+    identifiantsDeFilieres: [
+      "droit-licence-generaliste",
+      "udb-ijba",
+      "udb-sgdai",
+      "cesti-journalisme",
+    ],
   },
   {
     id: "arts-tourisme",
