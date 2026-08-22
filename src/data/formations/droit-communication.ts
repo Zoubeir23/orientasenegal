@@ -59,9 +59,9 @@ export const formationsDroitCommunication: Formation[] = [
           detail:
             "Grille publiée sur la plaquette UDB du cycle Licence Génie Juridique (2026) : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. Un régime particulier existe pour les étudiants travailleurs, à préciser auprès de l'établissement.",
         },
-        sourceOfficielle: { libelle: "udb.sn", url: "https://www.udb.sn/" },
+        sourceOfficielle: { libelle: "udb-sn.com", url: "http://www.udb-sn.com/?u=gj" },
         noteDAdmission:
-          "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup annoncée sur la plaquette de l'école — à confirmer sur anaqsup.sn avant inscription, cette filière n'ayant pas été retrouvée séparément dans la base consultée. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
+          "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup confirmée pour cette filière précise : anaqsup.sn/accreditations/udb-licence-en-ingenierie-juridique-banque-assurance/. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
       },
     ],
   },
@@ -116,9 +116,9 @@ export const formationsDroitCommunication: Formation[] = [
           detail:
             "Grille publiée sur la plaquette UDB du cycle Licence Génie Juridique (2026) : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. Un régime particulier existe pour les étudiants travailleurs, à préciser auprès de l'établissement.",
         },
-        sourceOfficielle: { libelle: "udb.sn", url: "https://www.udb.sn/" },
+        sourceOfficielle: { libelle: "udb-sn.com", url: "http://www.udb-sn.com/?u=gj" },
         noteDAdmission:
-          "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup annoncée sur la plaquette de l'école — à confirmer sur anaqsup.sn avant inscription, cette filière n'ayant pas été retrouvée séparément dans la base consultée. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
+          "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup confirmée pour cette filière précise : anaqsup.sn/accreditations/universite-dakar-bourguiba-licence-en-sciences-de-gestion-et-droit-des-affaires-internationales-sgdai/. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
       },
     ],
   },
@@ -217,13 +217,16 @@ export const formationsDroitCommunication: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence en Droit Economique et des Affaires (LDEA)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "80 000 F d'inscription + ≈ 580 500 F la 1re année (grille datée 2022)",
           detail:
-            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+            "Grille officielle publiée sur st-michel.sn (document daté 2022, toujours en ligne — demandez confirmation du tarif en vigueur avant inscription) : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches mensuelles (novembre à avril) incluant scolarité, tenue et accès aux ressources numériques, pour un total L1 d'environ 580 500 FCFA. L2 ≈ 630 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 770 500 FCFA (droits d'inscription 120 000 F, frais de diplomation inclus). Un uniforme (60 000 FCFA) et un ordinateur ou une tablette (achat obligatoire, payable en 12 mois) s'ajoutent.",
         },
-        sourceOfficielle: { libelle: "st-michel.sn", url: "https://www.st-michel.sn/licence/" },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/wp-content/uploads/2022/07/LDEA-LSG_2022.pdf",
+        },
         noteDAdmission:
-          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30), avec un Club des Juristes créé par les étudiants de cette filière. Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), reconnu CAMES d'après le site de l'école. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30), avec un Club des Juristes créé par les étudiants de cette filière. Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD), reconnu CAMES d'après le site de l'école. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie légalisée de l'attestation du Bac, copie légalisée du relevé détaillé des notes du Bac, copie des bulletins de Terminale, 4 photos d'identité, puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
