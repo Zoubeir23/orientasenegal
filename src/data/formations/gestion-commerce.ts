@@ -79,6 +79,22 @@ export const formationsGestionCommerce: Formation[] = [
         noteDAdmission:
           "Établissement public interétatique de référence en Afrique de l'Ouest, avec plusieurs options de spécialisation (management, PME, comptabilité, finance). Admission sur concours d'entrée, deux sessions par an. Accréditation confirmée : le CESAG revendique 40 programmes sur 40 accrédités CAMES (cesag.sn, page accréditations qualité) — l'un des dossiers les plus solides de ce répertoire.",
       },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Sciences de Gestion (LSG)",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+        },
+        sourceOfficielle: { libelle: "st-michel.sn", url: "https://www.st-michel.sn/licence/" },
+        noteDAdmission:
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), reconnu CAMES d'après le site de l'école. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+      },
     ],
   },
   {
@@ -183,6 +199,26 @@ export const formationsGestionCommerce: Formation[] = [
         },
         noteDAdmission:
           "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). D'après la page de reconnaissances de l'école, cette filière était habilitée mais son accréditation ANAQ-Sup restait en attente de résultats — à confirmer avant inscription. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence Professionnelle en Comptabilité et Finance (LPCF) — Hautes Etudes Comptables et Financières (HECF) également proposées",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+        },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/2025/10/06/accreditation-de-la-licence-hecf-par-lanaq-sup/",
+        },
+        noteDAdmission:
+          "Département Comptabilité-Finance-Audit (chef de département : +221 76 223 21 99). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988 avec le DEC (Diplôme Elémentaire Comptable), sa formation historique. Diplôme délivré par l'UCAO (système LMD) ; la licence HECF a été accréditée ANAQ-Sup en octobre 2025. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
@@ -404,24 +440,24 @@ export const formationsGestionCommerce: Formation[] = [
           "Admission après le baccalauréat ou en admission parallèle (BTS, DUT, L2), sur dossier et entretien, avec cours du soir en 2e et 3e année. Accréditation : l'ESMP n'apparaît sur ANAQ-Sup qu'au statut d'« habilitation » (étape préalable à l'accréditation complète), pas encore en accréditation confirmée pour cette filière.",
       },
       {
-        institut:
-          "UCAO - Université Catholique de l'Afrique de l'Ouest (Institut Saint Michel)",
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
         ville: "Dakar",
         statutEtablissement: "Privé",
         bacsCompatibles: ["Scientifique", "Littéraire"],
         dureeEnAnnees: 3,
-        diplomePrepare: "Licence en Transport et Logistique",
+        diplomePrepare:
+          "Licence Professionnelle en Transport Logistique (LPTL) — Commerce et Echanges Internationaux (LPCEI) également proposée",
         fraisDeScolarite: {
           montant: "Non publié",
           detail:
-            "Tarifs non publiés. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander à stmichel@ucao.edu.sn.",
+            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
         },
         sourceOfficielle: {
           libelle: "st-michel.sn",
-          url: "https://www.st-michel.sn/",
+          url: "https://www.st-michel.sn/nos-formations/licence-professionnelle-en-transport-logistique/",
         },
         noteDAdmission:
-          "L'UCAO propose également des licences en comptabilité-finance, droit des affaires, commerce international et ressources humaines, ainsi que des BTS en deux ans. Admission sur dossier puis entretien. Accréditation : aucun statut ANAQ-Sup ni CAMES retrouvé pour cette filière dans les sources consultées — à faire confirmer par écrit.",
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
