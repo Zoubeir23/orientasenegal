@@ -15,7 +15,7 @@ export const formationsSante: Formation[] = [
     id: "medecine",
     filiere: "Médecine",
     description:
-      "Cursus médical complet avec stages hospitaliers, menant au doctorat en médecine. Sélection très exigeante : mention fortement recommandée au baccalauréat. À Dakar, une faculté publique (UCAD) et deux universités privées accréditées.",
+      "Cursus médical complet avec stages hospitaliers, menant au doctorat en médecine. Sélection très exigeante : mention fortement recommandée au baccalauréat. À Dakar, deux facultés publiques (UCAD, UIDT) et quatre universités privées.",
     debouches: ["Médecin généraliste", "Interne", "Chercheur en santé publique"],
     competencesAcquises: [
       "Sciences fondamentales : anatomie, physiologie, biochimie, pharmacologie",
@@ -52,7 +52,7 @@ export const formationsSante: Formation[] = [
         dureeEnAnnees: 7,
         diplomePrepare: "Doctorat en médecine",
         fraisDeScolarite: {
-          montant: "≈ 200 000 F / an (étrangers, à confirmer)",
+          montant: "200 000 F/an en licence à 1 000 000 F/an en doctorat (étrangers, à confirmer)",
           detail:
             "Droits d'inscription historiquement rapportés à la FMPOS de l'UCAD : 200 000 FCFA par an en licence pour les étudiants étrangers, contre 25 000 FCFA pour les Sénégalais et boursiers, et 1 000 000 FCFA pour le doctorat — montant qui recoupe le tarif général UCAD pour étrangers en faculté (confirmé sur plusieurs sources 2025-2026). Ce montant n'est cependant plus republié sur un document daté propre à la FMPOS : confirmez le tarif en vigueur auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget. S'ajoutent le logement, la nourriture et le matériel médical.",
         },
@@ -124,7 +124,7 @@ export const formationsSante: Formation[] = [
         fraisDeScolarite: {
           montant: "260 000 F d'inscription + 300 000 F/mois en Licence (jusqu'à 300 000 F/mois en Doctorat)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « Médecine » : Licence (L1-L2-L3) = 260 000 FCFA d'inscription + 300 000 FCFA/mois, soit 2 960 000 FCFA/an, chaque année ; Master (M1-M2) = 285 000 + 300 000/mois (2 985 000 FCFA/an) ; Doctorat (D1-D2-D3) = 300 000 + 300 000/mois (3 000 000 FCFA/an). S'ajoutent 300 000 FCFA de frais d'encadrement de thèse à partir de la 7e année, et 200 000 FCFA de frais de soutenance du Diplôme d'État en 8e année : un cursus complet dépasse 23 000 000 FCFA sur huit ans.",
+            "Grille officielle UAHB 2024-2025, catégorie « Médecine » (mensualité versée sur 9 mois) : Licence (L1-L2-L3) = 260 000 FCFA d'inscription + 300 000 FCFA/mois, soit 2 960 000 FCFA/an, chaque année ; Master (M1-M2) = 285 000 + 300 000/mois (2 985 000 FCFA/an) ; Doctorat (D1-D2-D3) = 300 000 + 300 000/mois (3 000 000 FCFA/an). S'ajoutent 300 000 FCFA de frais d'encadrement de thèse à partir de la 7e année, et 200 000 FCFA de frais de soutenance du Diplôme d'État en 8e année : un cursus complet dépasse 23 000 000 FCFA sur huit ans.",
         },
         sourceOfficielle: { libelle: "uahb.sn", url: "https://www.uahb.sn/" },
         noteDAdmission:
@@ -147,7 +147,7 @@ export const formationsSante: Formation[] = [
           url: "https://www.universitestchristopher.net/",
         },
         noteDAdmission:
-          "Première université privée de sciences médicales du Sénégal, fondée en 2000 et inaugurée en 2003 par le Président de la République. Attention à la raison sociale : l'accréditation ANAQ-Sup (anaqsup.sn/accreditations/uein-universite-el-hadj-ibrahima-niasse-ecole-de-medecine-saint-christopher-iba-mar-diop-2/) est enregistrée sous le nom « UEIN - Université El Hadj Ibrahima Niasse / École de Médecine Saint Christopher Iba Mar Diop », distinct du nom commercial « Université St. Christopher » utilisé dans la communication de l'école — vérifiez la cohérence des documents avant de candidater. Accréditations ANAQ-Sup et CAMES annoncées par l'école, ainsi qu'une accréditation ECFMG permettant aux diplômés de faire leur résidence aux États-Unis et au Canada. Deux rentrées par an (janvier et août). Stages cliniques en hôpitaux partenaires et centre de simulation avancé. Contact : Immeuble Nadiema, Point E, rue 7xb, Dakar ; +221 76 620 38 62 ; info@stchris.edu.",
+          "Première université privée de sciences médicales du Sénégal, fondée en 2000 et inaugurée en 2003 par le Président de la République. Attention à la raison sociale : l'accréditation ANAQ-Sup (anaqsup.sn/accreditations/uein-universite-el-hadj-ibrahima-niasse-ecole-de-medecine-saint-christopher-iba-mar-diop-2/) est enregistrée sous le nom « UEIN - Université El Hadj Ibrahima Niasse / École de Médecine Saint Christopher Iba Mar Diop », distinct du nom commercial « Université St. Christopher » utilisé dans la communication de l'école — vérifiez la cohérence des documents avant de candidater. Accréditations ANAQ-Sup et CAMES annoncées par l'école, ainsi qu'une reconnaissance ECFMG revendiquée par l'école : selon la plaquette, elle rendrait les diplômés éligibles à demander la certification ECFMG (sous réserve des autres exigences applicables) pour candidater aux résidences accréditées ACGME aux États-Unis — l'ECFMG ne couvre pas l'accès aux résidences canadiennes, contrairement à ce que suggère la communication de l'école ; à vérifier directement auprès de l'ECFMG avant de bâtir un projet sur ce point. Deux rentrées par an (janvier et août). Stages cliniques en hôpitaux partenaires et centre de simulation avancé. Contact : Immeuble Nadiema, Point E, rue 7xb, Dakar ; +221 76 620 38 62 ; info@stchris.edu.",
       },
     ],
   },
@@ -352,7 +352,7 @@ export const formationsSante: Formation[] = [
     id: "pharmacie",
     filiere: "Pharmacie",
     description:
-      "Cursus long, à la faculté publique de l'UCAD ou dans l'une des deux universités privées de santé de Dakar. Débouche sur l'officine, l'industrie du médicament ou la biologie médicale.",
+      "Cursus long, à la faculté publique de l'UCAD ou dans l'une des trois universités privées de santé de Dakar. Débouche sur l'officine, l'industrie du médicament ou la biologie médicale.",
     debouches: [
       "Pharmacien d'officine",
       "Pharmacien hospitalier",
@@ -469,7 +469,7 @@ export const formationsSante: Formation[] = [
     id: "chirurgie-dentaire",
     filiere: "Chirurgie Dentaire",
     description:
-      "Le volet odontostomatologie de la faculté de santé de l'UCAD : soins dentaires, chirurgie buccale et prothèses.",
+      "Le volet odontostomatologie de la faculté de santé de l'UCAD, ou en université privée : soins dentaires, chirurgie buccale et prothèses.",
     debouches: [
       "Chirurgien-dentiste",
       "Odontologiste hospitalier",
@@ -667,7 +667,7 @@ export const formationsSante: Formation[] = [
         fraisDeScolarite: {
           montant: "100 000 F d'inscription + 90 000 F/mois en L1-L2 (150 000 F + 100 000 F/mois en L3)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « Santé Communautaire » : L1-L2 = 100 000 FCFA d'inscription + 90 000 FCFA/mois (910 000 FCFA/an, chaque année) ; L3 = 150 000 + 100 000/mois (1 050 000 FCFA/an) — soit environ 2 870 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+            "Grille officielle UAHB 2024-2025, catégorie « Santé Communautaire » (mensualité versée sur 9 mois) : L1-L2 = 100 000 FCFA d'inscription + 90 000 FCFA/mois (910 000 FCFA/an, chaque année) ; L3 = 150 000 + 100 000/mois (1 050 000 FCFA/an) — soit environ 2 870 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
         },
         sourceOfficielle: {
           libelle: "uahb.sn",
