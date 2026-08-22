@@ -211,7 +211,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
           url: "https://esp.sn/departement/genie-informatique/",
         },
         noteDAdmission:
-          "Candidature via mycandidature.esp puis admission.ucad.sn. Filière scientifique exigeante en mathématiques. Confirmez la catégorie tarifaire applicable aux bacheliers comoriens avant de candidater. Accréditation : cette licence n'apparaît pas dans la base ANAQ-Sup consultée ; l'ESP a engagé une démarche d'accréditation de ses formations auprès de l'ANAQ-Sup (annoncée sur esp.sn), non finalisée à ce jour pour ce diplôme précis.",
+          "Candidature via mycandidature.esp puis admission.ucad.sn. Filière scientifique exigeante en mathématiques. Confirmez la catégorie tarifaire applicable aux bacheliers comoriens avant de candidater. Accréditation : cette licence n'apparaît pas dans la base ANAQ-Sup consultée ; l'ESP a engagé une démarche d'accréditation de ses formations auprès de l'ANAQ-Sup depuis 2023 (annoncée sur esp.sn), toujours non finalisée pour ce diplôme précis à la vérification la plus récente.",
       },
       {
         institut: "ISI - Institut Supérieur d'Informatique",

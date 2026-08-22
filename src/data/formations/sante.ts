@@ -54,7 +54,7 @@ export const formationsSante: Formation[] = [
         fraisDeScolarite: {
           montant: "≈ 200 000 F / an (étrangers, à confirmer)",
           detail:
-            "Droits d'inscription historiquement rapportés à la FMPOS de l'UCAD : 200 000 FCFA par an en licence pour les étudiants étrangers, contre 25 000 FCFA pour les Sénégalais et boursiers, et 1 000 000 FCFA pour le doctorat. Ces montants ne sont plus republiés sur le site actuel de la faculté : confirmez le tarif en vigueur auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget. S'ajoutent le logement, la nourriture et le matériel médical.",
+            "Droits d'inscription historiquement rapportés à la FMPOS de l'UCAD : 200 000 FCFA par an en licence pour les étudiants étrangers, contre 25 000 FCFA pour les Sénégalais et boursiers, et 1 000 000 FCFA pour le doctorat — montant qui recoupe le tarif général UCAD pour étrangers en faculté (confirmé sur plusieurs sources 2025-2026). Ce montant n'est cependant plus republié sur un document daté propre à la FMPOS : confirmez le tarif en vigueur auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget. S'ajoutent le logement, la nourriture et le matériel médical.",
         },
         sourceOfficielle: { libelle: "fmpos.ucad.sn", url: "https://fmpos.ucad.sn/" },
         noteDAdmission:
@@ -397,7 +397,7 @@ export const formationsSante: Formation[] = [
         fraisDeScolarite: {
           montant: "200 000 à 1 000 000 F / an (à confirmer)",
           detail:
-            "Droits d'inscription en faculté à l'UCAD : 200 000 FCFA par an pour les étudiants étrangers contre 25 000 FCFA pour les Sénégalais, et 1 000 000 FCFA pour un doctorat. Ces montants ne sont plus republiés sur le site actuel de la faculté : confirmez auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget.",
+            "Droits d'inscription en faculté à l'UCAD : 200 000 FCFA par an pour les étudiants étrangers contre 25 000 FCFA pour les Sénégalais, et 1 000 000 FCFA pour un doctorat — montant qui recoupe le tarif général UCAD pour étrangers en faculté (confirmé sur plusieurs sources 2025-2026). Ce montant n'est cependant plus republié sur un document daté propre à la FMPOS : confirmez auprès de sinfo.fmpo@ucad.edu.sn avant de bâtir un budget.",
         },
         sourceOfficielle: {
           libelle: "fmpos.ucad.sn",
@@ -512,7 +512,7 @@ export const formationsSante: Formation[] = [
         fraisDeScolarite: {
           montant: "200 000 à 1 000 000 F / an (à confirmer)",
           detail:
-            "Mêmes droits d'inscription que les autres cursus de la faculté : 200 000 FCFA par an pour les étrangers en licence, 1 000 000 FCFA pour le doctorat, montants à confirmer auprès de la scolarité. S'y ajoute l'achat du matériel de travaux pratiques.",
+            "Mêmes droits d'inscription que les autres cursus de la faculté : 200 000 FCFA par an pour les étrangers en licence, 1 000 000 FCFA pour le doctorat — montant qui recoupe le tarif général UCAD pour étrangers en faculté (confirmé sur plusieurs sources 2025-2026), à confirmer auprès de la scolarité. S'y ajoute l'achat du matériel de travaux pratiques.",
         },
         sourceOfficielle: {
           libelle: "fmpos.ucad.sn",
