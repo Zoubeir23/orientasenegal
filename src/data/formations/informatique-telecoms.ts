@@ -116,7 +116,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
           url: "https://www.st-michel.sn/nos-formations/licence-professionnelle-en-informatique-de-gestion/",
         },
         noteDAdmission:
-          "Département Informatique-Mathématiques (contact chef de département : +221 77 525 49 61). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+          "Département Informatique-Mathématiques (contact chef de département : +221 77 525 49 61). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes, 4 photos d'identité (dossier standard observé sur les autres licences pro de l'école), puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
       {
         institut: "ESCOA - École Supérieure de Commerce et d'Administration",
@@ -138,7 +138,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         institut: "UAHB - Université Amadou Hampaté Ba",
         ville: "Dakar",
         statutEtablissement: "Privé",
-        bacsCompatibles: ["Littéraire", "Scientifique"],
+        bacsCompatibles: ["Scientifique"],
         dureeEnAnnees: 3,
         diplomePrepare:
           "Licence Professionnelle en Sciences et Technologies de l'Information et de la Communication (STIC), spécialité Informatique",
@@ -503,16 +503,16 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence Professionnelle en Réseaux et Systèmes Informatiques (LRSI)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "80 000 F d'inscription + ≈ 583 500 F la 1re année (grille 2024-2025)",
           detail:
-            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Le paiement est fractionné : frais d'inscription et un quart de la scolarité au moment de l'inscription, le solde en décembre, février et avril. Demandez la grille au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+            "Grille officielle LRSI 2024-2025 publiée sur st-michel.sn : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches (novembre à avril) incluant scolarité, tenue et ressources numériques, pour un total L1 d'environ 583 500 FCFA. L2 ≈ 633 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 773 500 FCFA (droits d'inscription 120 000 F, diplomation incluse). Un uniforme (60 000 FCFA) s'ajoute ; préparation aux certifications CISCO, Microsoft et/ou Linux incluse dans le cursus.",
         },
         sourceOfficielle: {
           libelle: "st-michel.sn",
-          url: "https://www.st-michel.sn/nos-formations/licence-professionnelle-en-reseaux-et-systemes-informatiques/",
+          url: "https://www.st-michel.sn/wp-content/uploads/2024/07/LRSI-2024-2025.pdf",
         },
         noteDAdmission:
-          "Département Informatique-Mathématiques (contact chef de département : +221 77 525 49 61). Institut le plus ancien affilié à l'UCAO/UUZ, ouvert en 1988. Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Admission sur dossier (extrait de naissance, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+          "Département Informatique-Mathématiques (contact chef de département : +221 77 525 49 61). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie légalisée de l'attestation ou du diplôme du Bac, copie légalisée du relevé détaillé des notes du Bac, copie des bulletins de Terminale, 4 photos d'identité, puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
