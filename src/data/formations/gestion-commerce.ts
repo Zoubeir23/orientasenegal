@@ -79,6 +79,25 @@ export const formationsGestionCommerce: Formation[] = [
         noteDAdmission:
           "Établissement public interétatique de référence en Afrique de l'Ouest, avec plusieurs options de spécialisation (management, PME, comptabilité, finance). Admission sur concours d'entrée, deux sessions par an. Accréditation confirmée : le CESAG revendique 40 programmes sur 40 accrédités CAMES (cesag.sn, page accréditations qualité) — l'un des dossiers les plus solides de ce répertoire.",
       },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Sciences de Gestion (LSG)",
+        fraisDeScolarite: {
+          montant: "≈ 580 500 F la 1re année, droits d'inscription inclus (grille datée 2022)",
+          detail:
+            "Grille officielle publiée sur st-michel.sn (document daté 2022, toujours en ligne — demandez confirmation du tarif en vigueur avant inscription) : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches mensuelles (novembre à avril) incluant scolarité, tenue et accès aux ressources numériques, pour un total L1 d'environ 580 500 FCFA. L2 ≈ 630 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 770 500 FCFA (droits d'inscription 120 000 F, frais de diplomation inclus). Un uniforme (60 000 FCFA) et un ordinateur ou une tablette (achat obligatoire, payable en 12 mois) s'ajoutent.",
+        },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/wp-content/uploads/2022/07/LDEA-LSG_2022.pdf",
+        },
+        noteDAdmission:
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD), reconnu CAMES d'après le site de l'école. Quatre options possibles à partir de la 3e année (Micro Finance, Marketing, GRH, Management des Organisations) ; cours proposés en journée ou en soirée. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie légalisée de l'attestation du Bac (L, STEG ou S), copie légalisée du relevé détaillé des notes du Bac, copie des bulletins de Terminale, 4 photos d'identité, puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+      },
     ],
   },
   {
@@ -164,6 +183,104 @@ export const formationsGestionCommerce: Formation[] = [
         sourceOfficielle: { libelle: "groupeisi.com", url: "https://www.groupeisi.com/" },
         noteDAdmission:
           "Proposée via « Groupe ISI en Ligne », le programme d'études à distance de l'ISI : utile pour étudier sans s'installer à Dakar. Accréditation confirmée : anaqsup.sn/accreditations/institut-superieur-dinformatique-isi-de-dakar-licence-professionnelle-en-comptabilite-finance/.",
+      },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence Professionnelle en Sciences de Gestion, spécialité Finances-Comptabilité",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
+          detail:
+            "Grille tirée de la plaquette tarifaire imprimée UAHB 2024-2025 (catégorie « Droit & Gestion », mensualité versée sur 9 mois), distincte de la page de reconnaissances citée ci-dessous et non retrouvée en ligne : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "uahb.sn",
+          url: "https://www.uahb.sn/reconnaissance-cames/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). D'après la page de reconnaissances de l'école, cette filière était habilitée mais son accréditation ANAQ-Sup restait en attente de résultats — à confirmer avant inscription. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence Professionnelle en Comptabilité et Finance (LPCF) — Hautes Etudes Comptables et Financières (HECF) également proposées",
+        fraisDeScolarite: {
+          montant: "Non publié",
+          detail:
+            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
+        },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/2025/10/06/accreditation-de-la-licence-hecf-par-lanaq-sup/",
+        },
+        noteDAdmission:
+          "Département Comptabilité-Finance-Audit (chef de département : +221 76 223 21 99). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable), sa formation historique. Diplôme délivré par l'UCAO (système LMD) ; la licence HECF a été accréditée ANAQ-Sup en octobre 2025. Admission sur dossier (extrait de naissance, copie de la CNI ou du passeport, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes, 4 photos d'identité) puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
+      },
+    ],
+  },
+  {
+    id: "banque-assurance-gestion",
+    filiere: "Banque, Assurance et Gestion des Risques",
+    description:
+      "Licence professionnelle en sciences de gestion spécialisée banque et assurance : produits bancaires, techniques d'assurance, gestion des risques et du crédit. Proposée par l'Université Amadou Hampaté Ba (UAHB).",
+    debouches: [
+      "Chargé de clientèle bancaire",
+      "Souscripteur ou gestionnaire de contrats d'assurance",
+      "Analyste de crédit",
+      "Gestionnaire de risques",
+    ],
+    competencesAcquises: [
+      "Techniques bancaires : produits, crédit, moyens de paiement",
+      "Techniques d'assurance : souscription, sinistres, réassurance",
+      "Gestion des risques financiers et analyse de crédit",
+      "Comptabilité et finance d'entreprise",
+      "Marketing des services financiers et relation client",
+    ],
+    missionsConcretes: [
+      "Instruire un dossier de crédit ou de souscription d'assurance",
+      "Conseiller un client particulier ou une entreprise sur des produits financiers",
+      "Évaluer et suivre un risque de crédit ou un sinistre",
+      "Développer un portefeuille clients dans une agence bancaire ou une compagnie d'assurance",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le secteur bancaire et assurantiel comorien est restreint mais structuré (banques commerciales, institutions de microfinance, quelques assureurs). Contrairement à un profil juridique pur (IJBA), ce diplôme forme au volet commercial et gestion du risque : chargé de clientèle, souscription, recouvrement.",
+      employeursPotentiels: [
+        "Banques commerciales",
+        "Institutions de microfinance",
+        "Compagnies et courtiers d'assurance",
+        "Sociétés de recouvrement et de gestion de crédit",
+      ],
+      conseil:
+        "Ce diplôme complète bien un profil commercial ou gestionnaire pour l'entrée dans le secteur financier ; pour viser des postes de conseil juridique en banque-assurance, privilégiez plutôt une filière de droit spécialisée (IJBA à l'UDB, par exemple).",
+    },
+    etablissements: [
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence Professionnelle en Sciences de Gestion, spécialité Banque-Assurance",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019) et accréditée ANAQ-Sup pour cette filière précise. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
       },
     ],
   },
@@ -326,24 +443,24 @@ export const formationsGestionCommerce: Formation[] = [
           "Admission après le baccalauréat ou en admission parallèle (BTS, DUT, L2), sur dossier et entretien, avec cours du soir en 2e et 3e année. Accréditation : l'ESMP n'apparaît sur ANAQ-Sup qu'au statut d'« habilitation » (étape préalable à l'accréditation complète), pas encore en accréditation confirmée pour cette filière.",
       },
       {
-        institut:
-          "UCAO - Université Catholique de l'Afrique de l'Ouest (Institut Saint Michel)",
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
         ville: "Dakar",
         statutEtablissement: "Privé",
         bacsCompatibles: ["Scientifique", "Littéraire"],
         dureeEnAnnees: 3,
-        diplomePrepare: "Licence en Transport et Logistique",
+        diplomePrepare:
+          "Licence Professionnelle en Transport Logistique (LPTL) — Commerce et Echanges Internationaux (LPCEI) également proposée",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "≈ 583 500 F la 1re année, droits d'inscription inclus (LPCEI, grille 2024-2025)",
           detail:
-            "Tarifs non publiés. Paiement fractionné : inscription et un quart de la scolarité à l'inscription, le solde en décembre, février et avril. Grille à demander à stmichel@ucao.edu.sn.",
+            "Grille officielle LPCEI 2024-2025 publiée sur st-michel.sn : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches (novembre à avril) incluant scolarité, tenue et ressources numériques, pour un total L1 d'environ 583 500 FCFA. L2 ≈ 633 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 773 500 FCFA (droits d'inscription 120 000 F, diplomation incluse). Un uniforme (60 000 FCFA) s'ajoute. Cette grille est publiée pour la spécialité LPCEI ; le tarif LPTL n'a pas de PDF dédié retrouvé en ligne, mais suit vraisemblablement le même barème — à confirmer auprès du service scolarité.",
         },
         sourceOfficielle: {
           libelle: "st-michel.sn",
-          url: "https://www.st-michel.sn/",
+          url: "https://www.st-michel.sn/wp-content/uploads/2024/07/LPCEI-2024-2025.pdf",
         },
         noteDAdmission:
-          "L'UCAO propose également des licences en comptabilité-finance, droit des affaires, commerce international et ressources humaines, ainsi que des BTS en deux ans. Admission sur dossier puis entretien. Accréditation : aucun statut ANAQ-Sup ni CAMES retrouvé pour cette filière dans les sources consultées — à faire confirmer par écrit.",
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD) ; aucune fiche ANAQ-Sup dédiée à cette filière précise n'a été retrouvée (seule l'habilitation institutionnelle de l'ISG Saint Michel est confirmée) — à faire confirmer avant inscription. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie légalisée de l'attestation du Bac (L, G ou S), copie légalisée du relevé détaillé des notes du Bac, copie des bulletins de Terminale, 4 photos d'identité, puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },

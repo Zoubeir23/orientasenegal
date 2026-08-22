@@ -4,8 +4,124 @@ import type { Formation } from "@/types/formation";
  * Droit, journalisme et communication.
  * "Droit" (licence généraliste) regroupe UCAD et ISDD, qui proposent la même
  * filière. UGB Droit Privé reste distincte car explicitement spécialisée.
+ * IJBA et SGDAI (UDB) sont les deux parcours de spécialisation en L3 du
+ * cycle Licence Génie Juridique de l'Université Dakar-Bourguiba : même
+ * tronc commun en L1-L2, fiches séparées car débouchés et masters distincts.
  */
 export const formationsDroitCommunication: Formation[] = [
+  {
+    id: "udb-ijba",
+    filiere: "Ingénierie Juridique Banque-Assurance (IJBA)",
+    description:
+      "Licence de droit spécialisée banque, assurance et crédit : tronc commun juridique en L1-L2 (droit civil, droit public, institutions judiciaires), puis spécialisation en L3 (droit bancaire, droit des assurances, droit des sûretés, fiscalité des affaires). Proposée par l'Université Dakar-Bourguiba (UDB), au sein de l'Unité de Formation et de Recherche Génie Juridique.",
+    debouches: [
+      "Juriste de banque",
+      "Juriste des assurances",
+      "Analyste de crédit",
+      "Conseiller juridique",
+    ],
+    competencesAcquises: [
+      "Droit civil, droit des obligations et droit des biens (tronc commun L1-L2)",
+      "Droit bancaire, droit du crédit et droit des sûretés",
+      "Droit des assurances, techniques bancaires et techniques des assurances",
+      "Fiscalité des affaires, finance et gestion financière",
+      "Anglais juridique et techniques d'expression professionnelle",
+    ],
+    missionsConcretes: [
+      "Sécuriser juridiquement des opérations bancaires et des contrats d'assurance",
+      "Instruire un dossier de crédit ou évaluer un risque assurantiel",
+      "Conseiller une banque, une compagnie d'assurance ou une entreprise sur ses obligations",
+      "Poursuivre en Master (IJBA, Ingénierie Juridique Bancaire, Ingénierie Juridique des Assurances)",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le secteur bancaire et assurantiel comorien est restreint mais structuré (banques commerciales, institutions de microfinance, quelques assureurs), avec un besoin réel de juristes spécialisés en conformité et en gestion du risque de crédit. Les postes existent surtout dans les rares établissements financiers formels du pays.",
+      employeursPotentiels: [
+        "Banques commerciales",
+        "Institutions de microfinance",
+        "Compagnies et courtiers d'assurance",
+        "Cabinets de conseil juridique et fiscal",
+      ],
+      conseil:
+        "Un Master reste quasi indispensable pour accéder aux postes de juriste bancaire ou d'assurance : le nombre d'employeurs financiers formels aux Comores est restreint mais stable, et une expérience régionale en Afrique de l'Ouest reste une option à envisager avant le retour.",
+    },
+    etablissements: [
+      {
+        institut: "UDB - Université Dakar-Bourguiba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Ingénierie Juridique Banque-Assurance (IJBA)",
+        fraisDeScolarite: {
+          montant: "40 000 F d'inscription + 40 000 F/mois",
+          detail:
+            "Grille publiée sur la plaquette UDB du cycle Licence Génie Juridique (2026) : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. Un régime particulier existe pour les étudiants travailleurs, à préciser auprès de l'établissement.",
+        },
+        sourceOfficielle: { libelle: "udb-sn.com", url: "https://www.udb-sn.com/?u=gj" },
+        noteDAdmission:
+          "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup confirmée pour cette filière précise : anaqsup.sn/accreditations/udb-licence-en-ingenierie-juridique-banque-assurance/. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
+      },
+    ],
+  },
+  {
+    id: "udb-sgdai",
+    filiere: "Sciences de Gestion et Droit des Affaires Internationales (SGDAI)",
+    description:
+      "Licence de droit des affaires à dimension internationale : tronc commun juridique en L1-L2 (droit civil, droit public, institutions judiciaires), puis spécialisation en L3 (droit international public et privé, droit communautaire, propriété industrielle, relations internationales). Proposée par l'Université Dakar-Bourguiba (UDB), au sein de l'Unité de Formation et de Recherche Génie Juridique.",
+    debouches: [
+      "Juriste d'affaires",
+      "Avocat d'affaires",
+      "Conseiller juridique",
+      "Administrateur de société",
+    ],
+    competencesAcquises: [
+      "Droit civil, droit des obligations et droit des biens (tronc commun L1-L2)",
+      "Droit international public et privé, droit communautaire",
+      "Droit des sûretés, droit des procédures collectives et propriété industrielle",
+      "Fiscalité des affaires, gestion financière et économie de l'entreprise",
+      "Anglais juridique et relations internationales",
+    ],
+    missionsConcretes: [
+      "Rédiger et sécuriser des contrats internationaux",
+      "Conseiller une entreprise sur ses opérations transfrontalières et communautaires",
+      "Suivre le contentieux et les procédures collectives d'une société",
+      "Poursuivre en Master (SGDAI, Gestion Juridique des Affaires, Droit Maritime)",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le droit des affaires internationales trouve peu de débouchés institutionnels directs aux Comores, mais reste utile pour accompagner les entreprises exportatrices, les organismes régionaux (COI, coopération) et les rares filiales de groupes internationaux présentes dans le pays.",
+      employeursPotentiels: [
+        "Organismes régionaux et de coopération (COI, agences internationales)",
+        "Entreprises d'import-export",
+        "Cabinets d'avocats d'affaires",
+        "Administration et douanes",
+      ],
+      conseil:
+        "Un Master reste indispensable pour la plupart des débouchés. Le droit maritime, accessible via le Master Droit Maritime, peut être une spécialisation différenciante pour un pays insulaire comme les Comores.",
+    },
+    etablissements: [
+      {
+        institut: "UDB - Université Dakar-Bourguiba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence en Sciences de Gestion et Droit des Affaires Internationales (SGDAI)",
+        fraisDeScolarite: {
+          montant: "40 000 F d'inscription + 40 000 F/mois",
+          detail:
+            "Grille publiée sur la plaquette UDB du cycle Licence Génie Juridique (2026) : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. Un régime particulier existe pour les étudiants travailleurs, à préciser auprès de l'établissement.",
+        },
+        sourceOfficielle: { libelle: "udb-sn.com", url: "https://www.udb-sn.com/?u=gj" },
+        noteDAdmission:
+          "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup confirmée pour cette filière précise : anaqsup.sn/accreditations/universite-dakar-bourguiba-licence-en-sciences-de-gestion-et-droit-des-affaires-internationales-sgdai/. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
+      },
+    ],
+  },
   {
     id: "droit-licence-generaliste",
     filiere: "Droit",
@@ -47,9 +163,9 @@ export const formationsDroitCommunication: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence en droit (privé ou public)",
         fraisDeScolarite: {
-          montant: "25 000 à 200 000 F / an selon la source",
+          montant: "25 000 F (CAMPUSEN) + 200 000 F/an de scolarité pour les étrangers",
           detail:
-            "Le portail d'orientation CAMPUSEN affiche 25 000 FCFA d'inscription + 500 FCFA de frais de transfert pour la procédure de candidature, tandis que des sources antérieures mentionnent 200 000 FCFA/an de scolarité pour les étudiants étrangers en faculté (contre 25 000 FCFA pour les Sénégalais et boursiers). Ces deux montants ne se recoupent pas clairement : confirmez le tarif exact applicable auprès de la DAP (dap@ucad.edu.sn) avant de bâtir un budget. Frais de dossier de 5 000 FCFA non remboursables.",
+            "Le portail d'orientation CAMPUSEN (orientation.campusen.sn) affiche 25 000 FCFA d'inscription + 500 FCFA de frais de transfert pour la procédure de candidature. À cela s'ajoute la scolarité annuelle en faculté : 200 000 FCFA/an pour les étudiants étrangers contre 25 000 FCFA pour les Sénégalais et boursiers — montant recoupé sur plusieurs sources récentes (2025-2026), mais non retrouvé sur un document officiel UCAD daté et détaillé par cycle : confirmez le tarif exact applicable auprès de la DAP (dap@ucad.edu.sn) avant de bâtir un budget. Frais de dossier de 5 000 FCFA non remboursables.",
         },
         sourceOfficielle: {
           libelle: "ucad.sn",
@@ -73,6 +189,44 @@ export const formationsDroitCommunication: Formation[] = [
         sourceOfficielle: { libelle: "isdd.edu.sn", url: "https://isdd.edu.sn/licence-en-droit/" },
         noteDAdmission:
           "École privée fondée en 2005 par le professeur Babacar Guèye, avec plus de 1 000 étudiants de 18 nationalités. Admission sur dossier après le baccalauréat, toutes séries. Pré-inscription en ligne sur le site de l'école (contact : +221 33 827 48 36, contact@isdd.edu.sn). Accréditation ANAQ-Sup confirmée (liste officielle des programmes accrédités) ; l'école est par ailleurs reconnue CAMES au niveau institutionnel.",
+      },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Sciences Juridiques (spécialité Droit Public ou Droit Privé)",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-16/",
+        },
+        noteDAdmission:
+          "Troisième établissement du Groupe Scolaire Jean de la Fontaine (SUARL dirigée par Michel Claver Gbaya), université privée laïque depuis 2006, habilitée à délivrer des diplômes LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). Le parcours Droit Public est accrédité ANAQ-Sup et CAMES depuis le 30/10/2021 (anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-16/) ; une fiche ANAQ-Sup dédiée existe désormais aussi pour le parcours Droit Privé (anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-licence-en-sciences-juridiques-specialite-droit-prive/), même si la page de reconnaissances de l'école le présentait encore comme en attente de résultats à une vérification antérieure — confirmez le statut à jour avant inscription. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence en Droit Economique et des Affaires (LDEA)",
+        fraisDeScolarite: {
+          montant: "≈ 580 500 F la 1re année, droits d'inscription inclus (grille datée 2022)",
+          detail:
+            "Grille officielle publiée sur st-michel.sn (document daté 2022, toujours en ligne — demandez confirmation du tarif en vigueur avant inscription) : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches mensuelles (novembre à avril) incluant scolarité, tenue et accès aux ressources numériques, pour un total L1 d'environ 580 500 FCFA. L2 ≈ 630 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 770 500 FCFA (droits d'inscription 120 000 F, frais de diplomation inclus). Un uniforme (60 000 FCFA) et un ordinateur ou une tablette (achat obligatoire, payable en 12 mois) s'ajoutent.",
+        },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/wp-content/uploads/2022/07/LDEA-LSG_2022.pdf",
+        },
+        noteDAdmission:
+          "Département Sciences de Gestion - Droit - Transport Logistique (chef de département : +221 77 185 08 30), avec un Club des Juristes créé par les étudiants de cette filière. Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD), reconnu CAMES d'après le site de l'école. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie légalisée de l'attestation du Bac, copie légalisée du relevé détaillé des notes du Bac, copie des bulletins de Terminale, 4 photos d'identité, puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
@@ -235,13 +389,16 @@ export const formationsDroitCommunication: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Diplôme Supérieur de Journalisme (équivalent Licence)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "10 000 F de frais de concours ; scolarité non publiée",
           detail:
-            "Centre public rattaché à l'UCAD : les frais spécifiques au CESTI ne sont pas publiés en ligne. Contactez cesti@ucad.edu.sn pour connaître le montant applicable aux candidats étrangers.",
+            "Le concours d'entrée coûte 10 000 FCFA (10 100 FCFA à Dakar avec frais Wave), non remboursables, payables lors du dépôt du dossier. La scolarité une fois admis (frais spécifiques au CESTI) n'est en revanche pas publiée en ligne : contactez cesti@ucad.edu.sn ou +221 77 587 07 64 pour connaître le montant applicable aux candidats étrangers.",
         },
-        sourceOfficielle: { libelle: "cesti.ucad.sn", url: "https://cesti.ucad.sn/" },
+        sourceOfficielle: {
+          libelle: "cesti.ucad.sn",
+          url: "https://cesti.ucad.sn/2026/04/29/concours-dentree-au-cesti-pour-lannee-2026-2027/",
+        },
         noteDAdmission:
-          "Admission par concours (présélection sur dossier puis épreuves écrites), ouvert à toutes nationalités, sans distinction, dans la limite des places disponibles. Calendrier annuel à surveiller sur le site du CESTI. Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée (le CESTI est une composante publique de l'UCAD, dont l'école doctorale a fait l'objet d'une auto-évaluation ANAQ-Sup, mais pas ce diplôme précis).",
+          "Admission par concours, ouvert à toutes nationalités sans distinction, dans la limite des places disponibles : entrée en L1 sur dossier de baccalauréat (candidats âgés de 17 à 24 ans) ou, sans limite d'âge, sur dossier de professionnel des médias justifiant de 4 ans d'expérience ; entrée en L2 possible pour les titulaires d'un Bac+5 ou équivalent. Session 2026-2027 : dépôt des dossiers jusqu'au 31 juillet 2026. Contact : cesti@ucad.edu.sn, +221 77 587 07 64, BP 5005 Dakar. Accréditation : ce diplôme n'apparaît pas séparément dans la base ANAQ-Sup consultée (le CESTI est une composante publique de l'UCAD, dont l'école doctorale a fait l'objet d'une auto-évaluation ANAQ-Sup, mais pas ce diplôme précis).",
       },
     ],
   },

@@ -50,6 +50,7 @@ export const DOMAINES: Domaine[] = [
       "sage-femme",
       "analyses-biologiques-medicales",
       "chirurgie-dentaire",
+      "uahb-sante-communautaire",
     ],
   },
   {
@@ -76,6 +77,7 @@ export const DOMAINES: Domaine[] = [
     couleurDeTexte: "text-encre",
     identifiantsDeFilieres: [
       "comptabilite-controle-audit",
+      "banque-assurance-gestion",
       "transport-logistique",
       "sciences-gestion-management",
       "marketing-communication-digitale",
@@ -89,7 +91,12 @@ export const DOMAINES: Domaine[] = [
       "Droit foncier, OHADA, journalisme. Des professions où le master est presque toujours nécessaire.",
     couleurDeFond: "bg-magenta-sombre",
     couleurDeTexte: "text-blanc",
-    identifiantsDeFilieres: ["droit-licence-generaliste", "cesti-journalisme"],
+    identifiantsDeFilieres: [
+      "droit-licence-generaliste",
+      "udb-ijba",
+      "udb-sgdai",
+      "cesti-journalisme",
+    ],
   },
   {
     id: "arts-tourisme",

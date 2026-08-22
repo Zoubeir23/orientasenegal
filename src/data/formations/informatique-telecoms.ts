@@ -84,37 +84,39 @@ export const formationsInformatiqueTelecoms: Formation[] = [
           "Officiellement intitulée « Informatique Appliquée à la Gestion d'Entreprise » (180 crédits ECTS, 6 semestres). Admission sur dossier après le bac (toutes séries), ou en L2/L3 pour un Bac+2 équivalent. Accréditation : le volet Réseaux informatiques du groupe ISI est confirmé accrédité ANAQ-Sup, mais cette filière précise n'a pas été retrouvée séparément dans la base — à confirmer auprès de l'école.",
       },
       {
-        institut: "UDB - Université Dakar Bourguiba",
+        institut: "UDB - Université Dakar-Bourguiba",
         ville: "Dakar",
         statutEtablissement: "Privé",
         bacsCompatibles: ["Scientifique"],
         dureeEnAnnees: 3,
         diplomePrepare: "Licence en MIAGE (Master en génie logiciel possible)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "40 000 F d'inscription + 40 000 F/mois (tarif général Licence)",
           detail:
-            "L'UDB ne publie pas sa grille tarifaire en ligne. Contactez le service scolarité (+221 33 825 36 11 / +221 33 825 36 16) pour connaître le montant applicable aux étudiants étrangers.",
+            "L'UDB ne publie pas de grille spécifique à cette filière, mais la plaquette 2026 du cycle Licence affiche un tarif général : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. À confirmer que ce tarif générique s'applique bien à la Faculté Sciences et Technologies (MIAGE) auprès du service scolarité.",
         },
-        sourceOfficielle: { libelle: "udb-sn.com", url: "https://www.udb-sn.com" },
+        sourceOfficielle: { libelle: "udb.sn", url: "https://www.udb.sn/" },
         noteDAdmission:
-          "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique (contrairement à ISM et ISI, ouvertes aux littéraires). Accréditation confirmée sur anaqsup.sn/accreditations/universite-dakar-bourguiba-udb-licence-en-methodes-informatiques-appliquees-a-la-gestion-miage/ — la mieux documentée des trois options.",
+          "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique (contrairement à ISM et ISI, ouvertes aux littéraires). Accréditation confirmée sur anaqsup.sn/accreditations/universite-dakar-bourguiba-udb-licence-en-methodes-informatiques-appliquees-a-la-gestion-miage/ — la mieux documentée des trois options. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact général (plaquette 2026) : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com — pour la scolarité MIAGE spécifiquement, une ligne alternative a été signalée par le passé (+221 33 825 36 16).",
       },
       {
-        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (Institut Saint Michel)",
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
         ville: "Dakar",
         statutEtablissement: "Privé",
         bacsCompatibles: ["Scientifique", "Littéraire"],
         dureeEnAnnees: 3,
-        diplomePrepare:
-          "Licence en Informatique de Gestion (Systèmes d'information et Réseaux également proposés)",
+        diplomePrepare: "Licence Professionnelle en Informatique de Gestion (LPIG)",
         fraisDeScolarite: {
           montant: "Non publié",
           detail:
-            "L'UCAO ne publie pas ses tarifs en ligne. Le paiement est fractionné : frais d'inscription et un quart de la scolarité au moment de l'inscription, le solde en décembre, février et avril. Demandez la grille à stmichel@ucao.edu.sn ou au +221 33 823 08 40.",
+            "L'UCAO/ISG Saint Michel ne publie pas ses tarifs en ligne. Le paiement est fractionné : frais d'inscription et un quart de la scolarité au moment de l'inscription, le solde en décembre, février et avril. Demandez la grille au service scolarité (+221 33 823 08 40, stmichel@arc.sn).",
         },
-        sourceOfficielle: { libelle: "st-michel.sn", url: "https://www.st-michel.sn/" },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/nos-formations/licence-professionnelle-en-informatique-de-gestion/",
+        },
         noteDAdmission:
-          "Admission après examen du dossier puis entretien avec le responsable de département. Université confessionnelle présente dans quatre pays d'Afrique de l'Ouest. Accréditation : aucun statut ANAQ-Sup ni CAMES retrouvé pour cette filière dans les sources consultées — à faire confirmer par écrit avant inscription.",
+          "Département Informatique-Mathématiques (contact chef de département : +221 77 525 49 61). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie certifiée de l'attestation du Bac, copie certifiée des bulletins de notes, 4 photos d'identité (dossier standard observé sur les autres licences pro de l'école), puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
       {
         institut: "ESCOA - École Supérieure de Commerce et d'Administration",
@@ -131,6 +133,26 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         sourceOfficielle: { libelle: "escoa.edu.sn", url: "https://www.escoa.edu.sn/" },
         noteDAdmission:
           "École membre de la FEDE (Fédération Européenne des Écoles), orientée gestion, commerce, administration et informatique appliquée. Attention : l'adhésion à la FEDE est un réseau privé, pas une accréditation nationale — aucun statut ANAQ-Sup ni CAMES n'a été retrouvé dans les sources consultées, à faire confirmer avant inscription.",
+      },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence Professionnelle en Sciences et Technologies de l'Information et de la Communication (STIC), spécialité Informatique",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/80 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « STIC » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 70 000/mois (750 000 FCFA/an) ; L3 = 130 000 + 80 000/mois (850 000 FCFA/an) — soit environ 2 250 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "uahb.sn",
+          url: "https://www.uahb.sn/reconnaissance-cames/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). D'après la page de reconnaissances de l'école, cette filière est accréditée ANAQ-Sup et CAMES depuis le 30/10/2021 (aucune fiche ANAQ-Sup dédiée à la licence, seul le Master de la même spécialité a été retrouvé séparément — à confirmer avant inscription). Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
       },
     ],
   },
@@ -189,7 +211,7 @@ export const formationsInformatiqueTelecoms: Formation[] = [
           url: "https://esp.sn/departement/genie-informatique/",
         },
         noteDAdmission:
-          "Candidature via mycandidature.esp puis admission.ucad.sn. Filière scientifique exigeante en mathématiques. Confirmez la catégorie tarifaire applicable aux bacheliers comoriens avant de candidater. Accréditation : cette licence n'apparaît pas dans la base ANAQ-Sup consultée ; l'ESP a engagé une démarche d'accréditation de ses formations auprès de l'ANAQ-Sup (annoncée sur esp.sn), non finalisée à ce jour pour ce diplôme précis.",
+          "Candidature via mycandidature.esp puis admission.ucad.sn. Filière scientifique exigeante en mathématiques. Confirmez la catégorie tarifaire applicable aux bacheliers comoriens avant de candidater. Accréditation : cette licence n'apparaît pas dans la base ANAQ-Sup consultée ; l'ESP a engagé une démarche d'accréditation de ses formations auprès de l'ANAQ-Sup depuis 2023 (annoncée sur esp.sn), toujours non finalisée pour ce diplôme précis à la vérification la plus récente.",
       },
       {
         institut: "ISI - Institut Supérieur d'Informatique",
@@ -452,6 +474,45 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         },
         noteDAdmission:
           "Formation en 6 semestres (180 crédits ECTS), ouverte aux titulaires du bac ou d'un diplôme équivalent. Débouchés visés : ingénieur réseaux, administrateur systèmes et réseaux, technicien télécoms, consultant cybersécurité réseaux. Accréditation confirmée pour la Licence professionnelle en Réseaux informatiques du même groupe : anaqsup.sn/accreditations/isi-institut-superieur-dinformatique/.",
+      },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence Professionnelle en Sciences et Technologies de l'Information et de la Communication (STIC), spécialité Réseaux et Télécommunications",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/80 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « STIC » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 70 000/mois (750 000 FCFA/an) ; L3 = 130 000 + 80 000/mois (850 000 FCFA/an) — soit environ 2 250 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-6/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019) et accréditée ANAQ-Sup pour cette filière précise. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
+      {
+        institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence Professionnelle en Réseaux et Systèmes Informatiques (LRSI)",
+        fraisDeScolarite: {
+          montant: "≈ 583 500 F la 1re année, droits d'inscription inclus (grille 2024-2025)",
+          detail:
+            "Grille officielle LRSI 2024-2025 publiée sur st-michel.sn : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches (novembre à avril) incluant scolarité, tenue et ressources numériques, pour un total L1 d'environ 583 500 FCFA. L2 ≈ 633 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 773 500 FCFA (droits d'inscription 120 000 F, diplomation incluse). Un uniforme (60 000 FCFA) s'ajoute ; préparation aux certifications CISCO, Microsoft et/ou Linux incluse dans le cursus.",
+        },
+        sourceOfficielle: {
+          libelle: "st-michel.sn",
+          url: "https://www.st-michel.sn/wp-content/uploads/2024/07/LRSI-2024-2025.pdf",
+        },
+        noteDAdmission:
+          "Département Informatique-Mathématiques (contact chef de département : +221 77 525 49 61). Institut le plus ancien affilié à l'UCAO/UUZ, qui inaugura son enseignement supérieur en 1984 avec le DEC (Diplôme Elémentaire Comptable). Diplôme délivré par l'UCAO (système LMD), accrédité ANAQ-Sup pour cette filière précise. Dossier : extrait de naissance, copie de la CNI ou du passeport, copie légalisée de l'attestation ou du diplôme du Bac, copie légalisée du relevé détaillé des notes du Bac, copie des bulletins de Terminale, 4 photos d'identité, puis entretien avec le chef de département. Adresse : 17, rue Saint Michel, BP 3402, Dakar.",
       },
     ],
   },
