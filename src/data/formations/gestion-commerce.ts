@@ -165,6 +165,84 @@ export const formationsGestionCommerce: Formation[] = [
         noteDAdmission:
           "Proposée via « Groupe ISI en Ligne », le programme d'études à distance de l'ISI : utile pour étudier sans s'installer à Dakar. Accréditation confirmée : anaqsup.sn/accreditations/institut-superieur-dinformatique-isi-de-dakar-licence-professionnelle-en-comptabilite-finance/.",
       },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence Professionnelle en Sciences de Gestion, spécialité Finances-Comptabilité",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "uahb.sn",
+          url: "https://www.uahb.sn/reconnaissance-cames/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). D'après la page de reconnaissances de l'école, cette filière était habilitée mais son accréditation ANAQ-Sup restait en attente de résultats — à confirmer avant inscription. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
+    ],
+  },
+  {
+    id: "banque-assurance-gestion",
+    filiere: "Banque, Assurance et Gestion des Risques",
+    description:
+      "Licence professionnelle en sciences de gestion spécialisée banque et assurance : produits bancaires, techniques d'assurance, gestion des risques et du crédit. Proposée par l'Université Amadou Hampaté Ba (UAHB).",
+    debouches: [
+      "Chargé de clientèle bancaire",
+      "Souscripteur ou gestionnaire de contrats d'assurance",
+      "Analyste de crédit",
+      "Gestionnaire de risques",
+    ],
+    competencesAcquises: [
+      "Techniques bancaires : produits, crédit, moyens de paiement",
+      "Techniques d'assurance : souscription, sinistres, réassurance",
+      "Gestion des risques financiers et analyse de crédit",
+      "Comptabilité et finance d'entreprise",
+      "Marketing des services financiers et relation client",
+    ],
+    missionsConcretes: [
+      "Instruire un dossier de crédit ou de souscription d'assurance",
+      "Conseiller un client particulier ou une entreprise sur des produits financiers",
+      "Évaluer et suivre un risque de crédit ou un sinistre",
+      "Développer un portefeuille clients dans une agence bancaire ou une compagnie d'assurance",
+    ],
+    perspectivesAuxComores: {
+      niveauDeDemande: "Moyenne",
+      resume:
+        "Le secteur bancaire et assurantiel comorien est restreint mais structuré (banques commerciales, institutions de microfinance, quelques assureurs). Contrairement à un profil juridique pur (IJBA), ce diplôme forme au volet commercial et gestion du risque : chargé de clientèle, souscription, recouvrement.",
+      employeursPotentiels: [
+        "Banques commerciales",
+        "Institutions de microfinance",
+        "Compagnies et courtiers d'assurance",
+        "Sociétés de recouvrement et de gestion de crédit",
+      ],
+      conseil:
+        "Ce diplôme complète bien un profil commercial ou gestionnaire pour l'entrée dans le secteur financier ; pour viser des postes de conseil juridique en banque-assurance, privilégiez plutôt une filière de droit spécialisée (IJBA à l'UDB, par exemple).",
+    },
+    etablissements: [
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare: "Licence Professionnelle en Sciences de Gestion, spécialité Banque-Assurance",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019) et accréditée ANAQ-Sup pour cette filière précise. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
     ],
   },
   {
