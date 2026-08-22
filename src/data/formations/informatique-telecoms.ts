@@ -84,20 +84,20 @@ export const formationsInformatiqueTelecoms: Formation[] = [
           "Officiellement intitulée « Informatique Appliquée à la Gestion d'Entreprise » (180 crédits ECTS, 6 semestres). Admission sur dossier après le bac (toutes séries), ou en L2/L3 pour un Bac+2 équivalent. Accréditation : le volet Réseaux informatiques du groupe ISI est confirmé accrédité ANAQ-Sup, mais cette filière précise n'a pas été retrouvée séparément dans la base — à confirmer auprès de l'école.",
       },
       {
-        institut: "UDB - Université Dakar Bourguiba",
+        institut: "UDB - Université Dakar-Bourguiba",
         ville: "Dakar",
         statutEtablissement: "Privé",
         bacsCompatibles: ["Scientifique"],
         dureeEnAnnees: 3,
         diplomePrepare: "Licence en MIAGE (Master en génie logiciel possible)",
         fraisDeScolarite: {
-          montant: "Non publié",
+          montant: "40 000 F d'inscription + 40 000 F/mois (tarif général Licence)",
           detail:
-            "L'UDB ne publie pas sa grille tarifaire en ligne. Contactez le service scolarité (+221 33 825 36 11 / +221 33 825 36 16) pour connaître le montant applicable aux étudiants étrangers.",
+            "L'UDB ne publie pas de grille spécifique à cette filière, mais la plaquette 2026 du cycle Licence affiche un tarif général : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. À confirmer que ce tarif générique s'applique bien à la Faculté Sciences et Technologies (MIAGE) auprès du service scolarité.",
         },
-        sourceOfficielle: { libelle: "udb-sn.com", url: "https://www.udb-sn.com" },
+        sourceOfficielle: { libelle: "udb.sn", url: "https://www.udb.sn/" },
         noteDAdmission:
-          "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique (contrairement à ISM et ISI, ouvertes aux littéraires). Accréditation confirmée sur anaqsup.sn/accreditations/universite-dakar-bourguiba-udb-licence-en-methodes-informatiques-appliquees-a-la-gestion-miage/ — la mieux documentée des trois options.",
+          "Faculté Sciences et Technologies : accès conditionné à un baccalauréat scientifique (contrairement à ISM et ISI, ouvertes aux littéraires). Accréditation confirmée sur anaqsup.sn/accreditations/universite-dakar-bourguiba-udb-licence-en-methodes-informatiques-appliquees-a-la-gestion-miage/ — la mieux documentée des trois options. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact général (plaquette 2026) : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com — pour la scolarité MIAGE spécifiquement, une ligne alternative a été signalée par le passé (+221 33 825 36 16).",
       },
       {
         institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (Institut Saint Michel)",
