@@ -132,6 +132,26 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         noteDAdmission:
           "École membre de la FEDE (Fédération Européenne des Écoles), orientée gestion, commerce, administration et informatique appliquée. Attention : l'adhésion à la FEDE est un réseau privé, pas une accréditation nationale — aucun statut ANAQ-Sup ni CAMES n'a été retrouvé dans les sources consultées, à faire confirmer avant inscription.",
       },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Littéraire", "Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence Professionnelle en Sciences et Technologies de l'Information et de la Communication (STIC), spécialité Informatique",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/80 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « STIC » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 70 000/mois (750 000 FCFA/an) ; L3 = 130 000 + 80 000/mois (850 000 FCFA/an) — soit environ 2 250 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "uahb.sn",
+          url: "https://www.uahb.sn/reconnaissance-cames/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). D'après la page de reconnaissances de l'école, cette filière est accréditée ANAQ-Sup et CAMES depuis le 30/10/2021 (aucune fiche ANAQ-Sup dédiée à la licence, seul le Master de la même spécialité a été retrouvé séparément — à confirmer avant inscription). Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+      },
     ],
   },
   {
@@ -452,6 +472,26 @@ export const formationsInformatiqueTelecoms: Formation[] = [
         },
         noteDAdmission:
           "Formation en 6 semestres (180 crédits ECTS), ouverte aux titulaires du bac ou d'un diplôme équivalent. Débouchés visés : ingénieur réseaux, administrateur systèmes et réseaux, technicien télécoms, consultant cybersécurité réseaux. Accréditation confirmée pour la Licence professionnelle en Réseaux informatiques du même groupe : anaqsup.sn/accreditations/isi-institut-superieur-dinformatique/.",
+      },
+      {
+        institut: "UAHB - Université Amadou Hampaté Ba",
+        ville: "Dakar",
+        statutEtablissement: "Privé",
+        bacsCompatibles: ["Scientifique"],
+        dureeEnAnnees: 3,
+        diplomePrepare:
+          "Licence Professionnelle en Sciences et Technologies de l'Information et de la Communication (STIC), spécialité Réseaux et Télécommunications",
+        fraisDeScolarite: {
+          montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/80 000 en L3)",
+          detail:
+            "Grille officielle UAHB 2024-2025, catégorie « STIC » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 70 000/mois (750 000 FCFA/an) ; L3 = 130 000 + 80 000/mois (850 000 FCFA/an) — soit environ 2 250 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+        },
+        sourceOfficielle: {
+          libelle: "anaqsup.sn",
+          url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-6/",
+        },
+        noteDAdmission:
+          "Université privée laïque depuis 2006 (Groupe Scolaire Jean de la Fontaine), habilitée LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019) et accréditée ANAQ-Sup pour cette filière précise. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
       },
     ],
   },
