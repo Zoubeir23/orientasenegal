@@ -59,7 +59,7 @@ export const formationsDroitCommunication: Formation[] = [
           detail:
             "Grille publiée sur la plaquette UDB du cycle Licence Génie Juridique (2026) : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. Un régime particulier existe pour les étudiants travailleurs, à préciser auprès de l'établissement.",
         },
-        sourceOfficielle: { libelle: "udb-sn.com", url: "http://www.udb-sn.com/?u=gj" },
+        sourceOfficielle: { libelle: "udb-sn.com", url: "https://www.udb-sn.com/?u=gj" },
         noteDAdmission:
           "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup confirmée pour cette filière précise : anaqsup.sn/accreditations/udb-licence-en-ingenierie-juridique-banque-assurance/. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
       },
@@ -116,7 +116,7 @@ export const formationsDroitCommunication: Formation[] = [
           detail:
             "Grille publiée sur la plaquette UDB du cycle Licence Génie Juridique (2026) : 40 000 FCFA de droit d'inscription et 40 000 FCFA de mensualité, sur 10 mois de formation (dont un mois de rattrapage, session NAWET = ETE) — soit environ 440 000 FCFA/an. Un régime particulier existe pour les étudiants travailleurs, à préciser auprès de l'établissement.",
         },
-        sourceOfficielle: { libelle: "udb-sn.com", url: "http://www.udb-sn.com/?u=gj" },
+        sourceOfficielle: { libelle: "udb-sn.com", url: "https://www.udb-sn.com/?u=gj" },
         noteDAdmission:
           "Admission sur dossier : extrait de naissance, carte nationale d'identité, diplôme ou attestation de BAC, relevé de notes du BAC, relevé de notes de la classe de Terminale (documents à photocopier et légaliser), 2 photos d'identité. École privée laïque, agréée par l'État du Sénégal (visa n° 004465/MEN/DES du 10/10/1995, agrément définitif du 18/05/2009, habilitation à délivrer des diplômes du système LMD depuis le 18/01/2023) et reconnue CAMES. Accréditation ANAQ-Sup confirmée pour cette filière précise : anaqsup.sn/accreditations/universite-dakar-bourguiba-licence-en-sciences-de-gestion-et-droit-des-affaires-internationales-sgdai/. Taux de réussite annoncé par l'école : 82% en cycle Licence, 95% en Master. Contact : 12 Avenue Bourguiba, BP 15744 Dakar-Fann, +221 33 825 36 11, contact@udb-sn.com.",
       },
@@ -200,14 +200,14 @@ export const formationsDroitCommunication: Formation[] = [
         fraisDeScolarite: {
           montant: "110 000 F d'inscription + 60 000 F/mois en L1 (jusqu'à 130 000/70 000 en L3)",
           detail:
-            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
+            "Grille officielle UAHB 2024-2025, catégorie « Droit & Gestion » (mensualité versée sur 9 mois) : L1 = 110 000 FCFA d'inscription + 60 000 FCFA/mois (650 000 FCFA/an) ; L2 = 120 000 + 65 000/mois (705 000 FCFA/an) ; L3 = 130 000 + 70 000/mois (760 000 FCFA/an) — soit environ 2 115 000 FCFA sur les trois ans. S'ajoutent 5 000 FCFA de frais de dossier en 1re année (15 000 FCFA à partir de la 2e) et 100 000 FCFA de frais de soutenance en L3.",
         },
         sourceOfficielle: {
           libelle: "anaqsup.sn",
           url: "https://anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-16/",
         },
         noteDAdmission:
-          "Troisième établissement du Groupe Scolaire Jean de la Fontaine (SUARL dirigée par Michel Claver Gbaya), université privée laïque depuis 2006, habilitée à délivrer des diplômes LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). Le parcours Droit Public est accrédité ANAQ-Sup et CAMES depuis le 30/10/2021 ; le parcours Droit Privé est habilité mais son accréditation ANAQ-Sup était encore en attente de résultats d'après le site de l'école — à confirmer avant inscription. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
+          "Troisième établissement du Groupe Scolaire Jean de la Fontaine (SUARL dirigée par Michel Claver Gbaya), université privée laïque depuis 2006, habilitée à délivrer des diplômes LMD par l'État du Sénégal (n°0092 RepSEN/Ensup-priv/HA/04 du 12/04/2019). Le parcours Droit Public est accrédité ANAQ-Sup et CAMES depuis le 30/10/2021 (anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-16/) ; une fiche ANAQ-Sup dédiée existe désormais aussi pour le parcours Droit Privé (anaqsup.sn/accreditations/uahb-universite-amadou-hampate-ba-licence-en-sciences-juridiques-specialite-droit-prive/), même si la page de reconnaissances de l'école le présentait encore comme en attente de résultats à une vérification antérieure — confirmez le statut à jour avant inscription. Dossier : copie légalisée de la CNI ou du passeport, de l'attestation/diplôme du Bac, et des relevés de notes des années précédentes. Contact : Rocade Fann, Bel-Air (face Canal IV), Dakar ; +221 33 824 01 24 / +221 77 325 80 80 ; contact@uahb.sn.",
       },
       {
         institut: "UCAO - Université Catholique de l'Afrique de l'Ouest (ISG Saint Michel)",
@@ -217,7 +217,7 @@ export const formationsDroitCommunication: Formation[] = [
         dureeEnAnnees: 3,
         diplomePrepare: "Licence en Droit Economique et des Affaires (LDEA)",
         fraisDeScolarite: {
-          montant: "80 000 F d'inscription + ≈ 580 500 F la 1re année (grille datée 2022)",
+          montant: "≈ 580 500 F la 1re année, droits d'inscription inclus (grille datée 2022)",
           detail:
             "Grille officielle publiée sur st-michel.sn (document daté 2022, toujours en ligne — demandez confirmation du tarif en vigueur avant inscription) : L1 = 80 000 FCFA de droits d'inscription + 25 000 FCFA de frais généraux + 20 000 FCFA de tenue à l'inscription, puis 6 tranches mensuelles (novembre à avril) incluant scolarité, tenue et accès aux ressources numériques, pour un total L1 d'environ 580 500 FCFA. L2 ≈ 630 500 FCFA (droits d'inscription 100 000 F), L3 ≈ 770 500 FCFA (droits d'inscription 120 000 F, frais de diplomation inclus). Un uniforme (60 000 FCFA) et un ordinateur ou une tablette (achat obligatoire, payable en 12 mois) s'ajoutent.",
         },
